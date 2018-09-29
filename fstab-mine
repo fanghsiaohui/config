@@ -1,0 +1,15 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda3 UUID=78e77979-14dc-4380-b354-0dac98fa57e7
+/dev/sda3	/         	xfs       	rw,relatime,attr2,inode64,noquota	0 1
+
+# /dev/sda2 UUID=387AC0B07AC06BE6
+/dev/sda2	/mnt/win10	ntfs-3g		rw,nodev,uid=1000,gid=users,fmask=133,dmask=022,nofail,x-gvfs-show 0 0
+/dev/sda4	/mnt/data	ntfs-3g    	rw,nodev,uid=1000,gid=users,fmask=133,dmask=022,nofail,x-gvfs-show 0 0
+
+# /swapfile	swap		swap 		defaults 0 0
+
+# slove "no space left on device"
+# tmpfs		/tmp		tmpfs		size=8G,nodev,nosuid	0 0

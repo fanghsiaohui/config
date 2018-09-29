@@ -1,0 +1,10 @@
+# ====================
+# the old JAVA setting
+# --------------------
+# export JAVA_HOME=/usr/local/jdk
+# export CLASSPATH=.:$JAVA_HOME/lib
+# export PATH=$PATH:/home/fang/.local/bin:$JAVA_HOME/lib
+# export PATH=$PATH:$JAVA_HOME/lib
+# ====================
+# setopt no_nomatch
+alias vi=vim

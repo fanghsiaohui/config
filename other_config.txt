@@ -1,0 +1,16 @@
+PATH
+	export PATH="${PATH}:/home/fang/.local/bin"
+yandex.disk
+	~/.config/autostart/yandex-desktop
+DIRECTORYS
+	~/.config/user-dirs.dirs
+ssh alias
+    ~/.ssh/config
+Problem: no space left on device
+	mount tmpfs as below in fstab:
+	tmpfs	/tmp	tmpfs	size=8G,nodev,nosuid	0 0
+	sudo mount -t tmpfs -o size=8G tmpfs /tmp
+Jupyter
+	jupyter notebook --generate-config
+	jupyter notebook password
+	sudo jupyter nbextension enable --py --sys-prefix widgetsnbextension
