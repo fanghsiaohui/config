@@ -10,13 +10,14 @@ set foldenable
 set formatoptions+=B
 set rtp+=~/.vim/julia-vim
 
-map <F6>:!g++ % && ./a.out<CR>
-map <F5>:!python3 %<CR>
+map <F6> : !g++ % && ./a.out<CR>
+map <F5> : !python3 %<CR>
 
 "set noundofile
 "set nobackup
 "set noswapfile
 "set encoding=utf-8
+"set fileencoding=utf-8
 "set fileformat=unix
 
 " --------
