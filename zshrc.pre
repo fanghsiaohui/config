@@ -9,7 +9,6 @@
 # export PATH=$PATH:/home/fang/.local/bin
 alias vi=vim
 # export JAVA_HOME=/usr/lib/jvm/default
-# export ANDROID_HOME=/opt/android-sdk
 # export ANDROID_HOME=/home/fang/.androidSdk
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
 

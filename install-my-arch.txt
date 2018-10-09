@@ -1,11 +1,15 @@
 1. timedatectl
 	set ntp 1
 2. fdisk /dev/sda
+    make efi partition
+    command: t, ef, w
+    makefs.fat -F32 /dev/sdax
 3. mkfs.xfs
 4. make swap
 	mkswap /dev/sda5
 	swapon /dev/sda5
 5. mount device
+    mount root, boot
 6. modify /etc/pacman.d/mirrorlist
 7. pacstrap /mnt base base-devel
 
@@ -14,8 +18,9 @@
 	-U uiid
 ** change to new system **
 9. setup network and other
-	pacman -S dialog wpa_supplicant vim ntfs-3g zsh os-prober grub
-    # networkmanager (include in gnome)
+	pacman -S dialog vim ntfs-3g zsh os-prober grub
+    # networkmanager, wpa_supplicant (include in gnome)
+    # dialog is needed by wifi-menu
 10. time zone
 	ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 	hwclock --systohc
@@ -28,7 +33,12 @@
 	::1
 	127.0.1.1
 13. setup grub
-	grub-install --target=i386-pc /dev/sda
+	MBR:
+        grub-install --target=i386-pc /dev/sda
+    EFI:
+        pacman -S efibootmgr
+        grub-install --target=x86_64-efi --efi-directory=/boot
+--bootloader-id=grub
 	edit /etc/default/grub, set time
 	grub-mkconfig -o /boot/grub/grub.cfg	
 14. passwd
@@ -57,15 +67,16 @@
 2 pacman history
   	pacman -S arch-install-scripts
   	pacman -S grml-zsh-config
+  	pacman -S git
+	pacman -S julia
   	pacman -S firefox
   	pacman -S flashplugin
-	pacman -S julia
-	pacman -S jdk10-openjdk
   	pacman -S gst-libav
 	pacman -S jupyter-notebook
 	pacman -S python-numpy
 	pacman -S python-matplotlib
 	pacman -S python-scipy
+	pacman -S jdk10-openjdk
   	pacman -S adobe-source-han-serif-cn-fonts
 	# pacman -S ibus
 	# pacman -S ibus-libpinyin

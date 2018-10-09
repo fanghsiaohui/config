@@ -14,8 +14,9 @@ Problem: no space left on device
     $ findmnt --target /tmp
     TARGET SOURCE FSTYPE OPTIONS
     /tmp   tmpfs  tmpfs  rw,nosuid,nodev,relatime
-    The tmpfs can also be temporarily resized without the need to reboot, for example when a large compile job needs to run soon. In this case, run:
-    # mount -o remount,size=4G,noatime /tmp
+    The tmpfs can also be temporarily resized without the need to reboot, for e
+    xample when a large compile job needs to run soon. In this case, run:
+    mount -o remount,size=4G,noatime /tmp
 
 Jupyter
 	jupyter notebook --generate-config

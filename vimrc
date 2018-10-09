@@ -12,7 +12,7 @@ set rtp+=~/.vim/julia-vim
 
 map <F5> : !python3 %<CR>
 map <F6> : !julia %<CR>
-map <F7> : !g++ % && ./a.out<CR>
+map <F7> : !g++ -lm % && ./a.out<CR>
 
 "set noundofile
 "set nobackup
