@@ -9,7 +9,30 @@
 /dev/sda2	/mnt/win10	ntfs-3g		rw,nodev,uid=1000,gid=users,fmask=133,dmask=022,nofail,x-gvfs-show 0 0
 /dev/sda4	/mnt/data	ntfs-3g    	rw,nodev,uid=1000,gid=users,fmask=133,dmask=022,nofail,x-gvfs-show 0 0
 
-# /swapfile	swap		swap 		defaults 0 0
-
 # slove "no space left on device"
 # tmpfs		/tmp		tmpfs		size=8G,nodev,nosuid	0 0
+
+# new table
+# <file system> <dir> <type> <options> <dump> <pass>
+# UUID=7fdf8cec-7d4e-40ec-8edc-076282cff08b
+/dev/sda3           	/         	xfs       	rw,relatime,attr2,inode64,noquota	0 1
+
+# UUID=D670-34FE
+/dev/sda1           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sda4 /mnt/data auto nosuid,nodev,nofail,x-gvfs-show 0 0
+# /dev/sda2 /home auto nosuid,nodev,nofail 0 0
+
+# add by iso
+# UUID=7fdf8cec-7d4e-40ec-8edc-076282cff08b
+# /dev/sda3           	/         	xfs       	rw,relatime,attr2,inode64,noquota	0 1
+
+# UUID=D670-34FE
+# /dev/sda1           	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# UUID=bb7570fa-63d3-4ae0-ae2e-f03461dc84c9
+/dev/sda2           	/home     	xfs       	rw,relatime,attr2,inode64,noquota	0 2
+
+# UUID=48192e4e-f3c8-4fed-879f-96bc2e703800 LABEL=Data
+/dev/sda4           	/mnt/data 	xfs       	rw,relatime,attr2,inode64,noquota	0 2
+
