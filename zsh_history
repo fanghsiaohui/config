@@ -1,0 +1,225 @@
+: 1539120421:0;sudo cat fstab-mine >> /etc/fstab
+: 1539120447:0;sudo cat hosts-suse >> /etc/hosts
+: 1539120454:0;su
+: 1539120537:0;sudo vim /etc/hosts
+: 1539120887:0;timedatectl
+: 1539092309:0;cp STZHONGS.TTF ~
+: 1539092313:0;cp STSONG.TTF ~
+: 1539092341:0;chmod -x ST*
+: 1539092373:0;cp ~/Downloads/ST* fonts
+: 1539092382:0;fc-cache
+: 1539092391:0;fc-list
+: 1539092530:0;sudo pacman -S python-matplotlib
+: 1539092574:0;sudo pacman -S jupyter-notebook
+: 1539092609:0;sudo pacman -S python-numpy
+: 1539092614:0;sudo pacman -S python-scipy
+: 1539092633:0;sudo pacman -S python-sympy
+: 1539092658:0;sudo pacman -S python-pandas
+: 1539092715:0;which yandex-disk
+: 1539092987:0;git config --global user.name "fang"
+: 1539092996:0;git config --global user.email "fang@arch"
+: 1539093011:0;ssh-keygen
+: 1539093042:0;cat id_rsa.pub
+: 1539093358:0;cat ssh-config
+: 1539093381:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh-config ~/.ssh/config
+: 1539093655:0;sudo systemctl enable sshd
+: 1539093662:0;sudo systemctl start sshd
+: 1539093713:0;ls .ssh
+: 1539093911:0;ssh phone
+: 1539094049:0;scp phone:.ssh/phone ./
+: 1539094065:0;mv phone .ssh/authorized_keys
+: 1539094086:0;who
+: 1539094167:0;vim user-dirs.dirs
+: 1539094492:0;cp -R /mnt/data/code /mnt/data/other-data /mnt/data/YandexDisk ./
+: 1539094867:0;mount -o remount, size=5G /tmp
+: 1539094928:0;sudo mount -o remount,size=5G /tmp
+: 1539094929:0;df -h
+: 1539094937:0;cd android-studio
+: 1539094946:0;makepkg -si
+: 1539097262:0;cd foobar
+: 1539097274:0;ls zzz
+: 1539100225:0;sudo mount /dev/sda4 /mnt/data
+: 1539100256:0;sudo chown fang:users data
+: 1539116982:0;mount -h
+: 1539117070:0;man mount
+: 1539117432:0;lsblk
+: 1539117454:0;sudo mkfs.ext4 /dev/sda4
+: 1539117515:0;sudo fdisk -l
+: 1539117525:0;sudo lsblk
+: 1539117618:0;mount
+: 1539117955:0;ls data
+: 1539117956:0;ls win10
+: 1539118081:0;sudo mkfs.xfs /dev/sda4
+: 1539118102:0;sudo mkfs.xfs -f /dev/sda4
+: 1539118119:0;touch d
+: 1539118212:0;sudo umount /mnt/data 
+: 1539118989:0;sudo cp -R fang /tmp
+: 1539119128:0;sudo mkdir other
+: 1539119130:0;sudo mount -a
+: 1539119331:0;cd /mnt
+: 1539119346:0;sudo rmdir win10
+: 1539119391:0;cd data
+: 1539119517:0;la other
+: 1539123864:0;ls home
+: 1539123867:0;ls home/fang
+: 1539123874:0;cd fang
+: 1539123907:0;mv fang /other
+: 1539123918:0;sudo mv fang /other/fang-bak
+: 1539153102:0;ls Pictures
+: 1539153105:0;rm -r Pictures
+: 1539153108:0;ll
+: 1539153113:0;cd Downloads
+: 1539153404:0;sudo vim /etc/fstab
+: 1539162286:0;cd /home
+: 1539162295:0;cd /
+: 1539162316:0;sudo chown root:root home
+: 1539162331:0;cd home
+: 1539162364:0;cp .zsh_history /mnt/data
+: 1539163621:0;mv .ssh ~
+: 1539163636:0;mv * ..
+: 1539163642:0;mv .* ..
+: 1539163647:0;rmdir home_old
+: 1539163652:0;cd
+: 1539163668:0;ln -sf /mnt/data/YandexDisk/documents ./
+: 1539163673:0;ln -sf /mnt/data/YandexDisk/pictures ./
+: 1539163678:0;ln -sf /mnt/data/YandexDisk/other ./
+: 1539163693:0;ln -sf /mnt/data/YandexDisk/other/backups/config/vimrc .vimrc
+: 1539163707:0;ln -sf /mnt/data/YandexDisk/other/backups/config/zshrc.pre .zshrc.pre
+: 1539163717:0;cd .ssh
+: 1539163757:0;cp -a . /mnt/data/YandexDisk/other/backups/config
+: 1539163809:0;vim .config/user-dirs.dirs
+: 1539163836:0;cp .config/user-dirs.dirs other/backups/config
+: 1539163856:0;mkdir ssh
+: 1539163860:0;mv authorized_keys ssh
+: 1539163867:0;rm config
+: 1539163877:0;mv id_rsa ssh
+: 1539163881:0;mv id_rsa.pub ssh
+: 1539163887:0;mkdir iso
+: 1539163894:0;mv install-archISO.txt iso
+: 1539163899:0;mv zshrc-arch iso
+: 1539163909:0;la httpd
+: 1539163916:0;mv known_hosts ssh
+: 1539163942:0;cd no
+: 1539163946:0;cat df.txt
+: 1539163954:0;df -h > df.txt
+: 1539163956:0;id
+: 1539163961:0;id > id.txt
+: 1539163965:0;cat locale.conf
+: 1539163967:0;cat locale.conf-init
+: 1539163978:0;cat /etc/locale.conf
+: 1539163985:0;rm locale.conf
+: 1539163986:0;ls
+: 1539163991:0;mv locale.conf-init locale.conf
+: 1539164012:0;cat /etc/fstab >> fstab-mine
+: 1539164014:0;vim fstab-mine
+: 1539164093:0;cat /etc/hostx
+: 1539164094:0;cat /etc/hosts
+: 1539164109:0;rmdir no
+: 1539164113:0;ls iso
+: 1539164116:0;ls no
+: 1539164122:0;mv no/* iso
+: 1539164137:0;mv iso archInit
+: 1539164157:0;vim other_config.txt
+: 1539164220:0;cd fo
+: 1539164235:0;git clone git@github.com:fanghsiaohui/foobar
+: 1539164274:0;ln -sf /mnt/data/code ./
+: 1539164281:0;cd .local/share
+: 1539164321:0;cp /mnt/data/other-data/back-up/fonts/STZHONGS.TTF ./
+: 1539164325:0;cp /mnt/data/other-data/back-up/fonts/STSONG.TTF ./
+: 1539164333:0;mkdir fonts
+: 1539164343:0;mv ST* fonts
+: 1539164355:0;fc-list | grep -i song
+: 1539164375:0;cd 
+: 1539164379:0;cd other/backups/config
+: 1539164387:0;git add *
+: 1539164400:0;git commit -m "re"
+: 1539164402:0;git push
+: 1539164408:0;git status
+: 1539164427:0;git rm install-archISO.txt
+: 1539164432:0;git rm zshrc-arch
+: 1539164435:0;ls archInit
+: 1539164448:0;git commit -a -m "re"
+: 1539164566:0;vim /etc/fstab
+: 1539164689:0;..
+: 1539164699:0;mv .androidSdk androidSdk
+: 1539164829:0;la
+: 1539164838:0;vim .zsh_history
+: 1539165067:0;vim foo.c
+: 1539165101:0;gcc foo.c
+: 1539165103:0;la
+: 1539165105:0;./a.out
+: 1539165108:0;rm a.out
+: 1539165110:0;rm foo.c
+: 1539165113:0;cd ..
+: 1539165114:0;la
+: 1539165116:0;cd code/android
+: 1539165116:0;la
+: 1539165119:0;cd AndroidSdk
+: 1539165120:0;la
+: 1539165124:0;cd platform
+: 1539165128:0;cd platform-tools
+: 1539165128:0;la
+: 1539165139:0;cd
+: 1539165156:0;cd other/backups/config
+: 1539165158:0;git status
+: 1539165161:0;git push
+: 1539165226:0;git status
+: 1539165228:0;cd
+: 1539165229:0;cd foobar
+: 1539165231:0;git status
+: 1539165234:0;git push
+: 1539165258:0;yandex-disk setup
+: 1539165287:0;cd ..
+: 1539165291:0;cd YandexDisk
+: 1539165391:0;yandex-disk status
+: 1539165431:0;cd
+: 1539165440:0;cd pictures/savedPics/wallpaper
+: 1539165442:0;la
+: 1539165767:0;lsblk
+: 1539165785:0;parted
+: 1539165850:0;sudo parted
+: 1539165871:0;cat other/backups/config/other_config.txt
+: 1539165876:0;df -h
+: 1539165904:0;sudo mount -o remount,size=5G,noatime /tmp
+: 1539165907:0;df -h
+: 1539165911:0;cd other/backups/config
+: 1539165912:0;la
+: 1539165933:0;cp ~/.zsh_history ./
+: 1539166000:0;la
+: 1539166013:0;ln -sf /mnt/data/YandexDisk/other/backups/config/gitconfig .gitconfig
+: 1539166022:0;cd .ssh
+: 1539166023:0;la
+: 1539166067:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh/id_rsa ./id_rsa
+: 1539166069:0;la
+: 1539166080:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh/id_rsa.pub ./id_rsa.pub
+: 1539166081:0;la
+: 1539166104:0;cd -
+: 1539166107:0;cd other/backups/config
+: 1539166107:0;la
+: 1539166111:0;la ssh
+: 1539166116:0;..
+: 1539166121:0;cd config
+: 1539166122:0;la
+: 1539166130:0;mv ssh-config ssh/config
+: 1539166134:0;la
+: 1539166137:0;cd
+: 1539166137:0;la
+: 1539166139:0;cd .ssh
+: 1539166140:0;la
+: 1539166154:0;la ~/other/backups/config/ssh
+: 1539166163:0;..
+: 1539166169:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh .ssh
+: 1539166170:0;la
+: 1539166199:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh .ssh
+: 1539166200:0;la
+: 1539166205:0;la .ssh
+: 1539166219:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh ./.ssh
+: 1539166221:0;la
+: 1539166227:0;mv .ssh .ssh-old
+: 1539166231:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh .ssh
+: 1539166232:0;la
+: 1539166236:0;ssh phone
+: 1539166310:0;rm -r .ssh-old
+: 1539166311:0;la
+: 1539166402:0;w
+: 1539166403:0;who
