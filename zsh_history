@@ -1,8 +1,6 @@
 : 1539120421:0;sudo cat fstab-mine >> /etc/fstab
 : 1539120447:0;sudo cat hosts-suse >> /etc/hosts
-: 1539120454:0;su
 : 1539120537:0;sudo vim /etc/hosts
-: 1539120887:0;timedatectl
 : 1539092309:0;cp STZHONGS.TTF ~
 : 1539092313:0;cp STSONG.TTF ~
 : 1539092341:0;chmod -x ST*
@@ -25,24 +23,19 @@
 : 1539093655:0;sudo systemctl enable sshd
 : 1539093662:0;sudo systemctl start sshd
 : 1539093713:0;ls .ssh
-: 1539093911:0;ssh phone
 : 1539094049:0;scp phone:.ssh/phone ./
 : 1539094065:0;mv phone .ssh/authorized_keys
-: 1539094086:0;who
 : 1539094167:0;vim user-dirs.dirs
 : 1539094492:0;cp -R /mnt/data/code /mnt/data/other-data /mnt/data/YandexDisk ./
 : 1539094867:0;mount -o remount, size=5G /tmp
 : 1539094928:0;sudo mount -o remount,size=5G /tmp
-: 1539094929:0;df -h
 : 1539094937:0;cd android-studio
 : 1539094946:0;makepkg -si
-: 1539097262:0;cd foobar
 : 1539097274:0;ls zzz
 : 1539100225:0;sudo mount /dev/sda4 /mnt/data
 : 1539100256:0;sudo chown fang:users data
 : 1539116982:0;mount -h
 : 1539117070:0;man mount
-: 1539117432:0;lsblk
 : 1539117454:0;sudo mkfs.ext4 /dev/sda4
 : 1539117515:0;sudo fdisk -l
 : 1539117525:0;sudo lsblk
@@ -67,8 +60,6 @@
 : 1539123918:0;sudo mv fang /other/fang-bak
 : 1539153102:0;ls Pictures
 : 1539153105:0;rm -r Pictures
-: 1539153108:0;ll
-: 1539153113:0;cd Downloads
 : 1539153404:0;sudo vim /etc/fstab
 : 1539162286:0;cd /home
 : 1539162295:0;cd /
@@ -79,13 +70,11 @@
 : 1539163636:0;mv * ..
 : 1539163642:0;mv .* ..
 : 1539163647:0;rmdir home_old
-: 1539163652:0;cd
 : 1539163668:0;ln -sf /mnt/data/YandexDisk/documents ./
 : 1539163673:0;ln -sf /mnt/data/YandexDisk/pictures ./
 : 1539163678:0;ln -sf /mnt/data/YandexDisk/other ./
 : 1539163693:0;ln -sf /mnt/data/YandexDisk/other/backups/config/vimrc .vimrc
 : 1539163707:0;ln -sf /mnt/data/YandexDisk/other/backups/config/zshrc.pre .zshrc.pre
-: 1539163717:0;cd .ssh
 : 1539163757:0;cp -a . /mnt/data/YandexDisk/other/backups/config
 : 1539163809:0;vim .config/user-dirs.dirs
 : 1539163836:0;cp .config/user-dirs.dirs other/backups/config
@@ -104,11 +93,8 @@
 : 1539163954:0;df -h > df.txt
 : 1539163956:0;id
 : 1539163961:0;id > id.txt
-: 1539163965:0;cat locale.conf
 : 1539163967:0;cat locale.conf-init
-: 1539163978:0;cat /etc/locale.conf
 : 1539163985:0;rm locale.conf
-: 1539163986:0;ls
 : 1539163991:0;mv locale.conf-init locale.conf
 : 1539164012:0;cat /etc/fstab >> fstab-mine
 : 1539164014:0;vim fstab-mine
@@ -121,7 +107,6 @@
 : 1539164137:0;mv iso archInit
 : 1539164157:0;vim other_config.txt
 : 1539164220:0;cd fo
-: 1539164235:0;git clone git@github.com:fanghsiaohui/foobar
 : 1539164274:0;ln -sf /mnt/data/code ./
 : 1539164281:0;cd .local/share
 : 1539164321:0;cp /mnt/data/other-data/back-up/fonts/STZHONGS.TTF ./
@@ -129,97 +114,211 @@
 : 1539164333:0;mkdir fonts
 : 1539164343:0;mv ST* fonts
 : 1539164355:0;fc-list | grep -i song
-: 1539164375:0;cd 
-: 1539164379:0;cd other/backups/config
-: 1539164387:0;git add *
 : 1539164400:0;git commit -m "re"
-: 1539164402:0;git push
-: 1539164408:0;git status
 : 1539164427:0;git rm install-archISO.txt
 : 1539164432:0;git rm zshrc-arch
 : 1539164435:0;ls archInit
 : 1539164448:0;git commit -a -m "re"
 : 1539164566:0;vim /etc/fstab
-: 1539164689:0;..
 : 1539164699:0;mv .androidSdk androidSdk
-: 1539164829:0;la
 : 1539164838:0;vim .zsh_history
 : 1539165067:0;vim foo.c
 : 1539165101:0;gcc foo.c
-: 1539165103:0;la
 : 1539165105:0;./a.out
 : 1539165108:0;rm a.out
 : 1539165110:0;rm foo.c
-: 1539165113:0;cd ..
-: 1539165114:0;la
-: 1539165116:0;cd code/android
-: 1539165116:0;la
 : 1539165119:0;cd AndroidSdk
-: 1539165120:0;la
 : 1539165124:0;cd platform
-: 1539165128:0;cd platform-tools
-: 1539165128:0;la
-: 1539165139:0;cd
-: 1539165156:0;cd other/backups/config
-: 1539165158:0;git status
-: 1539165161:0;git push
-: 1539165226:0;git status
-: 1539165228:0;cd
-: 1539165229:0;cd foobar
-: 1539165231:0;git status
-: 1539165234:0;git push
 : 1539165258:0;yandex-disk setup
 : 1539165287:0;cd ..
 : 1539165291:0;cd YandexDisk
-: 1539165391:0;yandex-disk status
-: 1539165431:0;cd
 : 1539165440:0;cd pictures/savedPics/wallpaper
-: 1539165442:0;la
 : 1539165767:0;lsblk
 : 1539165785:0;parted
 : 1539165850:0;sudo parted
 : 1539165871:0;cat other/backups/config/other_config.txt
-: 1539165876:0;df -h
-: 1539165904:0;sudo mount -o remount,size=5G,noatime /tmp
-: 1539165907:0;df -h
-: 1539165911:0;cd other/backups/config
-: 1539165912:0;la
 : 1539165933:0;cp ~/.zsh_history ./
-: 1539166000:0;la
 : 1539166013:0;ln -sf /mnt/data/YandexDisk/other/backups/config/gitconfig .gitconfig
-: 1539166022:0;cd .ssh
-: 1539166023:0;la
 : 1539166067:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh/id_rsa ./id_rsa
-: 1539166069:0;la
 : 1539166080:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh/id_rsa.pub ./id_rsa.pub
-: 1539166081:0;la
-: 1539166104:0;cd -
-: 1539166107:0;cd other/backups/config
-: 1539166107:0;la
 : 1539166111:0;la ssh
-: 1539166116:0;..
 : 1539166121:0;cd config
-: 1539166122:0;la
 : 1539166130:0;mv ssh-config ssh/config
-: 1539166134:0;la
-: 1539166137:0;cd
-: 1539166137:0;la
 : 1539166139:0;cd .ssh
-: 1539166140:0;la
 : 1539166154:0;la ~/other/backups/config/ssh
-: 1539166163:0;..
-: 1539166169:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh .ssh
-: 1539166170:0;la
-: 1539166199:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh .ssh
-: 1539166200:0;la
 : 1539166205:0;la .ssh
 : 1539166219:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh ./.ssh
-: 1539166221:0;la
 : 1539166227:0;mv .ssh .ssh-old
 : 1539166231:0;ln -sf /mnt/data/YandexDisk/other/backups/config/ssh .ssh
-: 1539166232:0;la
-: 1539166236:0;ssh phone
 : 1539166310:0;rm -r .ssh-old
-: 1539166311:0;la
-: 1539166402:0;w
 : 1539166403:0;who
+: 1539166413:0;clear
+: 1539166430:0;cd /opt/android-studio/plugins/terminal
+: 1539166444:0;touch dd
+: 1539166446:0;rm dd
+: 1539166514:0;timedatectl
+: 1539166602:0;sudo pacman -S python-pip
+: 1539166614:0;pip list
+: 1539166692:0;la .java
+: 1539166695:0;la .gradle
+: 1539166702:0;du -
+: 1539166710:0;cd .java
+: 1539166718:0;cd -
+: 1539166721:0;cd .gradle
+: 1539189276:0;time
+: 1539189282:0;timeout
+: 1539189285:0;timelineeditor
+: 1539189288:0;yandex-disk status
+: 1539189370:0;cat desktop.ini
+: 1539212908:0;sudopacman -Syu
+: 1539224721:0;git add *
+: 1539224748:0;git rm ssh-config
+: 1539224766:0;git commit -m "d"
+: 1539224771:0;ls ssh
+: 1539224783:0;git push
+: 1539225578:0;du -h
+: 1539225760:0;du -l
+: 1539225767:0;du --help
+: 1539225795:0;du -lhc
+: 1539225802:0;du -lh
+: 1539225848:0;du -lhs
+: 1539225880:0;du -lhs -exclude=.gradle
+: 1539225902:0;du -lh --exclude=.gradle
+: 1539225917:0;du -lhs --exclude=.gradle
+: 1539225949:0;du -lhs --exclude=.gradle | grep "[0-9]*M"
+: 1539225976:0;du -lhs --exclude=.gradle | grep "[0-9]*\.[0-9]*M"
+: 1539225982:0;du -lhs --exclude=.gradle | grep "[0-9]*.[0-9]*M"
+: 1539225989:0;du -lhs --exclude=.gradle | grep "\w*M"
+: 1539225993:0;du -lhs --exclude=.gradle | grep "\d*M"
+: 1539226007:0;du -lhs --exclude=.gradle | grep "\d*.\d*M"
+: 1539226018:0;du -lhs --exclude=.gradle | grep "\d*[.]\d*M"
+: 1539226909:0;du -lhs --exclude=.gradle | grep "\d*\. \d*M"
+: 1539226950:0;du -lhs --exclude=.gradle | grep "\d*\.? \d*?M"
+: 1539226965:0;du -lhs --exclude=.gradle | grep "\d*[\.]? [\d*]?M"
+: 1539226977:0;du -lhs --exclude=.gradle | grep "M"
+: 1539227009:0;du -lh --exclude=.gradle | grep "\d*\.? \d*M"
+: 1539227016:0;du -h --exclude=.gradle | grep "\d*\.? \d*M"
+: 1539227022:0;du -h --exclude=.gradle | grep "M"
+: 1539227231:0;lh
+: 1539227245:0;mv fang.tar.gz /mnt/data/other-data/back-up
+: 1539227250:0;du -Sh
+: 1539227261:0;du -sh
+: 1539227264:0;du -s
+: 1539232185:0;rm bookmarks.html
+: 1539232200:0;javac --version
+: 1539232203:0;gcc
+: 1539232215:0;gcc --version
+: 1539232283:0;sudo mount -o remount,size=5G,noatime /tmp
+: 1539232331:0;tar czvf fang.tar.gz ./
+: 1539232558:0;cd fish
+: 1539232562:0;cd ../lib
+: 1539235069:0;cat .vimrc
+: 1539235073:0;less .vimrc
+: 1539235083:0;less .zshrc
+: 1539235093:0;less .zshrc.pre
+: 1539235130:0;ssh phone
+: 1539237162:0;cd /mnt/data/other-data
+: 1539237171:0;cd code/android
+: 1539237174:0;cd Sdk
+: 1539237178:0;cd platform-tools
+: 1539237187:0;./adb
+: 1539237301:0;./adb kill-server
+: 1539238312:0;df -h
+: 1539244117:0;cat .zcompdump
+: 1539244129:0;cat .zshrc
+: 1539244330:0;sudo pacman -Syu
+: 1539244360:0;version
+: 1539244375:0;gnome-shell
+: 1539244388:0;which gnome-shell
+: 1539244394:0;gnome-shell -h
+: 1539244452:0;free -h
+: 1539244457:0;w
+: 1539244608:0;git clone git@giehub.com:fanghsiaohui/foobar
+: 1539244616:0;git clone git@github.com:fanghsiaohui/foobar
+: 1539244639:0;cd foobar
+: 1539244675:0;git reset b365547
+: 1539244696:0;rm -r foobar
+: 1539244698:0;y
+: 1539244704:0;git clone git@github.com:fanghsiaohui/conf
+: 1539244716:0;cd conf
+: 1539244727:0;git reset d0c540c
+: 1539244736:0;la archInit
+: 1539244743:0;cat archInit/locale.conf
+: 1539244754:0;git reset 484988b
+: 1539244758:0;ls
+: 1539244783:0;git reset 6180d61
+: 1539244799:0;cd archInit
+: 1539244807:0;git log
+: 1539244833:0;git checkou -- locale.conf
+: 1539244855:0;git pull
+: 1539244885:0;git status
+: 1539244901:0;git checkout -- locale.conf
+: 1539244918:0;cat locale.conf
+: 1539244941:0;cp locale.conf ~/other/backups/config/locale.conf-zh
+: 1539244945:0;...
+: 1539244947:0;cd Downloads
+: 1539244950:0;rm -f conf
+: 1539244956:0;rm -rf conf
+: 1539244984:0;cat locale.conf-zh >> /etc/locale.conf
+: 1539245015:0;sudo cat >> /etc/locale.conf <<eof\
+add by me\
+eof
+: 1539245034:0;sudo echo "add" >> /etc/locale.conf
+: 1539245047:0;cd 
+: 1539245059:0;la dconf
+: 1539245067:0;cd other/backups/config
+: 1539245068:0;su
+: 1539245588:0;cat other/backups/config/locale.conf-zh
+: 1539245633:0;sudo vim /etc/locale.conf
+: 1539245679:0;cd .config
+: 1539245690:0;cd gnome-session
+: 1539245693:0;cd saved-session
+: 1539245698:0;..
+: 1539245699:0;..cd
+: 1539245701:0;cd
+: 1539245701:0;la
+: 1539245716:0;reboot
+: 1539245800:0;cat /etc/locale.conf
+: 1539245821:0;l
+: 1539245822:0;ll
+: 1539245870:0;cat /etc/locale.conf
+: 1539245876:0;la
+: 1539245880:0;cd .config
+: 1539245881:0;la
+: 1539245883:0;la su
+: 1539245886:0;la autostart
+: 1539245889:0;la dconf
+: 1539245894:0;la enchant
+: 1539245899:0;la gedit
+: 1539245912:0;..
+: 1539245913:0;la
+: 1539245921:0;cd .local
+: 1539245921:0;la
+: 1539245923:0;la share
+: 1539245942:0;la share/gnome-settings-daemon
+: 1539245952:0;la share/xorg
+: 1539245960:0;la
+: 1539245994:0;cd
+: 1539246010:0;file /usr/bin/pip
+: 1539246016:0;which pip
+: 1539246020:0;file /usr/bin/pip3
+: 1539246036:0;pip list
+: 1539246070:0;cd foobar
+: 1539246077:0;pip list >> piplist
+: 1539246095:0;vim piplist
+: 1539246149:0;pip list --outdated
+: 1539246205:0;julia
+: 1539250116:0;git status
+: 1539250123:0;rm piplist
+: 1539250124:0;la
+: 1539250126:0;git status
+: 1539250132:0;ls
+: 1539250135:0;vim foo.c
+: 1539250148:0;vim foo.py
+: 1539250226:0;la
+: 1539250227:0;cd
+: 1539250228:0;la
+: 1539250236:0;cd other/backups/config
+: 1539250237:0;la
+: 1539250246:0;cp -i ~/.zsh_history ./
+: 1539250258:0;cp -i ~/.zsh_history ./zsh_history
