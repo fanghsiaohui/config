@@ -1,13 +1,13 @@
 1. timedatectl
-	set ntp 1
+    set ntp 1
 2. fdisk /dev/sda
     make efi partition
     command: t, ef, w
     makefs.fat -F32 /dev/sdax
 3. mkfs.xfs
 4. make swap
-	mkswap /dev/sda5
-	swapon /dev/sda5
+    mkswap /dev/sda5
+    swapon /dev/sda5
 5. mount device
     mount root, boot
 6. modify /etc/pacman.d/mirrorlist
@@ -15,78 +15,78 @@
 
 ### config system
 8. genfstab -L /mnt >> /mnt/etc/fstab
-	-U uiid
+    -U uiid
 ** change to new system **
 9. setup network and other
-	pacman -S dialog vim ntfs-3g zsh os-prober grub
+    pacman -S dialog vim ntfs-3g zsh os-prober grub
     # networkmanager, wpa_supplicant (include in gnome)
     # dialog is needed by wifi-menu
 10. time zone
-	ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-	hwclock --systohc
+    ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+    hwclock --systohc
 11. Locale
-	edit /etc/locale.gen
-	locale-gen
-	echo LANG=en_US.UTF-8 > /etc/locale.conf
+    edit /etc/locale.gen
+    locale-gen
+    echo LANG=en_US.UTF-8 > /etc/locale.conf
 12. hostname, hosts
-	127.0.0.1
-	::1
-	127.0.1.1
+    127.0.0.1
+    ::1
+    127.0.1.1
 13. setup grub
-	MBR:
+    MBR:
         grub-install --target=i386-pc /dev/sda
     EFI:
         pacman -S efibootmgr
         grub-install --target=x86_64-efi --efi-directory=/boot
 --bootloader-id=grub
-	edit /etc/default/grub, set time
-	grub-mkconfig -o /boot/grub/grub.cfg	
+    edit /etc/default/grub, set time
+    grub-mkconfig -o /boot/grub/grub.cfg    
 14. passwd
 15. new user
-	useradd -m -g users -G wheel -s /bin/zsh Username
-	passwd Username
-	visudo #uncomment wheel
+    useradd -m -g users -G wheel -s /bin/zsh Username
+    passwd Username
+    visudo #uncomment wheel
 16. install Xorg
-	pacman -S xorg xf86-video-ati
-	- gnome gnome-extra (tweaks) 
-	- xfce4 xfce4-goodies
-	- plasma kde-applications kde-l10n-zh_cn
-	- pacman -S sddm
+    pacman -S xorg xf86-video-ati
+    - gnome gnome-extra (tweaks) 
+    - xfce4 xfce4-goodies
+    - plasma kde-applications kde-l10n-zh_cn
+    - pacman -S sddm
 17 systemctl
-	enable gdm or sddm
-	enable NetworkManager
-	# disable netctl
-	# pacman -S network-manager-applet
+    enable gdm or sddm
+    enable NetworkManager
+    # disable netctl
+    # pacman -S network-manager-applet
 
 ### Problems
 1 fcitx
-	/etc/profile
-	export XMODIFIERS="@im=fcitx"
-	export GTK_IM_MODULE="fcitx"
-	export QT_IM_MODULE="fcitx"
+    /etc/profile
+    export XMODIFIERS="@im=fcitx"
+    export GTK_IM_MODULE="fcitx"
+    export QT_IM_MODULE="fcitx"
 2 pacman history
-  	pacman -S arch-install-scripts
-  	pacman -S grml-zsh-config
-  	pacman -S git
-	pacman -S julia
-  	pacman -S firefox
-  	pacman -S flashplugin
-  	pacman -S gst-libav
-	pacman -S jupyter-notebook
-	pacman -S python-numpy
-	pacman -S python-matplotlib
-	pacman -S python-scipy
-	pacman -S jdk10-openjdk
-  	pacman -S adobe-source-han-serif-cn-fonts
-	# pacman -S ibus
-	# pacman -S ibus-libpinyin
-	# pacman -S ibus-qt
-	# pacman -S tk #matplot.pyplot
-		QT5, Qt4 library
-	git clone from aur
-	yandexdisk:	https://aur.archlinux.org/yandex-disk.git
-	android studio: https://aur.archlinux.org/android-studio.git
-	makepkg -si
+    pacman -S arch-install-scripts
+    pacman -S grml-zsh-config
+    pacman -S git
+    pacman -S julia
+    pacman -S firefox
+    pacman -S flashplugin
+    pacman -S gst-libav
+    pacman -S jupyter-notebook
+    pacman -S python-numpy
+    pacman -S python-matplotlib
+    pacman -S python-scipy
+    pacman -S jdk10-openjdk
+    pacman -S adobe-source-han-serif-cn-fonts
+    # pacman -S ibus
+    # pacman -S ibus-libpinyin
+    # pacman -S ibus-qt
+    # pacman -S tk #matplot.pyplot
+        QT5, Qt4 library
+    git clone from aur
+    yandexdisk: https://aur.archlinux.org/yandex-disk.git
+    android studio: https://aur.archlinux.org/android-studio.git
+    makepkg -si
 3. timedatectl set-local-rtc 1
 
 ### END
