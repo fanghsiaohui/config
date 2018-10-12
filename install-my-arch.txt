@@ -68,11 +68,12 @@
     pacman -S arch-install-scripts
     pacman -S grml-zsh-config
     pacman -S git
-    pacman -S julia
     pacman -S firefox
     pacman -S flashplugin
     pacman -S gst-libav
+    pacman -S julia
     pacman -S jupyter-notebook
+    pacman -S python-pip
     pacman -S python-numpy
     pacman -S python-matplotlib
     pacman -S python-scipy
