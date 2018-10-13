@@ -18,12 +18,12 @@
     -U uiid
 ** change to new system **
 9. setup network and other
-    pacman -S dialog vim ntfs-3g zsh os-prober grub
-    # networkmanager, wpa_supplicant (include in gnome)
+    pacman -S dialog vim ntfs-3g zsh os-prober grub efibootmgr
+    # nwpa_supplicant, etworkmanager (include in gnome)
     # dialog is needed by wifi-menu
 10. time zone
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-    hwclock --systohc
+    # hwclock --systohc
 11. Locale
     edit /etc/locale.gen
     locale-gen
@@ -33,12 +33,10 @@
     ::1
     127.0.1.1
 13. setup grub
-    MBR:
-        grub-install --target=i386-pc /dev/sda
-    EFI:
-        pacman -S efibootmgr
-        grub-install --target=x86_64-efi --efi-directory=/boot
---bootloader-id=grub
+    # MBR:
+    grub-install --target=i386-pc /dev/sda
+    # EFI:
+    grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
     edit /etc/default/grub, set time
     grub-mkconfig -o /boot/grub/grub.cfg    
 14. passwd
@@ -47,7 +45,8 @@
     passwd Username
     visudo #uncomment wheel
 16. install Xorg
-    pacman -S xorg xf86-video-ati
+    pacman -S xorg
+    - xf86-video-ati
     - gnome gnome-extra (tweaks) 
     - xfce4 xfce4-goodies
     - plasma kde-applications kde-l10n-zh_cn
@@ -55,6 +54,7 @@
 17 systemctl
     enable gdm or sddm
     enable NetworkManager
+    enable sshd
     # disable netctl
     # pacman -S network-manager-applet
 
@@ -79,11 +79,11 @@
     pacman -S python-scipy
     pacman -S jdk10-openjdk
     pacman -S adobe-source-han-serif-cn-fonts
-    # pacman -S ibus
-    # pacman -S ibus-libpinyin
+    pacman -S ibus
+    pacman -S ibus-libpinyin
+    pacman -S tk #matplot.pyplot
     # pacman -S ibus-qt
-    # pacman -S tk #matplot.pyplot
-        QT5, Qt4 library
+    # QT5, Qt4 library
     git clone from aur
     yandexdisk: https://aur.archlinux.org/yandex-disk.git
     android studio: https://aur.archlinux.org/android-studio.git
