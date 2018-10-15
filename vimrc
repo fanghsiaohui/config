@@ -29,10 +29,12 @@ func! Compile()
         exec "!time python3 %"
     elseif &filetype == 'go'
         exec "!time go run %"
-    elseif &filetype == 'jl'
+    elseif &filetype == 'julia'
         exec "!time julia %"
     elseif &filetype == 'html'
         exec "!firefox % &"
+    endif
+    endfunc
 
 
 

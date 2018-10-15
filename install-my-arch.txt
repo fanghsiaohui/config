@@ -77,6 +77,7 @@
     pacman -S python-numpy
     pacman -S python-matplotlib
     pacman -S python-scipy
+    pacman -S vim-jedi # python plugin
     pacman -S jdk10-openjdk
     pacman -S adobe-source-han-serif-cn-fonts
     pacman -S ibus
