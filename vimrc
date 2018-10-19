@@ -13,24 +13,24 @@ set rtp+=~/.vim/julia-vim
 "map <F5> : !python3 %<CR>
 "map <F6> : !julia %<CR>
 "map <F7> : !g++ -lm % && ./a.out<CR>
-map <F5> : call Compile() <CR>
+map <F5> : call Compile()<CR>
 func! Compile()
-    exec "w"
+    exec 'w'
     if &filetype == 'c'
         exec "!g++ % -o %<"
         exec "!time ./%<"
-    elseif &filetype == 'cpp'
-        exec "!g++ % -o %<"
-        exec "!time ./%<"
-    elseif &filetype == 'java'
-        exec "!javac %"
-        exec "!time java %<"
+"    elseif &filetype == 'cpp'
+"        exec "!g++ % -o %<"
+"        exec "!time ./%<"
+"    elseif &filetype == 'java'
+"        exec "!javac %"
+"        exec "!time java %<"
     elseif &filetype == 'python'
-        exec "!time python3 %"
+        exec "!python3 %"
     elseif &filetype == 'go'
-        exec "!time go run %"
+        exec "!go run %"
     elseif &filetype == 'julia'
-        exec "!time julia %"
+        exec "!julia %"
     elseif &filetype == 'html'
         exec "!firefox % &"
     endif
