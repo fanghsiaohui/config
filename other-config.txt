@@ -17,6 +17,11 @@ Problem: no space left on device
     The tmpfs can also be temporarily resized without the need to reboot, for e
     xample when a large compile job needs to run soon. In this case, run:
     mount -o remount,size=4G,noatime /tmp
+python virtual environment
+    old vir env:
+    pip freeze > requirements.txt
+    new vir env:
+    pip -r requirements.txt
 
 Jupyter
 	jupyter notebook --generate-config

@@ -88,8 +88,6 @@
 : 1539382250:0;cd foobar/zzz
 : 1539391841:0;ssh 10.0.2.15/24
 : 1539391844:0;ssh 10.0.2.15
-: 1539392907:0;node
-: 1539392920:0;vim .bash_history
 : 1539392927:0;rm .bash_history
 : 1539393576:0;ssh 192.168.1.119
 : 1539393608:0;ssh 192.168.122.1
@@ -121,7 +119,6 @@
 : 1539403329:0;sudo umount /home/fang/usb/mnt/data 
 : 1539403345:0;mount | grep "sd"
 : 1539403411:0;ls /sys/firmware/efi/efivars
-: 1539403418:0;cd /mnt
 : 1539403426:0;cd /run/m
 : 1539403431:0;cd /run
 : 1539403437:0;cd /media
@@ -222,7 +219,6 @@
 : 1539437713:0;sudo mount /dev/sdb1 oo
 : 1539437725:0;cd /run/media/fang/usbArch
 : 1539437760:0;mkfs.fat /dev/sdb1
-: 1539437780:0;cd fang
 : 1539437784:0;touch dd
 : 1539438305:0;sudo pacman -S archiso
 : 1539438865:0;sudo umounr /dev/sdb1
@@ -392,7 +388,6 @@
 : 1539532765:0;ls Documents
 : 1539532769:0;du Documents
 : 1539532773:0;du -h Documents
-: 1539532813:0;cd Pictures
 : 1539532864:0;git commit -m "rn"
 : 1539532888:0;ls /mnt/data/YandexDisk/Other/backups/config
 : 1539532910:0;ln -sf /mnt/data/YandexDisk/Other/backups/config/vimrc .vimrc
@@ -476,7 +471,6 @@
 : 1539581414:0;whereis go
 : 1539581423:0;man gofmt
 : 1539593108:0;vim --version
-: 1539595646:0;cd Other/backups/config
 : 1539595663:0;git commit -a -m "vimrc"
 : 1539595676:0;cd fo
 : 1539595881:0;ls zzz
@@ -506,8 +500,6 @@
 : 1539621018:0;cd Documents
 : 1539621027:0;cd Pictures/savedPics
 : 1539621102:0;ssh arch
-: 1539632470:0;cd .config
-: 1539632480:0;cd .cache
 : 1539632484:0;ls jedi
 : 1539632487:0;ls jedi/CPython-37-30
 : 1539632495:0;ls jedi/CPython-37-30 -lh
@@ -521,7 +513,6 @@
 : 1539668239:0;uname =a
 : 1539668456:0;./foo
 : 1539668527:0;cp foo.c zzz/c/chapter6.c
-: 1539668533:0;rm foo
 : 1539668538:0;ls c
 : 1539668547:0;lss
 : 1539668556:0;ls python
@@ -532,7 +523,6 @@
 : 1539672555:0;vim foo.
 : 1539672962:0;rm -r __pycache__
 : 1539673070:0;python -i snake.py
-: 1539673153:0;vim snake.py
 : 1539687894:0;rm snake.py
 : 1539687933:0;python foo.py 23 23 23
 : 1539687939:0;python 23 23 23
@@ -611,7 +601,6 @@
 : 1539748788:0;wc -l foo.c
 : 1539748833:0;cd zzz
 : 1539748838:0;cd c
-: 1539748868:0;lh
 : 1539748877:0;ls -lh
 : 1539749036:0;ll | grep "^[-d]" | wc
 : 1539749092:0;ls usr/bin
@@ -667,7 +656,6 @@
 : 1539793642:0;git clone https://aur.archlinux.org/opencl-amd.git
 : 1539793690:0;mv opencl-amd Downloads
 : 1539793696:0;cd opencl-amd
-: 1539793699:0;makepkg -si
 : 1539794167:0;mv opencl-amd opencl-amd-AUR
 : 1539794174:0;mv opencl-amd-AUR /mnt/data/other-data/back-up
 : 1539794210:0;zip -r opencl-amd-AUR.zip opencl-amd-AUR
@@ -684,16 +672,11 @@
 : 1539794759:0;cat foo.c
 : 1539794850:0;clang -lm foo.c
 : 1539794895:0;cat makefile
-: 1539794902:0;make
-: 1539794932:0;./a.out
 : 1539794937:0;clang foo.c
-: 1539794947:0;gcc foo.c
-: 1539794950:0;rm a.out
 : 1539795860:0;vim foobar/foo.py
 : 1539795919:0;vim .vimrc
 : 1539796084:0;git add *
 : 1539796089:0;git commit -m "rc"
-: 1539796094:0;git push
 : 1539799692:0;vi foo.py
 : 1539831196:0;which vim-jedi
 : 1539831206:0;pacman -Qs jedi
@@ -721,10 +704,8 @@
 : 1539838596:0;ls syntax
 : 1539838668:0;ipython
 : 1539838875:0;sudo pacman -S vim-jedi
-: 1539838925:0;vim foo.c
 : 1539840738:0;rm foo.py
 : 1539874022:0;python /mnt/data/code/refer/python/Python-1/snake.py
-: 1539874502:0;yandex-disk status
 : 1539920895:0;git clone https://github.com/online-go/online-go.com.git
 : 1539921878:0;cd online-go.com
 : 1539923033:0;time
@@ -732,7 +713,6 @@
 : 1539923042:0;sleep --help
 : 1539923050:0;sleep 3
 : 1539923072:0;cd 
-: 1539923545:0;python foo.py
 : 1539928135:0;mail
 : 1539928296:0;cat d
 : 1539928299:0;cat dead.letter
@@ -740,7 +720,6 @@
 : 1539928306:0;cd /var
 : 1539928310:0;cd spool
 : 1539928313:0;cd mail
-: 1539928333:0;cd foobar
 : 1539928628:0;python foo.py 4
 : 1539928634:0;python foo.py 2
 : 1539928799:0;python foo.py 5
@@ -748,7 +727,6 @@
 : 1539928940:0;vim foo.py 3
 : 1539928956:0;python foo.py gadfadf
 : 1539928977:0;vim foo.py 
-: 1539929058:0;vim foo.py
 : 1539929077:0;python foo.py 1
 : 1539929081:0;python foo.py d
 : 1539929088:0;python foo.py 
@@ -757,7 +735,6 @@
 : 1539929574:0;python foo.py 3 > t.t
 : 1539929578:0;rm t.t
 : 1539929581:0;python foo.py 300
-: 1539931540:0;cd go
 : 1539936551:0;rm -r Downloads/julia-1.0.1-full-src
 : 1539936571:0;mv Downloads/online-go.com /mnt/data/code/refer/go
 : 1539936579:0;ls /mnt/data/code/refer/go
@@ -774,7 +751,6 @@
 : 1539936776:0;ll cache
 : 1539936779:0;ll files
 : 1539936784:0;cd files
-: 1539936816:0;pwd
 : 1539936829:0;cd cache
 : 1539936842:0;ll | grep "^-\
 
@@ -784,7 +760,6 @@
 : 1539936890:0;ll | less
 : 1539936920:0;ls audio
 : 1539936923:0;rmdir audio
-: 1539936925:0;rmdir *
 : 1539936939:0;ls log
 : 1539936948:0;rm log/nim_sdk.log
 : 1539936951:0;rmdir log
@@ -794,7 +769,6 @@
 : 1539937008:0;cd xcache
 : 1539937083:0;cd cache/image_manager_disk_cache
 : 1539937087:0;chmod -x *
-: 1539937097:0;rm *
 : 1539937938:0;mv xcache mooc-xcaca
 : 1539937945:0;mv mooc-xcaca mooc-xcache
 : 1539937986:0;cd lib
@@ -803,22 +777,16 @@
 : 1539937993:0;cd python3.7
 : 1539937994:0;cd site-packages
 : 1539937998:0;pip
-: 1539938049:0;julia
 : 1539938564:0;git pull
 : 1539938573:0;cd trade
 : 1539938830:0;ll -h
 : 1539938833:0;cd CTP-TradeServer-master
-: 1539938834:0;du -h
 : 1539938850:0;rm -r CTP-TradeServer-master
 : 1539938865:0;rm -r binance-trader-master
 : 1539938869:0;rm -r strategies-master
-: 1539948063:0;fg
 : 1539951630:0;sudo pacman -S wine
-: 1539951648:0;l
 : 1539951659:0;mkdir go
-: 1539951986:0;cd Downloads/python-venv
 : 1539951989:0;cd bin
-: 1539951992:0;ll
 : 1539952018:0;bash
 : 1539952592:0;echo 
 : 1539952596:0;echo $PATH
@@ -829,51 +797,313 @@
 : 1539955135:0;ls python-venv
 : 1539955137:0;ls bi
 : 1539955143:0;ls bin
-: 1539957305:0;cd
 : 1539957960:0;s
-: 1539967736:0;cd Downloads
-: 1539967744:0;source ./python-venv/bin/activate
-: 1539967751:0;pip list
-: 1539967760:0;python
 : 1539967882:0;pip list | grep "matplot"
 : 1539967894:0;pip list | grep "pan"
 : 1539967987:0;mv Downloads/python-venv ./
 : 1539967990:0;cd p
 : 1539967992:0;cd python-venv
-: 1539967998:0;source ./bin/activate
-: 1539968008:0;la
 : 1539968016:0;ll bin
-: 1539968021:0;..
 : 1539968024:0;mv python-venv Downloads
-: 1539968037:0;source Downloads/python-venv/bin/activate
-: 1539968040:0;which python
-: 1539968048:0;pip list 
-: 1539968094:0;deactivate
-: 1539968098:0;cd .local/share
-: 1539968107:0;cd gnome-boxes
-: 1539968107:0;ls
 : 1539968109:0;ls images
 : 1539968114:0;ll images
 : 1539968118:0;ll images -h
 : 1539968139:0;uname -a
-: 1539968141:0;uptime
 : 1539968144:0;reboot
 : 1539968250:0;sudo pacman -S ntfs-3g
-: 1539968364:0;sudo pacman -Syu
 : 1539968396:0;mtools -h
 : 1539968408:0;man 1 mtools
 : 1539968437:0;man opus
 : 1539968447:0;man orca
 : 1539968453:0;man sbc
-: 1539968491:0;ll
 : 1539968582:0;cd /mnt
-: 1539968582:0;ls
-: 1539968584:0;cd
-: 1539969467:0;git status
-: 1539969469:0;git push
-: 1539969643:0;cd
 : 1539969647:0;cd Other/backups/config
-: 1539969649:0;git status
 : 1539969658:0;git commit -m "compile"
 : 1539969663:0;git commit -am "compile"
 : 1539971051:0;cp ../.zsh_history ../Other/backups/config/zsh_history
+: 1539971058:0;cd ../Other/backups/config
+: 1539971065:0;git commit -a -m "his"
+: 1539971075:0;cd -
+: 1539971088:0;go run foo.go
+: 1539971096:0;nodejs
+: 1539971099:0;node
+: 1539971103:0;sudo pacman -S nodejs
+: 1539971141:0;sudo pacman -S ruby
+: 1539971147:0;sudo pacman -S perl
+: 1539971196:0;cd Pictures
+: 1539971202:0;rm Screenshot\ from\ 2018-10-20\ 01-46-30.png
+: 1539971207:0;yandex-disk status
+: 1539971595:0;cd Downloads/python-venv
+: 1539971602:0;source ./bin/activate
+: 1539971612:0;pip install -U Sphinx
+: 1539971653:0;git clone git clone https://github.com/django/django.git
+: 1539971776:0;pip install -U django
+: 1539971802:0;pip install -U bs4
+: 1539971829:0;pip install -U scrapy
+: 1539999078:0;uptime
+: 1539999085:0;uptime -a
+: 1539999094:0;uptime -s
+: 1539999108:0;uptime -p
+: 1539999166:0;source ./python-venv/bin/activate
+: 1539999248:0;pip install -U setuptools
+: 1539999901:0;cd go
+: 1540000624:0;sudo pacman -S texlive
+: 1540000949:0;sudo pacman -S texlive-most
+: 1540002203:0;git clone https://github.com/django/django.git
+: 1540010375:0;pip -m venv venv
+: 1540013007:0;gcc foo.c
+: 1540021604:0;rm *
+: 1540021611:0;rm -r logos
+: 1540021614:0;rm -r WebKitCache
+: 1540021625:0;rm images/fedora28-wor
+: 1540021628:0;rmdir images
+: 1540021631:0;cd ..
+: 1540021638:0;cd .config
+: 1540021644:0;cd sources
+: 1540021646:0;rm QEMU\ Session
+: 1540021650:0;ls 
+: 1540021651:0;ls unattended
+: 1540021653:0;rm unattended/setup-data.conf
+: 1540021655:0;rmdir *
+: 1540021812:0;sudo pacman -Rs texlive-most
+: 1540021916:0;pip list | grep matplot
+: 1540021929:0;source Downloads/venv/bin/activate
+: 1540021949:0;pip list | grep mat
+: 1540021957:0;deactivate
+: 1540021962:0;pip list 
+: 1540022005:0;cd gnome-
+: 1540022010:0;cd gnome-boxes
+: 1540022012:0;ls e
+: 1540022014:0;ls *
+: 1540022079:0;cd .cache
+: 1540022086:0;cd ../con
+: 1540022091:0;cd ../.config
+: 1540022095:0;rm -r gnome-boxes
+: 1540022105:0;cd ../.local/share/gnome-boxes
+: 1540022111:0;rmdir gnome-boxes
+: 1540022132:0;vim .bash_history
+: 1540022211:0;cp /mnt/data/other-data/back-up/iso/Fedora-Workstation-Live-x86_64-28-1.1.iso Downloads
+: 1540022274:0;rm openSUSE-Leap-42.3-DVD-x86_64.iso\~
+: 1540022291:0;rm boot.iso\~
+: 1540022501:0;julia -e 54000/3600
+: 1540022520:0;julia -e println(54000/3600)
+: 1540022527:0;julia -e "println(54000/3600)"
+: 1540022549:0;file Fedora-Workstation-Live-x86_64-27-1.6.iso
+: 1540022563:0;file Fedora-Workstation-Live-x86_64-28-1.1.iso
+: 1540022601:0;cp Fedora-Workstation-Live-x86_64-27-1.6.iso /mnt/data/other-data/back-up/iso
+: 1540022633:0;mv  Fedora-Workstation-Live-x86_64-2* /tmp
+: 1540022720:0;cd /tmp
+: 1540022731:0;cd yandex-disk-87abf7a0bffeb8b98c8207501715d4ccc7f61154s
+: 1540022733:0;ls daemon
+: 1540022738:0;ls params
+: 1540022740:0;file params
+: 1540022745:0;cat params
+: 1540022749:0;cat daemon
+: 1540022870:0;rm foo
+: 1540022879:0;make
+: 1540022884:0;./a.out
+: 1540022893:0;vim foo.c
+: 1540022906:0;rm a.out
+: 1540022915:0;cat foo.go
+: 1540022923:0;git commit -a -m "c"
+: 1540022924:0;git push
+: 1540022990:0;rm ubuntu-16.04.3-server-i386.iso\~
+: 1540023001:0;cd venv
+: 1540023005:0;vim pyvenv.cfg
+: 1540023034:0;cat pyvenv.cfg
+: 1540025744:0;mv /tmp/Fedora-Workstation-Live-x86_64-2* ./&
+: 1540025754:0;mkdir fedoraISO
+: 1540025769:0;cat python-venv/pyvenv.cfg
+: 1540025807:0;python -m venv venv
+: 1540025823:0;cat venv/pyvenv.cfg
+: 1540025829:0;du -h
+: 1540025833:0;git statu
+: 1540025879:0;cd django
+: 1540025894:0;mv /mnt/data/code/refer/python/django ./
+: 1540025897:0;git status
+: 1540025899:0;..
+: 1540025908:0;mv django /mnt/data/code/refer/python
+: 1540025923:0;fg
+: 1540025940:0;mv Fedora-Workstation-Live-x86_64-2* fedoraISO
+: 1540025960:0;sudo pacman -Suy
+: 1540026061:0;pwd
+: 1540026080:0;source Downloads/python-venv/bin/activate
+: 1540026082:0;which python
+: 1540026087:0;pip list
+: 1540026116:0;pip list --outdated
+: 1540026207:0;python foo.py
+: 1540026216:0;python foo.py 12
+: 1540026231:0;python foo.py 12dfd
+: 1540026236:0;python foo.py 12d
+: 1540026299:0;python foo.py 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+: 1540026333:0;python foo.py 1000
+: 1540039491:0;julia -e "100*1000/30/60"
+: 1540039511:0;julia -e "println(100*1000/30/60, min)"
+: 1540039530:0;julia
+: 1540042265:0;rm -r venv
+: 1540042279:0;mv go Go-weiqi
+: 1540042286:0;ls /mnt/data/other-data
+: 1540042294:0;mv Go-weiqi go-game
+: 1540042298:0;ls fedoraISO
+: 1540042303:0;rm -r fedoraISO
+: 1540042485:0;python foo.py 30
+: 1540042522:0;836-400
+: 1540042524:0;python
+: 1540042628:0;cp -i foo.py zzz/python/timer.py
+: 1540042634:0;vim foo.py
+: 1540042832:0;cp foo.py zzz/python/timer2.py
+: 1540042843:0;cd /mnt/data/code/refer/python/Python-1
+: 1540042845:0;vim snake.py
+: 1540043195:0;cd foobar
+: 1540043204:0;chmod + x foo.py
+: 1540043211:0;chmod +x foo.py
+: 1540043214:0;./foo.py
+: 1540045356:0;ll
+: 1540047709:0;l
+: 1540047710:0;lh
+: 1540087470:0;sudo pacman -Rs gnome-boxes
+: 1540088074:0;lspci
+: 1540088138:0;lspci >> inter-vdio-card
+: 1540088623:0;sudo pacman -S gnome-boxes
+: 1540088697:0;sudo pacman -Syu
+: 1540090129:0;git clone https://aur.archlinux.org/gnome-shell-extension-pixel-saver-git.git
+: 1540090139:0;cd gnome-shell-extension-pixel-saver-git
+: 1540090144:0;makepkg -si
+: 1540090219:0;cd .local/share
+: 1540090222:0;cd app
+: 1540090225:0;cd applications
+: 1540090227:0;la
+: 1540090257:0;cd /var/lib
+: 1540090261:0;cd AccountsService
+: 1540090264:0;cd users
+: 1540090267:0;cd fang
+: 1540090274:0;vim fang
+: 1540090295:0;cd
+: 1540090304:0;mv hideicon hideicon.md
+: 1540090306:0;vim hideicon.md
+: 1540090500:0;mv hideicon.md Documents
+: 1540090506:0;mv inter-vdio-card Documents
+: 1540090738:0;cd Downloads
+: 1540091679:0;ls
+: 1540091695:0;sudo pacman -Rs gnome-shell-extension-pixel-saver-git
+: 1540092103:0;gnome-boxes
+: 1540092221:0;cd
+: 1540092223:0;cd .local
+: 1540092225:0;cd share
+: 1540092225:0;ls
+: 1540092230:0;ls app-info
+: 1540092233:0;ls app-info/xmls
+: 1540092238:0;ls applications
+: 1540092251:0;cd gnome-settings-daemon
+: 1540092251:0;la
+: 1540092256:0;..
+: 1540092261:0;ls webkitgtk
+: 1540092264:0;ls webkitgtk/localstorage
+: 1540092268:0;..
+: 1540092272:0;cd
+: 1540092274:0;cd .config
+: 1540092275:0;ls
+: 1540092278:0;cd gnome-boxes
+: 1540092278:0;la
+: 1540092281:0;ls sources
+: 1540092284:0;ls unattended
+: 1540092290:0;..
+: 1540092295:0;cd .cache
+: 1540092295:0;ls
+: 1540092298:0;cd gnome-boxes
+: 1540092299:0;la
+: 1540092301:0;ls WebKitCache
+: 1540092304:0;ls logos
+: 1540092306:0;..
+: 1540092307:0;cd
+: 1540092439:0;lspci >> switch
+: 1540092460:0;cd Documents
+: 1540092461:0;ls
+: 1540092464:0;cat inter-vdio-card
+: 1540092469:0;less inter-vdio-card
+: 1540092483:0;mv switch switch-vedio-card
+: 1540092487:0;less switch-vedio-card
+: 1540092561:0;vim inter-vdio-card
+: 1540092570:0;vim switch-vedio-card
+: 1540093021:0;cd foobar
+: 1540093022:0;ls
+: 1540093030:0;cat foo.jl
+: 1540093042:0;chmod +x foo.jl
+: 1540093045:0;./foo.jl
+: 1540093058:0;vim foo.jl
+: 1540093093:0;./foo.jl
+: 1540093107:0;vim foo.jl
+: 1540093147:0;./foo.jl
+: 1540093161:0;jl
+: 1540093168:0;vim foo.jl
+: 1540093180:0;./foo.jl
+: 1540093190:0;vim foo.jl
+: 1540093199:0;./foo.jl
+: 1540093204:0;vim foo.jl
+: 1540093212:0;chmod -x foo.jl
+: 1540093214:0;ls
+: 1540093227:0;go run foo.go
+: 1540093236:0;julia foo.jl
+: 1540093242:0;vim foo.jl
+: 1540093251:0;which julia
+: 1540093257:0;chmod +x foo.jl
+: 1540093259:0;./foo.jl
+: 1540093282:0;vim foo.jl
+: 1540093294:0;vim foo.py
+: 1540093354:0;sudo pacman -Rs vim-jedi
+: 1540093381:0;vim foo.py
+: 1540093442:0;time ./foo.py
+: 1540093475:0;git commit -am "env"
+: 1540093478:0;git status
+: 1540093484:0;git add *
+: 1540093486:0;git status
+: 1540093492:0;git commit -m "timer"
+: 1540093495:0;git push
+: 1540093506:0;git status
+: 1540093509:0;cd
+: 1540093515:0;cd Other/backups/config
+: 1540093516:0;git status
+: 1540093518:0;cd
+: 1540093520:0;cd foobar
+: 1540093523:0;vim foo.c
+: 1540093550:0;l
+: 1540093551:0;rm foo
+: 1540093555:0;chmod -x foo.jl
+: 1540093556:0;ls
+: 1540093566:0;git commit -am "exe"
+: 1540093568:0;git push
+: 1540093846:0;cd
+: 1540093848:0;cd fown
+: 1540093849:0;cd Downloads
+: 1540093851:0;ls
+: 1540093855:0;ls
+: 1540093860:0;rm ubuntu-16.04.3-server-i386.iso\~
+: 1540093862:0;ls
+: 1540093865:0;rm -r gnome-shell-extension-pixel-saver-git
+: 1540093873:0;y
+: 1540093874:0;ls
+: 1540093878:0;rm -rf gnome-shell-extension-pixel-saver-git
+: 1540093879:0;ls
+: 1540093892:0;ls
+: 1540094068:0;cd Downloads
+: 1540094068:0;ls
+: 1540094740:0;ls
+: 1540097169:0;ls
+: 1540097761:0;ls
+: 1540099621:0;ls
+: 1540101910:0;cd
+: 1540101920:0;cp .zsh_history zsh_his
+: 1540101950:0;less .zsh_history
+: 1540101963:0;less zsh_his
+: 1540101974:0;tail zsh_his
+: 1540101978:0;tail .zsh_history
+: 1540102002:0;cat zsh_his
+: 1540102008:0;cat .zsh_history
+: 1540102046:0;rm zsh_his
+: 1540102047:0;ls
+: 1540102064:0;sed -i "/[lL]eela/d" .zsh_history
+: 1540102094:0;sed -i "/[fF]ree/d" .zsh_history
+: 1540102099:0;vim .zsh_history
+: 1540102158:0;cd Other/backups/config
+: 1540102158:0;la
+: 1540102171:0;cp -a ~/.zsh_history zsh_history
