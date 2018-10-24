@@ -22,26 +22,16 @@
 #
 <VirtualHost *:80>
     ServerAdmin webmaster@dummy-host.example.com
-    DocumentRoot "/srv/http/myserver"
-    <Directory "/srv/http/myserver">
-    	Options Indexes FollowSymLinks
-    	AllowOverride None
-    	Require all granted
-    </Directory>
+    DocumentRoot "/etc/httpd/docs/dummy-host.example.com"
     ServerName dummy-host.example.com
     ServerAlias www.dummy-host.example.com
-    ErrorLog "/var/log/httpd/myserver-error_log"
-    CustomLog "/var/log/httpd/myserver-access_log" common
+    ErrorLog "/var/log/httpd/dummy-host.example.com-error_log"
+    CustomLog "/var/log/httpd/dummy-host.example.com-access_log" common
 </VirtualHost>
 
-<VirtualHost *:81>
+<VirtualHost *:80>
     ServerAdmin webmaster@dummy-host2.example.com
-    DocumentRoot "/srv/http/myserver2"
-    <Directory "/srv/http/myserver2">
-    	Options Indexes FollowSymLinks
-    	AllowOverride None
-    	Require all granted
-    </Directory>
+    DocumentRoot "/etc/httpd/docs/dummy-host2.example.com"
     ServerName dummy-host2.example.com
     ErrorLog "/var/log/httpd/dummy-host2.example.com-error_log"
     CustomLog "/var/log/httpd/dummy-host2.example.com-access_log" common
