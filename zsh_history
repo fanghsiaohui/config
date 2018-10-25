@@ -23,7 +23,6 @@
 : 1539322694:0;sudo pacman -S jdk10-openjdk
 : 1539322755:0;git clone https://aur.archlinux.org/yandex-disk.git
 : 1539322765:0;git clone https://aur.archlinux.org/android-studio.git
-: 1539322825:0;cp ~/.zsh_history ./zsh_history
 : 1539322879:0;cd other
 : 1539322912:0;whichyandex-disk
 : 1539322915:0;which yandex-disk
@@ -666,7 +665,6 @@
 : 1539923034:0;sleep
 : 1539923042:0;sleep --help
 : 1539923050:0;sleep 3
-: 1539923072:0;cd 
 : 1539928135:0;mail
 : 1539928296:0;cat d
 : 1539928299:0;cat dead.letter
@@ -691,7 +689,6 @@
 : 1539936551:0;rm -r Downloads/julia-1.0.1-full-src
 : 1539936571:0;mv Downloads/online-go.com /mnt/data/code/refer/go
 : 1539936579:0;ls /mnt/data/code/refer/go
-: 1539936582:0;ls Downloads
 : 1539936592:0;rm Downloads/STSONG.TTF
 : 1539936596:0;ls Downloads/go
 : 1539936610:0;ls xcache
@@ -766,7 +763,6 @@
 : 1539971051:0;cp ../.zsh_history ../Other/backups/config/zsh_history
 : 1539971058:0;cd ../Other/backups/config
 : 1539971065:0;git commit -a -m "his"
-: 1539971075:0;cd -
 : 1539971096:0;nodejs
 : 1539971099:0;node
 : 1539971103:0;sudo pacman -S nodejs
@@ -780,7 +776,6 @@
 : 1539971776:0;pip install -U django
 : 1539971802:0;pip install -U bs4
 : 1539971829:0;pip install -U scrapy
-: 1539999078:0;uptime
 : 1539999085:0;uptime -a
 : 1539999094:0;uptime -s
 : 1539999108:0;uptime -p
@@ -823,7 +818,6 @@
 : 1540022563:0;file Fedora-Workstation-Live-x86_64-28-1.1.iso
 : 1540022601:0;cp Fedora-Workstation-Live-x86_64-27-1.6.iso /mnt/data/other-data/back-up/iso
 : 1540022633:0;mv  Fedora-Workstation-Live-x86_64-2* /tmp
-: 1540022720:0;cd /tmp
 : 1540022731:0;cd yandex-disk-87abf7a0bffeb8b98c8207501715d4ccc7f61154s
 : 1540022733:0;ls daemon
 : 1540022738:0;ls params
@@ -849,7 +843,6 @@
 : 1540025894:0;mv /mnt/data/code/refer/python/django ./
 : 1540025908:0;mv django /mnt/data/code/refer/python
 : 1540025940:0;mv Fedora-Workstation-Live-x86_64-2* fedoraISO
-: 1540025960:0;sudo pacman -Suy
 : 1540026061:0;pwd
 : 1540026216:0;python foo.py 12
 : 1540026231:0;python foo.py 12dfd
@@ -1012,7 +1005,6 @@
 : 1540120140:0;mv foo.go zzz
 : 1540120171:0;cd python
 : 1540120212:0;git commit -am "mv"
-: 1540120236:0;mkdir d
 : 1540121315:0;python -i foo.py
 : 1540121633:0;cat zzz/python/koch.py
 : 1540121637:0;vim zzz/python/koch.py
@@ -1192,7 +1184,6 @@
 : 1540222690:0;du --max-depth=1 -h
 : 1540222693:0;cd da
 : 1540222694:0;cd save
-: 1540222699:0;lh
 : 1540223269:0;vim solve
 : 1540223464:0;mv solve solve.py
 : 1540223611:0;cd foobar/'
@@ -1214,7 +1205,6 @@
 : 1540228498:0;ls zzz
 : 1540228506:0;go run zzz/foo.go
 : 1540228511:0;reset
-: 1540229063:0;vim foo.c
 : 1540266516:0;cd down
 : 1540271740:0;rm 1
 : 1540274645:0;man pow
@@ -1282,13 +1272,11 @@
 : 1540354868:0;head foo.py
 : 1540354882:0;deactivate
 : 1540354921:0;source ~/Downloads/pythonVenv/bin/activate
-: 1540354924:0;which python
 : 1540356046:0;fg
 : 1540356055:0;ls foobar
 : 1540356059:0;cat te
 : 1540356064:0;cat test
 : 1540356522:0;rm test
-: 1540357738:0;python
 : 1540357994:0;python foo.py
 : 1540358652:0;cd fow
 : 1540362540:0;cat stat.py
@@ -1297,7 +1285,6 @@
 : 1540362559:0;git commit -am "h"
 : 1540371552:0;ee
 : 1540373450:0;yandex-disk status
-: 1540373556:0;vim foo.py
 : 1540374443:0;git add englishWordsFrequence.py
 : 1540374456:0;git mv englishWordsFrequence.py zzz/python
 : 1540374458:0;ls zzz/python
@@ -1305,12 +1292,9 @@
 : 1540374479:0;git mv threeKindoms.py zzz/python
 : 1540374526:0;git commit -am "frequence"
 : 1540374546:0;vim zzz/python/threeKindoms.py
-: 1540377267:0;git status
 : 1540377275:0;cat zzz/python/threeKindoms.py
 : 1540377280:0;git add *
 : 1540377286:0;git commit -m "mldify"
-: 1540377288:0;git push
-: 1540377300:0;du -hs
 : 1540377346:0;sudo pacman -S vim-jedi
 : 1540377900:0;vim
 : 1540378052:0;sudo pacman -S php
@@ -1322,7 +1306,6 @@
 : 1540379650:0;cd srv
 : 1540379688:0;sudo usermod -a -G http fang
 : 1540380617:0;sudo pacman -S phpmyadmin
-: 1540380923:0;ls extra
 : 1540381050:0;sudo chmod g+w http
 : 1540381366:0;mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
 : 1540381383:0;sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
@@ -1333,21 +1316,15 @@
 : 1540381830:0;sudo vim /etc/httpd/conf/httpd.conf
 : 1540382268:0;sudo cp -a httpd-vhosts.conf httpd-vhosts.conf-bak
 : 1540382517:0;sudo pacman -S mariadb
-: 1540383083:0;sudo vim phpmyadmin.conf
 : 1540383108:0;vim httpd.conf
 : 1540383320:0;cd /usr/share/webapps/phpMyAdmin
 : 1540383371:0;sudo chown :http phpMyAdmin
 : 1540383614:0;vim /etc/php/php.ini
-: 1540383630:0;systemctl restart mariadb.service
 : 1540383690:0;cd /etc/httpd/conf/extra/
 : 1540383697:0;vim php7_module.conf
 : 1540383704:0;vim phpmyadmin.conf
 : 1540383938:0;ls /srv/http
-: 1540389752:0;l
 : 1540389757:0;rm test.php
-: 1540389763:0;uname -a
-: 1540398148:0;cd /etc/httpd/conf
-: 1540398483:0;sudo pacman -Syu
 : 1540399108:0;sudo cp httpd.conf-bak httpd.conf
 : 1540399272:0;cd /srv
 : 1540399405:0;ll http
@@ -1361,7 +1338,6 @@
 : 1540400081:0;mv go-game/ myserver1
 : 1540400091:0;rm go-game
 : 1540400095:0;cd myserver1
-: 1540400107:0;cd extra
 : 1540400154:0;systemctl reload httpd
 : 1540400231:0;mv myserver1 myserver
 : 1540400248:0;vim myserver2/index.html
@@ -1369,152 +1345,199 @@
 : 1540400361:0;sudo vim httpd-vhosts.conf
 : 1540400408:0;sudo vim ../httpd.conf
 : 1540400443:0;apachectl configtest
-: 1540400453:0;..
-: 1540400459:0;sudo vim httpd.conf
 : 1540400488:0;sudo vim extra/httpd-vhosts.conf
-: 1540400519:0;systemctl restart httpd
 : 1540400526:0;systemctl status httpd
 : 1540408326:0;pacman -Qs php-cgi
 : 1540408330:0;pacman -Ss php-cgi
 : 1540408351:0;sudo vim /etc/php/php.ini
-: 1540408472:0;cd /etc/php
 : 1540408475:0;cd conf.d
-: 1540408476:0;ls
-: 1540408477:0;la
 : 1540408546:0;systemctl enable mariadb
 : 1540408553:0;systemctl start mariadb
 : 1540408558:0;systemctl status mariadb
 : 1540408757:0;vim /etc/mysql/my.cnf
 : 1540408810:0;sudo vim /etc/mysql/my.cnf
-: 1540408831:0;systemctl restart mariadb
 : 1540408839:0;mysql -p -u root
-: 1540408913:0;cd /var/lib
-: 1540408914:0;ll
 : 1540408943:0;sudo usermod -aG mysql fang
-: 1540408945:0;id
 : 1540408955:0;vim /etc/group
 : 1540408982:0;groups fang
 : 1540408990:0;cd mysql
 : 1540409002:0;source /etc/group
 : 1540409025:0;cd /usr/lib/mysql/
-: 1540409026:0;ls
-: 1540409034:0;cd /var/lib/mysql
-: 1540409141:0;cd /etc/php
-: 1540409145:0;sudo vim php.ini
 : 1540409211:0;sudo vim ../mysql/my.cnf
-: 1540409282:0;sudo vim php.ini
-: 1540409342:0;cd /etc/httpd/conf
-: 1540409343:0;ls
-: 1540409346:0;sudo vim httpd.conf
 : 1540409620:0;cd extra
-: 1540409621:0;ls
-: 1540409631:0;systemctl restart httpd
 : 1540409700:0;pacman -Qs php-apache
 : 1540409714:0;cd /etc/php
 : 1540409716:0;sudo vim php.ini
 : 1540409739:0;cd /etc/httpd/conf
-: 1540409739:0;ls
-: 1540409741:0;sudo vim httpd.conf
-: 1540409819:0;cd /srv/http
-: 1540409819:0;ls
-: 1540409820:0;ll
-: 1540409826:0;cd myserver
-: 1540409828:0;la
 : 1540409832:0;vim info.php
 : 1540409850:0;vim foo.html
 : 1540409864:0;ln -sf ~/foobar/foo.py ./
-: 1540409864:0;ls
-: 1540409866:0;ll
-: 1540409913:0;cd /etc/httpd/conf/extra
-: 1540409914:0;ls
 : 1540409928:0;sudo vim phpmyadmin.conf
-: 1540410091:0;..
 : 1540410095:0;sudo vim httpd.conf
 : 1540410116:0;ls extra
 : 1540410177:0;cd /etc/webapps/phpmyadmin
 : 1540410182:0;sudo vim config.inc.php
-: 1540410213:0;ls
-: 1540410214:0;ll
-: 1540410217:0;..
-: 1540410217:0;ll
 : 1540410232:0;ls phpmyadmin
 : 1540410264:0;sudo chown :http phpmyadmin
-: 1540410265:0;ll
 : 1540410277:0;sudo chmod g+w phpmyadmin
-: 1540410278:0;ll
-: 1540410299:0;cd phpmyadmin
-: 1540410299:0;ls
-: 1540410311:0;ll
 : 1540410313:0;mkdir d
-: 1540410315:0;l
 : 1540410319:0;rmdir d
 : 1540410324:0;mkdir config
 : 1540410339:0;chown http:http config
 : 1540410346:0;sudo chown http:http config
-: 1540410347:0;ll
 : 1540410357:0;chmod 750 config
 : 1540410361:0;sudo chmod 750 config
-: 1540410362:0;ll
 : 1540410410:0;systemctl restart mariadb.service
-: 1540410422:0;systemctl restart httpd
-: 1540410558:0;ls
 : 1540410559:0;ls config
-: 1540410570:0;..
-: 1540410571:0;la
-: 1540410572:0;cd phpmyadmin
-: 1540410573:0;ls
 : 1540410582:0;mv config.inc.php config.inc.php-bak
-: 1540410600:0;ls
 : 1540410611:0;mv config.inc.php-bak config.inc.php
-: 1540410612:0;ll
-: 1540410617:0;..
-: 1540410618:0;l
 : 1540410652:0;sudo chown :root phpmyadmin
-: 1540410653:0;ll
-: 1540410655:0;cd phpmyadmin
-: 1540410656:0;l
-: 1540410683:0;cd
-: 1540410697:0;ls
 : 1540410705:0;cat phpmyadmin.conf
 : 1540410708:0;rm phpmyadmin.conf
-: 1540410717:0;cd Other/backups/config
-: 1540410717:0;ls
-: 1540410719:0;cd httpd
-: 1540410720:0;ls
 : 1540410733:0;cat httpd-vhosts.conf-myconf
-: 1540410776:0;ls
-: 1540410801:0;cp /etc/httpd/conf/httpd.conf-bak ./
 : 1540410814:0;cp /etc/httpd/conf/extra/httpd-vhosts.conf-bak ./
-: 1540410822:0;cp /etc/httpd/conf/extra/phpmyadmin.conf ./
-: 1540410830:0;cp /etc/php/php.ini ./
-: 1540410843:0;ls
 : 1540410866:0;mv httpd.conf-bak httpd.conf-archbak
 : 1540410879:0;diff httpd.conf-archbak httpd.conf_bak
 : 1540410885:0;diff httpd.conf-archbak httpd.conf_myconf
 : 1540410900:0;rm httpd.conf_bak
-: 1540410901:0;ls
-: 1540410915:0;vim httpd.conf_myconf
 : 1540410968:0;rm httpd.conf_myconf
-: 1540410969:0;ls
 : 1540410991:0;rm httpd-vhosts.conf*
-: 1540410992:0;ls
 : 1540411013:0;cp /etc/httpd/conf/extra/httpd-vhosts.co* ./
-: 1540411014:0;ls
 : 1540411034:0;mv httpd-vhosts.conf httpd-vhosts.conf-myconf
-: 1540411035:0;ls
 : 1540411063:0;cp /etc/httpd/conf/httpd.conf httpd.conf-archbak-myconf
-: 1540411065:0;ls
-: 1540411082:0;..
-: 1540411084:0;ls
 : 1540411091:0;git add httpd/*
 : 1540411099:0;git commit -m "apache"
-: 1540411102:0;git status
 : 1540411123:0;git rm httpd/httpd-vhosts.conf_bak
 : 1540411135:0;git rm httpd/httpd.conf_bak
 : 1540411139:0;git rm httpd/httpd.conf_myconf
-: 1540411141:0;git status
 : 1540411151:0;git commit -a -m "rm old file"
-: 1540411154:0;git status
-: 1540411156:0;git push
-: 1540411165:0;ls
 : 1540411178:0;cp ~/.zsh_history ./zsh_history
+: 1540411186:0;git commit -am "history"
+: 1540411202:0;du -hs
+: 1540411274:0;git reset httpd.conf_myconf
+: 1540411297:0;git reset 09fc80d httpd.conf_myconf
+: 1540411340:0;git checkout -- httpd.conf_myconf
+: 1540411347:0;vim httpd.conf_myconf
+: 1540411445:0;git reset 09fc80d httpd.vhosts.conf_myconf
+: 1540411484:0;mv httpd-vhosts.conf-myconf httpd-vhosts.conf-myconf-new
+: 1540411502:0;mv httpd.conf-archbak httpd.conf-bak
+: 1540411515:0;rm httpd.conf-archbak-myconf
+: 1540411531:0;cp /etc/httpd/conf/httpd.conf httpd.conf-myconf
+: 1540411553:0;mv httpd.conf-myconf httpd.conf-myconf-new
+: 1540411573:0;mv httpd.conf_myconf httpd.conf_myconf-old
+: 1540411648:0;git reset 48b95c3
+: 1540411659:0;git checkout -- *
+: 1540411729:0;git checkout -- httpd-vhosts.conf httpd-vhosts.conf_bak httpd.conf_bak httpd.conf_myconf
+: 1540411768:0;git checkout -- httpd-vhosts.conf-myconf httpd-vhosts.conf_bak httpd.conf_bak httpd.conf_myconf
+: 1540411855:0;git reset 59a054b17e96f9abf218846
+: 1540411858:0;git log
+: 1540411881:0;git rm *
+: 1540411890:0;git rm -r httpd/
+: 1540411926:0;git rm -rf httpd/
+: 1540411954:0;git commit -am "rm httpd"
+: 1540411960:0;ls httpd
+: 1540412001:0;mkdir httpd
+: 1540412018:0;cp /etc/httpd/conf/httpd.conf-bak ./
+: 1540412029:0;cp /etc/httpd/conf/httpd.conf ./
+: 1540412040:0;cp /etc/httpd/conf/extra/httpd-vhosts.con*
+: 1540412058:0;mv httpd.* httpd
+: 1540412100:0;cp /etc/httpd/conf/extra/httpd-vhosts.conf* ./
+: 1540412106:0;cp /etc/php/php.ini ./
+: 1540412168:0;whereis phpmyadmin
+: 1540412201:0;grep myadmin ~/.zsh_history
+: 1540412243:0;cp /etc/httpd/conf/extra/phpmyadmin.conf ./
+: 1540412267:0;vim httpd-vhosts.conf
+: 1540412276:0;cd httpd
+: 1540412294:0;vim httpd-vhosts.conf_bak
+: 1540412317:0;vim httpd-vhosts.conf-myconf
+: 1540412460:0;mv httpd-vhosts.conf-myconf ~
+: 1540412476:0;vim httpd.conf_myconf-old
+: 1540412525:0;rm -r httpd
+: 1540412538:0;mv httpd-vhosts.conf-myconf httpd-vhosts.conf-myconf-old
+: 1540412547:0;mv httpd-vhosts.conf-myconf-old Other/backups/config/httpd
+: 1540412572:0;sudo vim /etc/httpd/conf/extra/httpd-vhosts.conf
+: 1540412649:0;systemctl restart httpd
+: 1540412658:0;systemctl restart mariadb
+: 1540412834:0;touch aaa
+: 1540412842:0;ln -s ../aaa ./
+: 1540412888:0;cd /tmp
+: 1540412893:0;touch bbb ccc
+: 1540412896:0;cd -
+: 1540412916:0;rm bbb
+: 1540412921:0;ln -s /tmp/bbb ./
+: 1540412928:0;l
+: 1540412961:0;touch ccc
+: 1540412970:0;ln -s /srv/http/ccc ./
+: 1540412985:0;rm aaa ccc
+: 1540413018:0;.
+: 1540413177:0;ls http
+: 1540413182:0;ls http/myserver2
+: 1540413187:0;ls http/myserver
+: 1540413190:0;cd http/myserver
+: 1540413194:0;rm aaa ccc bbb
+: 1540413195:0;la
+: 1540413198:0;rm foo.py
+: 1540413403:0;cd /etc
+: 1540413420:0;cd webapps
+: 1540413422:0;cd phpmyadmin
+: 1540413508:0;cd Other/backups/config
+: 1540413522:0;git add httpd
+: 1540413546:0;git commit -am "httpd"
+: 1540413552:0;git push
+: 1540413566:0;git status
+: 1540413612:0;systemctl status
+: 1540413637:0;systemctl list-jobs
+: 1540413644:0;systemctl list-unit
+: 1540413651:0;systemctl list-units
+: 1540413761:0;id fang
+: 1540413870:0;cd /var/lib/mysql
+: 1540413875:0;cd /var/lib
+: 1540413921:0;usermod -
+: 1540413923:0;usermod -h
+: 1540414007:0;sudo gpasswd mysql -d fang
+: 1540414009:0;id
+: 1540414258:0;cd /srv/http
+: 1540414265:0;cd myserver
+: 1540414268:0;..
+: 1540414282:0;wget https://wordpress.org/latest.tar.gz
+: 1540414294:0;lh
+: 1540414304:0;tar xzvf latest.tar.gz
+: 1540414306:0;ll
+: 1540414315:0;whereis wordpress
+: 1540414408:0;cd /usr/share/webapps/wordpress
+: 1540414453:0;cd /etc/httpd/conf/extra
+: 1540414541:0;mysql -u root -p
+: 1540414818:0;cd
+: 1540414823:0;c foobar
+: 1540414833:0;sudo pacman -Suy
+: 1540415497:0;python
+: 1540454579:0;update
+: 1540454585:0;update-desktop-database
+: 1540454591:0;uptime
+: 1540454595:0;uname -a
+: 1540454608:0;ls Downloads
+: 1540454612:0;which python
+: 1540454624:0;cd foobar
+: 1540454630:0;vim foo.c
+: 1540454642:0;vim foo.py
+: 1540455324:0;sudo pacman -SYU
+: 1540455334:0;sudo pacman -Syu
+: 1540456536:0;cd 
+: 1540456539:0;cd Downloads
+: 1540456577:0;mv 14993685-009-Jn\ love-commingo.sgf 2
+: 1540458499:0;ls
+: 1540458500:0;rm 2
+: 1540458707:0;mv 14993960-011-commingo-HahalipaYen.sgf 2
+: 1540458709:0;./go-game/leela_0110_linux_x64
+: 1540460905:0;cd Downloads
+: 1540460905:0;ls
+: 1540460906:0;rm 2
+: 1540460908:0;cd
+: 1540460909:0;cd foobar
+: 1540460918:0;git commit -a -m ""
+: 1540460921:0;git commit -a -m "l"
+: 1540460923:0;git push
+: 1540460933:0;cd
+: 1540460935:0;cd conf
+: 1540460939:0;cd Other/backups/config
+: 1540460950:0;cp ~/.zsh_history zsh_history
