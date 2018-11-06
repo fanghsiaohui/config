@@ -7,6 +7,19 @@ DIRECTORYS
 ssh alias
     ~/.ssh/config
 
+swap file
+    fallocate -l 4G /swapfile
+    or
+    dd if=/dev/zero of=/swapfile bs=1M count=1024
+    chmod 600 /swapfile
+    mkswap /swapfile
+    swapon /swapfile
+        swap partion
+        mkswap /dev/sdax
+        swapon /dev/sdax
+    add to fstab
+    /swapfile none swap defaults 0 0
+
 Problem: no space left on device
 	mount tmpfs as below in fstab:
 	tmpfs	/tmp	tmpfs	size=8G,nodev,nosuid	0 0
