@@ -31,6 +31,8 @@ func! Compile()
         exec "!go run %"
     elseif &filetype == 'julia'
         exec "!julia %"
+    elseif &filetype == 'sh'
+        exec "!bash %"
     elseif &filetype == 'html'
         exec "!firefox % &"
     endif

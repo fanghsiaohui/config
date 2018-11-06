@@ -29,7 +29,6 @@
 : 1539323129:0;ln -sf /mnt/data/code ./
 : 1539323587:0;w
 : 1539323596:0;who
-: 1539323599:0;last
 : 1539323818:0;cd /mnt/data/other-data/back-up/fonts
 : 1539323829:0;cp STZHONGS.TTF ~
 : 1539323834:0;cp STSONG.TTF ~
@@ -50,11 +49,9 @@
 : 1539329789:0;cd ../.java
 : 1539331381:0;cd .gradle
 : 1539331384:0;df -hs
-: 1539331388:0;d
 : 1539334796:0;sudo pacman -S obs-studio
 : 1539337221:0;l Downloads
 : 1539337319:0;jupyter notebook --generate-config
-: 1539337330:0;cd .jupyter
 : 1539337354:0;mv jupyter_notebook_config.py jupyter_notebook_config.py-bak
 : 1539337372:0;ln -sf /mnt/data/YandexDisk/other/backups/config/jupyter/jupyter_notebook_config.py ./
 : 1539337380:0;vim jupyter_notebook_config.py
@@ -229,7 +226,6 @@
 : 1539455142:0;sudo umount /devsdb
 : 1539455150:0;sudo umount /dev/sdb
 : 1539455187:0;sudo dd bs=4M if=/mnt/data/other-data/back-up/iso/archlinux-2018.10.01-x86_64.iso of=/dev/sdb status=progress && sync
-: 1539455653:0;git clone git@github.com:fanghsiaohui/foobar
 : 1539455684:0;git clone git@github.com:fanghsiaohui/conf
 : 1539456180:0;./go
 : 1539456188:0;chmod +x go
@@ -286,7 +282,6 @@
 : 1539532769:0;du Documents
 : 1539532773:0;du -h Documents
 : 1539532864:0;git commit -m "rn"
-: 1539532888:0;ls /mnt/data/YandexDisk/Other/backups/config
 : 1539532910:0;ln -sf /mnt/data/YandexDisk/Other/backups/config/vimrc .vimrc
 : 1539532918:0;ln -sf /mnt/data/YandexDisk/Other/backups/config/zshrc.pre .zshrc.pre
 : 1539532927:0;ln -sf /mnt/data/YandexDisk/Other/backups/config/gitconfig .gitconfig
@@ -309,7 +304,6 @@
 : 1539533275:0;rm -r ssh
 : 1539533280:0;rm .ssh
 : 1539533289:0;ssh-keygen
-: 1539533294:0;cd .ssh
 : 1539533299:0;cat id_rsa.pub
 : 1539533384:0;ssh git@github.com
 : 1539533557:0;ln -sf /mnt/data/YandexDisk/Other/backups/config/ssh-config config
@@ -355,7 +349,6 @@
 : 1539605311:0;mv makefile ..
 : 1539605313:0;rm my_index.html
 : 1539606617:0;rm ./foo
-: 1539620979:0;wc -h
 : 1539621027:0;cd Pictures/savedPics
 : 1539621102:0;ssh arch
 : 1539632484:0;ls jedi
@@ -374,7 +367,6 @@
 : 1539669030:0;cd .local/share/fonts
 : 1539669039:0;mv STSONG.TTF ~/Downloads
 : 1539669045:0;fc-cache
-: 1539672555:0;vim foo.
 : 1539673070:0;python -i snake.py
 : 1539687894:0;rm snake.py
 : 1539687933:0;python foo.py 23 23 23
@@ -390,7 +382,6 @@
 : 1539700965:0;cd cookbook
 : 1539700974:0;cd todo
 : 1539707689:0;pacman -Qs gdb
-: 1539707700:0;pacman -Ss gdb
 : 1539707713:0;sudo pacman -S gdb
 : 1539707721:0;sudo pacman -S pdb
 : 1539707736:0;sudo pacman -S gfortran
@@ -435,7 +426,6 @@
 : 1539749155:0;rmdir julia-src
 : 1539749158:0;rm julia-1.0.1.tar.gz
 : 1539749495:0;cd doc
-: 1539749503:0;cd /usr/share/doc
 : 1539749559:0;sudo pacman -S julia-doc
 : 1539749567:0;sudo pacman -S julia-docs
 : 1539749580:0;cd julia/
@@ -451,8 +441,6 @@
 : 1539750308:0;ls go
 : 1539750317:0;rm -r o
 : 1539750322:0;ls hosts
-: 1539764234:0;cd Plots.jl
-: 1539766322:0;cd Primes.jl
 : 1539791406:0;cd /mnt/data/other-data/go-game/engine
 : 1539791996:0;chmod +x *linux*
 : 1539792532:0;git clone https://aur.archlinux.org/libopencl.git
@@ -480,7 +468,6 @@
 : 1539794895:0;cat makefile
 : 1539794937:0;clang foo.c
 : 1539795860:0;vim foobar/foo.py
-: 1539795919:0;vim .vimrc
 : 1539796089:0;git commit -m "rc"
 : 1539799692:0;vi foo.py
 : 1539831196:0;which vim-jedi
@@ -510,7 +497,6 @@
 : 1539921878:0;cd online-go.com
 : 1539923034:0;sleep
 : 1539923042:0;sleep --help
-: 1539923050:0;sleep 3
 : 1539928135:0;mail
 : 1539928296:0;cat d
 : 1539928310:0;cd spool
@@ -570,7 +556,6 @@
 : 1539951630:0;sudo pacman -S wine
 : 1539951659:0;mkdir go
 : 1539951989:0;cd bin
-: 1539952592:0;echo 
 : 1539952596:0;echo $PATH
 : 1539952622:0;python -m venv python-venv
 : 1539952662:0;pip install --upgrade matplotlib
@@ -607,7 +592,6 @@
 : 1539971829:0;pip install -U scrapy
 : 1539999085:0;uptime -a
 : 1539999901:0;cd go
-: 1540000624:0;sudo pacman -S texlive
 : 1540000949:0;sudo pacman -S texlive-most
 : 1540002203:0;git clone https://github.com/django/django.git
 : 1540010375:0;pip -m venv venv
@@ -617,7 +601,6 @@
 : 1540021628:0;rmdir images
 : 1540021644:0;cd sources
 : 1540021646:0;rm QEMU\ Session
-: 1540021650:0;ls 
 : 1540021653:0;rm unattended/setup-data.conf
 : 1540021812:0;sudo pacman -Rs texlive-most
 : 1540021929:0;source Downloads/venv/bin/activate
@@ -786,10 +769,7 @@
 : 1540121315:0;python -i foo.py
 : 1540121633:0;cat zzz/python/koch.py
 : 1540121637:0;vim zzz/python/koch.py
-: 1540121657:0;mkdir bar
-: 1540121658:0;cd bar
 : 1540121695:0;source ~/Downloads/python-venv/bin/activate
-: 1540121736:0;ls build
 : 1540121738:0;ls build/foo
 : 1540121744:0;ll 
 : 1540121747:0;ll build/foo
@@ -832,7 +812,6 @@
 : 1540139356:0;ls include
 : 1540139384:0;mv pyvenv.txt ~/Other/backups/config/
 : 1540139395:0;vim Other/backups/config/other-config.txt
-: 1540139489:0;cd Other
 : 1540139494:0;cd backups/config
 : 1540139508:0;git commit -a -m "py venv"
 : 1540139548:0;cd freebsd
@@ -852,7 +831,6 @@
 : 1540147622:0;pacman -Ss tk | grep install
 : 1540177703:0;cd go-game
 : 1540177706:0;rm l
-: 1540177888:0;timedatectl
 : 1540181599:0;go
 : 1540181613:0;which perl
 : 1540184756:0;cd /usr/lib/
@@ -946,7 +924,6 @@
 : 1540228498:0;ls zzz
 : 1540228506:0;go run zzz/foo.go
 : 1540266516:0;cd down
-: 1540271740:0;rm 1
 : 1540274645:0;man pow
 : 1540274686:0;man sqrt
 : 1540274698:0;man log
@@ -1042,10 +1019,8 @@
 : 1540383697:0;vim php7_module.conf
 : 1540383704:0;vim phpmyadmin.conf
 : 1540383938:0;ls /srv/http
-: 1540389757:0;rm test.php
 : 1540399108:0;sudo cp httpd.conf-bak httpd.conf
 : 1540399522:0;sudo mv phpmyadmin.conf ~
-: 1540399526:0;ls ~
 : 1540399956:0;sudo vim httpd-userdir.conf
 : 1540400051:0;mkdir myserver[1,2]
 : 1540400058:0;mkdir myserver{1,2}
@@ -1117,7 +1092,6 @@
 : 1540411135:0;git rm httpd/httpd.conf_bak
 : 1540411139:0;git rm httpd/httpd.conf_myconf
 : 1540411151:0;git commit -a -m "rm old file"
-: 1540411178:0;cp ~/.zsh_history ./zsh_history
 : 1540411186:0;git commit -am "history"
 : 1540411274:0;git reset httpd.conf_myconf
 : 1540411297:0;git reset 09fc80d httpd.conf_myconf
@@ -1219,7 +1193,6 @@
 : 1540520031:0;sudo rm httpd-autoindex.conf-bak
 : 1540520091:0;rm latest.tar.gz
 : 1540520095:0;cd wordpress
-: 1540520136:0;sudo pacman -Suy
 : 1540520602:0;julia -e "println(900*1024/600/60)"
 : 1540520638:0;julia -e "900*1024/600/60"
 : 1540522225:0;cd logs
@@ -1244,9 +1217,7 @@
 : 1540525176:0;ls downloads
 : 1540525186:0;file downloads/gr-0.35.0-Linux-x86_64.tar.gz
 : 1540525195:0;stat downloads/gr-0.35.0-Linux-x86_64.tar.gz
-: 1540525241:0;time
 : 1540525253:0;man timestamp
-: 1540525258:0;man printf
 : 1540525508:0;python /mnt/data/code/refer/python/Python-1/snake.py
 : 1540526500:0;sudo mount -o remount,size=5G,noatime /tmp
 : 1540526820:0;cat Other/backups/config/other-config.txt
@@ -1329,7 +1300,6 @@
 : 1540618137:0;echo $(date +%F)
 : 1540618149:0;man echo
 : 1540618207:0;(date +%F)
-: 1540618219:0;date
 : 1540618239:0;date %F
 : 1540618247:0;date 
 : 1540618251:0;man date
@@ -1342,7 +1312,6 @@
 : 1540618573:0;rmdir */**
 : 1540618744:0;rm bb.sh
 : 1540618749:0;cd md
-: 1540618771:0;cd Documents
 : 1540618773:0;cd otherDocs
 : 1540618777:0;cd rub
 : 1540618815:0;cd /mnt/data/code/fanghsiaohui.github.io
@@ -1370,9 +1339,7 @@
 : 1540620120:0;cd GO-weiqi
 : 1540620122:0;cd Sabaki
 : 1540620129:0;cd gnugo-3.8
-: 1540620156:0;git checkout master
 : 1540620255:0;cd ../JuliaBoxTutorials
-: 1540620671:0;ssh phone
 : 1540621289:0;cd /mnt/data/other-data/back-up/iso
 : 1540621309:0;mv Win10_1803_Chinese\(Simplified\)_x64.iso Win10_1803_Chinese_Simplified_x64.iso
 : 1540640190:0;cd /usr/share/doc/aria2/xmlrpc
@@ -1385,7 +1352,6 @@
 : 1540660704:0;du -hs zzz
 : 1540660759:0;sed -i "13/d" foo.py
 : 1540660765:0;sed -i "13d" foo.py
-: 1540667393:0;lspci
 : 1540667581:0;cp ~/.zsh_history ./zsh_history 
 : 1540673261:0;find ./ -type f -a -not -iname "*mp4" -a -not -iname "*jpg" -a -not -iname "*torrent" -exec mv {} oooo \;
 : 1540678761:0;cp .zsh_history foobar/zshhis
@@ -1468,9 +1434,7 @@
 : 1540805601:0;sudo pacman -S asp 
 : 1540805659:0;asp checkout grep 
 : 1540805714:0;l repos
-: 1540805786:0;git branch
 : 1540805808:0;cd grep
-: 1540805815:0;asp update
 : 1540806066:0;makepkg
 : 1540806182:0;makepkg -od 
 : 1540806248:0;asp checkout sed
@@ -1478,7 +1442,6 @@
 : 1540806293:0;ls trunk
 : 1540806295:0;ls repos/core-x86_64
 : 1540806673:0;asp checkout julia
-: 1540806757:0;asp -h
 : 1540806792:0;asp export julia
 : 1540806925:0;tar xzvf julia-1.0.1-full.tar.gz
 : 1540806953:0;cd repos/community-x86_64
@@ -1502,7 +1465,6 @@
 : 1540810515:0;vim /etc/httpd/conf/httpd.conf
 : 1540810543:0;sudo vim /etc/httpd/conf/httpd.conf
 : 1540813704:0;grep --version
-: 1540813732:0;cd /var
 : 1540813799:0;cd cache/pacman/pkg
 : 1540813803:0;ls grep*
 : 1540813815:0;cp grep-3.1-1-x86_64.pkg.tar.xz /tmp
@@ -1523,13 +1485,10 @@
 : 1540833395:0;cd deps
 : 1540833422:0;vim patchelf.mk
 : 1540833431:0;file openlibm.mk
-: 1540835941:0;vim ~/.zsh_history
 : 1540845629:0;file pack-12149a3f056455dd3f8a1dc353b8be00e1e4e717.pack
 : 1540845652:0;cd /mnt/data/code/refer/source-code/linux
 : 1540845673:0;cd repos/core-x86_64
 : 1540845678:0;ls src
-: 1540845686:0;makepkg -od
-: 1540845733:0;makepkg -h
 : 1540845912:0;cd archlinux-linux
 : 1540846015:0;makepkg -od --skippgpcheck
 : 1540846333:0;cp /var/cache/pacman/pkg/grep-3.1-1-x86_64.pkg.tar.xz ./
@@ -1549,12 +1508,9 @@
 : 1540848940:0;pacman -Ss gccgo
 : 1540848946:0;pacman -Si gccgo
 : 1540870432:0;whereis uptime
-: 1540870447:0;pacman -Qo /usr/bin/uptime
 : 1540870468:0;pacman -So /usr/bin/uptime
 : 1540870476:0;pacman -Fy /usr/bin/uptime
 : 1540870482:0;sudo pacman -Fy /usr/bin/uptime
-: 1540870549:0;pacman -Fs /usr/bin/uptime
-: 1540870567:0;pacman -Fs uptime
 : 1540870814:0;ll | grep grep
 : 1540870823:0;ll -h | grep grep
 : 1540870828:0;ll -h | grep julia
@@ -1567,7 +1523,6 @@
 : 1540870928:0;pacman -Ss emacs
 : 1540870935:0;pacman -Fs emacs
 : 1540870952:0;pacman -Qs emacs
-: 1540871016:0;reset
 : 1540871168:0;sed -n "^$/p" .zsh_history
 : 1540871187:0;sed -n "/^$/p" .zsh_history
 : 1540871204:0;sed -n "/^$/d" .zsh_history
@@ -1622,7 +1577,6 @@
 : 1540882261:0;find ./ -type d -name "*yandex*"
 : 1540882267:0;find ./ -type f -name "*yandex*"
 : 1540882300:0;yandex-disk setup
-: 1540882628:0;cd /mnt/data
 : 1540882632:0;cd YandexDisk
 : 1540882646:0;git add diskusaget.txt
 : 1540882661:0;git commit -am "disk usage anany"
@@ -1655,7 +1609,6 @@
 : 1540884194:0;gcc foo.c -o foo
 : 1540884845:0;rm a.out foo foo.c hello-fefora.out
 : 1540884850:0;rm -r Python-3
-: 1540884854:0;rmdir bar
 : 1540884877:0;gdb a.out
 : 1540884888:0;cat -N foo.c
 : 1540884892:0;cat -c foo.c
@@ -1666,8 +1619,6 @@
 : 1540885371:0;cd .sync
 : 1540885384:0;cat push.log
 : 1540885396:0;cat status
-: 1540887174:0;yandex-disk stop
-: 1540887235:0;yandex-disk start
 : 1540891677:0;cp foo.py mat.py
 : 1540891679:0;vim ma
 : 1540891703:0;vim mat.py
@@ -1751,7 +1702,6 @@
 : 1540906878:0;mv application_state-bak application_state
 : 1540906921:0;cd .cache
 : 1540906989:0;ll | less
-: 1540907023:0;la
 : 1540907050:0;cd .config
 : 1540907057:0;cd gnome-session
 : 1540907060:0;ls saved-session
@@ -1769,7 +1719,6 @@
 : 1540907362:0;cp gnome-shell/application_state ~/Downloads
 : 1540917827:0;sudo pacman -Rs gnome-weather
 : 1540920590:0;sudo pacman -S gnome-weather
-: 1540920944:0;cd /usr/share/applications
 : 1540920954:0;vim org.gnome.baobab.desktop
 : 1540920991:0;vim org.gnome.DiskUtility.desktop
 : 1540921191:0;cp -a application_state application_state-bak1030
@@ -1799,18 +1748,13 @@
 : 1540924721:0;ls gnome-shell
 : 1540954873:0;cp  .local/share/gnome-shell/application_state Downloads/bar
 : 1540954876:0;vim Downloads/bar
-: 1540963309:0;go version
 : 1541055516:0;eog /mnt/data/YandexDisk/Camera\ Uploads/2018-10-31\ 22-59-18.PNG
 : 1541055539:0;rm /mnt/data/YandexDisk/Camera\ Uploads/2018-10-31\ 22-59-18.PNG
 : 1541064206:0;cd /mnt/data/code/refer/source-code/
 : 1541064210:0;cd linux
-: 1541064217:0;cd repos
 : 1541064221:0;ls core-x86_64
-: 1541064226:0;pwd
 : 1541064235:0;cd core-x86_64/
-: 1541064245:0;cd src
 : 1541064248:0;ls archlinux-linux
-: 1541064701:0;free -h
 : 1541064784:0;du -hs .local/share/gnome-boxes
 : 1541064800:0;cd .config/gnome-boxes
 : 1541064802:0;ls sources
@@ -1841,35 +1785,26 @@
 : 1541065378:0;pacman -Fo /usr/bin/time
 : 1541065386:0;pacman -Fo /usr/bin/uptime
 : 1541065393:0;pacman -Fo /usr/bin/vim
-: 1541065411:0;sudo pacman -Syu
 : 1541065606:0;pacman -Ss jdk-openjdk
 : 1541065644:0;sudo pacman -Rs jdk10-openjdk
-: 1541065660:0;sudo pacman -S jdk-openjdk
-: 1541065680:0;cd /var/cache/pacman/pkg
 : 1541065684:0;ls jdk*
 : 1541065797:0;javac -version
 : 1541065809:0;cd zzz
 : 1541065815:0;javac foo.java
 : 1541065828:0;mv foo.class ~/Downloads
 : 1541065835:0;java foo
-: 1541065839:0;lh
 : 1541065843:0;file foo.class
 : 1541065850:0;vim foo.class
 : 1541065873:0;rm foo.class
 : 1541065875:0;lh jd*
-: 1541065892:0;history
-: 1541065904:0;du -s
 : 1541065907:0;du -sh
 : 1541065928:0;git commit -am "h"
-: 1541065933:0;git push
-: 1541065952:0;cd Other/backups/config
 : 1541066026:0;ls /mnt/data/other-data/back-up/yandex-disk-0.1.5.1010
 : 1541066058:0;systemctl list-units
 : 1541066065:0;systemctl list-units | grep yan
 : 1541066070:0;systemctl list-units | grep gdm
 : 1541066080:0;systemctl list-units | grep service
 : 1541066125:0;vim /mnt/data/other-data/back-up/yandex-disk-0.1.5.1010/yandex-disk.service
-: 1541066191:0;yandex-disk status
 : 1541066200:0;ps aux | grep yand
 : 1541066357:0;uptime -p
 : 1541066385:0;ls Documents
@@ -1877,11 +1812,8 @@
 : 1541066388:0;ls Pictures
 : 1541066389:0;ls foobar
 : 1541066392:0;ls Downloads
-: 1541066400:0;pip list --outdated
 : 1541066459:0;jupyter notebook
 : 1541066518:0;ls /mnt/data/code/ipynb
-: 1541066528:0;vim .local/share/gnome-shell/application_state
-: 1541066617:0;vim foo.py
 : 1541066753:0;vim ~/.viminfo
 : 1541067590:0;ping www.bing.com
 : 1541067639:0;ping https://www.twitch.tv
@@ -1916,11 +1848,9 @@
 : 1541070384:0;which pip
 : 1541070581:0;python -V
 : 1541070822:0;which pythion
-: 1541070826:0;which python
 : 1541070828:0;deactivate
 : 1541070850:0;mv tensorflow /mnt/data/code/refer/
 : 1541070880:0;mv /mnt/data/code/refer
-: 1541070886:0;cd /mnt/data/code/refer
 : 1541070929:0;mv source-code * ./
 : 1541070956:0;mv julia julia1
 : 1541070960:0;mv source-code/* ./
@@ -1934,7 +1864,6 @@
 : 1541071084:0;find ./ -size +300M 
 : 1541071095:0;find ./ -type f -size +300M 
 : 1541071105:0;find ./ -type f -size +50M 
-: 1541071615:0;git status
 : 1541071798:0;du -hs refer
 : 1541071803:0;du -hs android
 : 1541071830:0;cd refer/GitHub/tensorflow
@@ -1943,39 +1872,26 @@
 : 1541071886:0;cat config
 : 1541072448:0;find ./ -name "*whl"
 : 1541072594:0;find ./ -iname "*whl"
-: 1541073207:0;cd Downloads
 : 1541073861:0;git clone git@github.com:yasinkuyu/binance-trader.git
 : 1541073877:0;git clone git@github.com:fmzquant/strategies.git
 : 1541074005:0;git clone git@github.com:EricMWalton/Fast-Poker-Odds.git
 : 1541074214:0;git clone git@github.com:CharlieHess/slack-poker-bot.git
 : 1541084220:0;git clone git@github.com:zhuzhenpeng/CTP-TradeServer.git
-: 1541084291:0;du -hs 
 : 1541085616:0;ls --help
-: 1541085636:0;cd foobar
 : 1541085637:0;ls -d
 : 1541085641:0;ls -d *
 : 1541085647:0;ls -d */
-: 1541085743:0;cd  /mnt/data/code
-: 1541085748:0;cd refer
 : 1541085976:0;ls /bin
-: 1541085981:0;ll /
-: 1541086273:0;mv shellç®€åƒ­ƒµè¯­æ³ƒµ shellç®€åƒ­ƒµè¯­æ³ƒµ.md
-: 1541086277:0;vim shellç®€åƒ­ƒµè¯­æ³ƒµ.md
-: 1541087124:0;man test
-: 1541088260:0;mv shellç®€åƒ­ƒµè¯­æ³ƒµ.md ~/Documents/md
 : 1541088282:0;chmod +x gitpull.sh
 : 1541088291:0;cp gitpull.sh go-weiqi
-: 1541088293:0;cd go-weiqi
 : 1541088306:0;sh
 : 1541088322:0;./gitpull.sh
-: 1541088379:0;cd
 : 1541088381:0;cd -
 : 1541088386:0;rm gitpull.sh
 : 1541088389:0;vim gitpull.sh
 : 1541088400:0;mv gitpull.sh ~/foobar
 : 1541088402:0;cd sa
 : 1541088411:0;cd go-weiqi/Sabaki
-: 1541088423:0;cd leela-zero
 : 1541088433:0;cd ../online-go.com
 : 1541088447:0;cd o
 : 1541088449:0;cd hosts
@@ -1984,11 +1900,9 @@
 : 1541088480:0;cd JuliaBoxTutorials
 : 1541088488:0;cd ../Plots.jl
 : 1541088501:0;cd ../Primes.jl
-: 1541088509:0;cd TutorialZH.jl-bilibiliè§ƒ¦éƒ‚ƒ±æƒµƒ¹æƒƒ¨
 : 1541088516:0;cd ../cgit
 : 1541088526:0;cd ../julia
 : 1541088551:0;cd poker
-: 1541088552:0;l
 : 1541088554:0;cd Fast-Poker-Odds
 : 1541088563:0;cd ../slack-poker-bot
 : 1541088582:0;cd ../../python
@@ -1996,23 +1910,17 @@
 : 1541088592:0;cd ../Python-2
 : 1541088603:0;cd ../Python-3
 : 1541088612:0;cd ../django
-: 1541088650:0;cd tensorflow
-: 1541088671:0;..
 : 1541088673:0;cd trade
 : 1541088676:0;cd binance-trader
 : 1541088683:0;cd .
-: 1541088685:0;cd ..
 : 1541088693:0;cd strategies
-: 1541088694:0;git pull
 : 1541088720:0;cd /mnt/data/code/refer/trade
 : 1541088735:0;grep "git clone" ~/.zsh_history
 : 1541088751:0;git clone git@github.com:zhuzhenpeng/CTP-TradeServer.git\
 
 : 1541088920:0;mv tensorflow-1.11.0-cp27-cp27mu-manylinux1_x86_64.whl /mnt/data/back-up
 : 1541088924:0;ls /mnt/data
-: 1541089314:0;ls
 : 1541089317:0;cd CTP-TradeServer
-: 1541089319:0;du -hs
 : 1541089333:0;find ./ -size +10M 
 : 1541089352:0;ls -lh .git/objects/pack/pack-72dc51dfd7b7b1d86833b823e99a66407925f5ff.*
 : 1541089374:0;ls -hl *wmv
@@ -2025,14 +1933,999 @@
 : 1541089860:0;pacman -Ss "crontab*"
 : 1541089879:0;sudo pacman -S gnome-schedule
 : 1541089923:0;sudo pacman -S cron
-: 1541089944:0;java -version
-: 1541097907:0;julia
 : 1541098150:0;timedatectl
 : 1541099044:0;cd Other/backups/
-: 1541099044:0;ls
 : 1541099050:0;cd config
-: 1541099060:0;vim .git/config
-: 1541099068:0;git status
-: 1541099074:0;git pull
-: 1541099085:0;vim .git/config
 : 1541099103:0;cp ~/.zsh_history ./zsh_history
+: 1541099253:0;git commit -am "his\
+"
+: 1541099276:0;vim other-config.txt
+: 1541099281:0;vim .git/config
+: 1541101049:0;git clone git@github.com:nasa-jpl/open-source-rover.git
+: 1541101789:0;du -hs open-source-rover
+: 1541101800:0;ls Bill\ of\ Materials\ Files
+: 1541101807:0;ll *
+: 1541101813:0;lh *
+: 1541101845:0;find ./ -size +50M
+: 1541101869:0;mv open-source-rover /mnt/data/code/refer/
+: 1541101967:0;cd /mnt/nco
+: 1541101977:0;cd tensorflow
+: 1541102035:0;git branchs
+: 1541102114:0;cd go-weiqi/leela-zero
+: 1541102234:0;cd julia/julia
+: 1541102252:0;git merge
+: 1541102308:0;vim .git/branches
+: 1541102314:0;ls .git/branches
+: 1541102321:0;la .git/branches
+: 1541102339:0;git branch dev
+: 1541102342:0;git branc
+: 1541102539:0;git branch 
+: 1541102542:0;git branch master
+: 1541109562:0;yandex-disk stop
+: 1541109593:0;yandex-disk start
+: 1541110561:0;which python
+: 1541110613:0;pip install -U django future
+: 1541110664:0;pip install -U pytz pyparsing
+: 1541110677:0;pip list --outdated
+: 1541110723:0;pip freeze > pyequirements.txt
+: 1541110734:0;ls /mnt/data/YandexDisk/Other/backups/config
+: 1541110748:0;cat /mnt/data/YandexDisk/Other/backups/config/pyvenv.txt
+: 1541110762:0;mv pyequirements.txt /mnt/data/YandexDisk/Other/backups/config
+: 1541110767:0;cd Other/backups/config
+: 1541110816:0;mv pyequirements.txt pyVenvEqRequirements.txt
+: 1541110821:0;git rm pyvenv.txt
+: 1541110826:0;git add pyVenvEqRequirements.txt
+: 1541110836:0;git commit -m "py venv"
+: 1541111016:0;vim java-java-openjdk.desktop
+: 1541111058:0;vim julia.desktop
+: 1541111082:0;ls | less
+: 1541111100:0;cd icons
+: 1541111107:0;cd Adwaita
+: 1541111121:0;find ./ -name "julia"
+: 1541111127:0;find ./ -name "julia*"
+: 1541111144:0;find ./ -name "ipython*"
+: 1541111150:0;find ./ -name "obs*"
+: 1541111424:0;find ./ -name "firefox*"
+: 1541111500:0;find ./ -name "java*"
+: 1541111537:0;sudo cp -a java-java-openjdk.desktop java-java-openjdk.desktop-bak
+: 1541111552:0;ls ja*
+: 1541111645:0;cd /usr/share/applications
+: 1541111682:0;ll ja*
+: 1541111694:0;sudo mv java-java-openjdk.desktop-bak ~
+: 1541111776:0;ls j(
+: 1541111801:0;sudo cp -a jconsole-java-openjdk.desktop jconsole-java-openjdk.desktop-bak
+: 1541111810:0;sudo cp -a jshell-java-openjdk.desktop jshell-java-openjdk.desktop-bak
+: 1541111814:0;ls *bak
+: 1541111818:0;sudo mv *bak ~
+: 1541111878:0;sudo pacman -Rs jdk-openjdk
+: 1541111909:0;ls j*
+: 1541111913:0;sudo pacman -S jdk-openjdk
+: 1541111948:0;sudo vim java-java-openjdk.desktop
+: 1541111954:0;sudo vim jshell-java-openjdk.desktop
+: 1541111959:0;sudo vim jconsole-java-openjdk.desktop
+: 1541111983:0;sudo mv avahi-discover.desktop ~
+: 1541111990:0;vim bssh.desktop
+: 1541112009:0;tail bssh.desktop
+: 1541112023:0;find ./ -name "network-wired"
+: 1541112031:0;find ../icons -name "network-wired"
+: 1541112039:0;find ../icons -name "network-wired*"
+: 1541112051:0;vim bvnc.desktop
+: 1541112062:0;ls 
+: 1541112066:0;ls ~
+: 1541112074:0;sudo mv bssh.desktop ~
+: 1541112078:0;sudo mv bvnc.desktop ~
+: 1541112118:0;jshell
+: 1541112130:0;sudo mv jshell-java-openjdk.desktop ~
+: 1541112151:0;jconsole
+: 1541112160:0;sudo mv jconsole-java-openjdk.desktop ~
+: 1541112204:0;mkdir desktopFile
+: 1541112215:0;mv j* desktopFile
+: 1541112226:0;mv avahi-discover.desktop bssh.desktop bvnc.desktop desktopFile
+: 1541112233:0;cd desktopFile
+: 1541112256:0;ls /usr/share/applications/j*
+: 1541112268:0;sudo mv /usr/share/applications/java-java-openjdk.desktop *
+: 1541112275:0;sudo mv /usr/share/applications/java-java-openjdk.desktop ./
+: 1541112300:0;zip -r desktopFile.zip desktopFile
+: 1541112318:0;mv desktopFile.zip /mnt/data/back-up/
+: 1541112323:0;rm -r desktopFile
+: 1541112334:0;ls d
+: 1541112335:0;ls desktopFile
+: 1541112340:0;rm desktopFile/avahi-discover.desktop
+: 1541112345:0;rmdir desktopFile
+: 1541112363:0;vim .local/share/gnome-shell
+: 1541136182:0;git add gitpull.sh
+: 1541136203:0;git mv gitpull.sh pullGit.sh
+: 1541136215:0;git commit "sh"
+: 1541136479:0;vim pullGit.sh
+: 1541136671:0;cd ../foobar
+: 1541136677:0;vim shell.md
+: 1541136781:0;mv shell.md shell.sh
+: 1541136793:0;chmod +x shell.sh
+: 1541136797:0;ls ..
+: 1541136800:0;ls ../shell_tut
+: 1541136807:0;rm -r ../shell_tut
+: 1541136995:0;curl www.ip138.cn
+: 1541137007:0;curl www.ip139.cn
+: 1541137026:0;rm -r shell
+: 1541137078:0;./shell.sh
+: 1541137083:0;ls shell_tut
+: 1541137096:0;rm -r shell_tut
+: 1541137098:0;vim shell.sh
+: 1541137158:0;ls -l /bin/*sh
+: 1541137196:0;shell
+: 1541137273:0;vim ~/.local/share/gnome-shell/application_state
+: 1541137292:0;logout
+: 1541137432:0;vim test.php
+: 1541138421:0;str = "alibaba"
+: 1541138428:0;str="alibaba is a company"
+: 1541138432:0;expr
+: 1541138453:0;echo `expr index "$string" is`
+: 1541138457:0;echo `expr index "$string" i`
+: 1541138465:0;echo `expr index "$str" is`
+: 1541138497:0;echo ${string:1:3}
+: 1541138502:0;echo ${str:1:3}
+: 1541138520:0;echo ${str:0:3}
+: 1541138552:0;echo ${str:2:5}
+: 1541140444:0;ls /
+: 1541140447:0;ll /
+: 1541140829:0;s=(1+2)
+: 1541140830:0;s
+: 1541140845:0;s=1+2
+: 1541140847:0;echo $s
+: 1541179389:0;ln -sf /mnt/data/back-up/config/vimrc .vimrc
+: 1541179426:0;ln -sf /mnt/data/back-up/config/zshrc.pre ./.zshrc.pre
+: 1541179442:0;ln -sf /mnt/data/back-up/config/gitconfig .gitconfig
+: 1541179449:0;cd .ssh
+: 1541179462:0;ln -sf /mnt/data/back-up/config/ssh-config ./config
+: 1541179480:0;cd .jupyter
+: 1541179495:0;ln -sf /mnt/data/back-up/config/jupyter/jupyter_notebook_config.py ./jupyter_notebook_config.py
+: 1541179759:0;cat test.php
+: 1541179762:0;rm test.php
+: 1541179778:0;git add shell.sh
+: 1541188489:0;lh
+: 1541188500:0;file zsh_history
+: 1541188504:0;stat zsh_history
+: 1541188620:0;ping online-go.com
+: 1541188635:0;curl -o ip139.cn
+: 1541188669:0;curl ip.cn
+: 1541189454:0;b=2
+: 1541189458:0;c=a+b
+: 1541189459:0;c
+: 1541189472:0;c=$(a+b)
+: 1541189476:0;c=$((a+b))
+: 1541189510:0;a=a+1
+: 1541189521:0;echo $((a+1))
+: 1541189547:0;echo $(a+1)
+: 1541189553:0;echo $((b+1))
+: 1541189583:0;a=$((a+1))
+: 1541189613:0;a=$(1+2)
+: 1541189617:0;a=$((1+2))
+: 1541189630:0;a=$(1+6)
+: 1541189648:0;a=$((1+6))
+: 1541189655:0;a=((1+6))
+: 1541189660:0;a=(1+6)
+: 1541242796:0;cd Documents
+: 1541242803:0;cd /mnt/data
+: 1541242810:0;ls back-up
+: 1541243912:0;rm -rf foobar
+: 1541243973:0;du -hs foobar
+: 1541244037:0;mv arch-init arch
+: 1541244053:0;du -hs 
+: 1541248410:0;diff fennec-63.0.multi.android-arm.apk fennec-63.0.multi.android-arm-old.apk
+: 1541248419:0;diff3 fennec-63.0.multi.android-arm.apk fennec-63.0.multi.android-arm-old.apk
+: 1541254591:0;cat shell.sh
+: 1541254600:0;git rm shell.sh
+: 1541254604:0;cat pullGit.sh
+: 1541254616:0;git commit -am "rm test shell file"
+: 1541254783:0;cd /mnt/data/back-up/config
+: 1541254792:0;ssh phone
+: 1541290956:0;awk
+: 1541290975:0;grep
+: 1541290993:0;grep -c space other-config.txt
+: 1541291010:0;grep -c "space" other-config.txt
+: 1541291016:0;grep "space" other-config.txt
+: 1541291036:0;grep -c left other-config.txt
+: 1541291042:0;grep -c "left" other-config.txt
+: 1541291048:0;grep left other-config.txt
+: 1541291076:0;grep tmpfs other-config.txt
+: 1541291085:0;grep -c tmpfs other-config.txt
+: 1541303507:0;log
+: 1541303584:0;git pihs
+: 1541303888:0;last
+: 1541309864:0;java -v
+: 1541309870:0;java -version
+: 1541324396:0;ps -ef
+: 1541324403:0;ps -ef | grep kernel
+: 1541324457:0;source Downloads/pythonVenv/bin/activate
+: 1541324590:0;set
+: 1541324620:0;set | less
+: 1541324799:0;pacman -Fs /usr/bin/uptime
+: 1541324814:0;pacman -Fs /usr/bin/python
+: 1541324841:0;pacman -Fs uptime
+: 1541324861:0;pacman -Ql procps-ng
+: 1541324876:0;pacman -Qo /usr/bin/uptime
+: 1541334779:0;git help config
+: 1541334793:0;git config user.name
+: 1541334798:0;git config
+: 1541334812:0;git -l
+: 1541334843:0;git config -l
+: 1541334864:0;git ls
+: 1541334889:0;git checkout -b dev
+: 1541334905:0;git remote branch
+: 1541334913:0;git remoge show
+: 1541334968:0;git remote add bar git@github.com/fanghsiaohui/foobar
+: 1541334977:0;git remote add bar git@github.com:fanghsiaohui/foobar
+: 1541335094:0;git init
+: 1541335102:0;git remote add git@github.com:fanghsiaohui/foobar
+: 1541335121:0;git remote -m add git@github.com:fanghsiaohui/foobar
+: 1541335232:0;git remote add origin git@github.com:fanghsiaohui/foobar
+: 1541335255:0;rm -rf *
+: 1541335259:0;git remote add origin git@github.com:fanghsiaohui/foobar.git
+: 1541335453:0;git clean
+: 1541335616:0;git baranch
+: 1541335781:0;git pull remote
+: 1541335810:0;mv foobar bbb
+: 1541335812:0;cd bbb
+: 1541335855:0;git checkout
+: 1541335883:0;git push
+: 1541335903:0;git push --set-upstream origin dev
+: 1541335987:0;git checkout dev
+: 1541336043:0;rm -rf bar
+: 1541336138:0;git clone git@github.com:fanghsiaohui/foobar
+: 1541336180:0;git barnch
+: 1541336199:0;git fetch
+: 1541336249:0;git remote -v
+: 1541336345:0;git remote
+: 1541336466:0;git fetch origin
+: 1541336607:0;git checkout -b ddd origin/dev
+: 1541336644:0;git push origin --delete dev
+: 1541336676:0;git checkout origin
+: 1541336689:0;git checkout master
+: 1541336691:0;git branch -d ddd
+: 1541336740:0;git remote show
+: 1541336755:0;git branch -d dev
+: 1541336758:0;git branch
+: 1541336771:0;lspci
+: 1541336870:0;lspci | grep -i vga
+: 1541336917:0;lsw
+: 1541336945:0;glxinfo
+: 1541336962:0;lspci -vnn | grep -i vga
+: 1541337141:0;cd /mnt/data/code
+: 1541337145:0;cd refer
+: 1541337152:0;cd open-source-rover
+: 1541337184:0;cd refer/julia/julia
+: 1541337313:0;git ls-remote >> loggggg.txt
+: 1541337324:0;vim loggggg.txt
+: 1541337330:0;rm loggggg.txt
+: 1541337342:0;cd Plots.jl
+: 1541337345:0;git ls-remote
+: 1541337367:0;cd Primes.jl
+: 1541337402:0;.
+: 1541337410:0;cd python/Python-1
+: 1541337436:0;cd Other
+: 1541337441:0;git ls-remote  | wc
+: 1541337455:0;git ls-remote 
+: 1541337514:0;git help remote 
+: 1541337533:0;grep set .zsh_history
+: 1541337735:0;file /usr/bin/git-shell
+: 1541337755:0;pacman -Qo git-shell
+: 1541337776:0;file /usr/bin/git-clang
+: 1541337787:0;which git-clang
+: 1541337800:0;pacman -Qo git-shell-format
+: 1541337842:0;pacman -Qo git-clang-format
+: 1541337862:0;ls /usr/bin | grep go
+: 1541337872:0;pacman -Qo gofmt
+: 1541338008:0;vim .local/share/gnome-shell/application_state
+: 1541342980:0;chmod +x sabaki-v0.40.0-linux-x64.AppImage
+: 1541343029:0;chmod +w sabaki-v0.40.0-linux-x64.AppImage
+: 1541343207:0;cd /mnt/data/code/refer
+: 1541343210:0;cd go-weiqi
+: 1541343224:0;git pull
+: 1541343462:0;vim AUTHORS
+: 1541343513:0;git log
+: 1541343675:0;git clone git@github.com:featurecat/lizzie.git
+: 1541343773:0;cd lizzie
+: 1541343805:0;mvn
+: 1541343808:0;cd src
+: 1541343812:0;ls main
+: 1541343818:0;cd main/java/
+: 1541343821:0;ls com
+: 1541343824:0;ls featurecat
+: 1541343857:0;cd leela-zero
+: 1541343869:0;mkdir build
+: 1541343920:0;ls build
+: 1541343924:0;cd build
+: 1541343936:0;cmake
+: 1541343939:0;make ..
+: 1541343990:0;git submodule update --init --recursive
+: 1541344189:0;make
+: 1541344396:0;sudo pacman -S leela
+: 1541358112:0;du -h
+: 1541358118:0;df -h
+: 1541358821:0;top
+: 1541386813:0;grep root /etc/passwd | wc
+: 1541386847:0;grep root:/bin /etc/passwd
+: 1541386948:0;ps aux | grep ibus
+: 1541386973:0;vim /etc/passwd
+: 1541387021:0;wc -l /etc/passwd
+: 1541387031:0;wc -l foobar/foo.c
+: 1541387038:0;wc foobar/foo.c
+: 1541387055:0;sleep 1
+: 1541387058:0;sleep 3
+: 1541387158:0;sleep 10
+: 1541387181:0;fg
+: 1541387221:0;sleep 10 &&\
+\
+: 1541387263:0;sleep 10 
+: 1541387267:0;bg
+: 1541387306:0;sleep 10 &
+: 1541387336:0;vim &
+: 1541387339:0;jobs
+: 1541387343:0;fg 1
+: 1541387346:0;fg %1
+: 1541387378:0;mkdir bar
+: 1541387380:0;cd bar
+: 1541387391:0;mkdir {1,3}h
+: 1541387401:0;mkdir {1-3}h
+: 1541387408:0;mkdir {1..3}h
+: 1541387415:0;mkdir {1..30}h
+: 1541387448:0;ls [1-9]*
+: 1541387460:0;rmdir *
+: 1541387488:0;vim Downloads/pythonVenv/bin/activate
+: 1541387512:0;vim jjj/kkk
+: 1541387547:0;cat j
+: 1541388080:0;$((1+1))
+: 1541388093:0;echo $((1+1/2))
+: 1541388097:0;echo $((1+1./2))
+: 1541388113:0;alias
+: 1541388121:0;whereis alias
+: 1541388149:0;echo "ab\ncd"
+: 1541388171:0;echo abncd
+: 1541388192:0;echo ab\\ncd
+: 1541388200:0;echo ab\ncd
+: 1541388515:0;read j
+: 1541388535:0;printf("h")
+: 1541388569:0;man printf
+: 1541388585:0;printf d
+: 1541388588:0;printf d\n
+: 1541388593:0;printf "d\n"
+: 1541388599:0;whereis printf
+: 1541388641:0;type printf
+: 1541388648:0;type julia
+: 1541388656:0;type
+: 1541388659:0;type :
+: 1541388669:0;whereis :
+: 1541388694:0;help :
+: 1541388696:0;help
+: 1541388709:0;type exec
+: 1541388779:0;eog /mnt/data/YandexDisk/Camera\ Uploads/2018-11-05\ 11-27-54.JPG
+: 1541393280:0;basename foo.c
+: 1541393363:0;basename foo.sh
+: 1541393391:0;basename nothing.txt
+: 1541393399:0;basename -txt nothing.txt
+: 1541393413:0;basename nothing.txt txt
+: 1541393419:0;basename nothing.txt g.txt
+: 1541393425:0;dirname .
+: 1541393428:0;dirname ./
+: 1541393431:0;dirname /home/fang
+: 1541393434:0;dirname /home/fang/
+: 1541393441:0;dirname foo.c
+: 1541393468:0;date +%s
+: 1541393471:0;date +%f
+: 1541393474:0;date +%D
+: 1541393476:0;date +%d
+: 1541393479:0;date +%h
+: 1541393486:0;date +%H
+: 1541393490:0;date +%M
+: 1541393493:0;date +%S
+: 1541393496:0;date +%SS
+: 1541393498:0;date +%SSs
+: 1541393539:0;ls /etc/dddddd > err
+: 1541393553:0;ls /etc/dddddd 2> err
+: 1541393556:0;cat 2
+: 1541393559:0;cat err
+: 1541393694:0;cd /var
+: 1541393703:0;find . -size +10M
+: 1541393711:0;find . -size +100M
+: 1541393725:0;find . -size +1000M
+: 1541393738:0;texlive
+: 1541393831:0;pacman -Qo cache/pacman/pkg/texlive-bibtexextra-2018.48548-1-any.pkg.tar.xz
+: 1541393851:0;sudo pacman -S texlive
+: 1541393868:0;ls cache/pacman/pkg/tex*
+: 1541393874:0;ls cache/pacman/pkg/tex* -l
+: 1541393876:0;ls cache/pacman/pkg/tex* -lh
+: 1541393899:0;sudo pacman -S texlive-core
+: 1541393982:0;sudo pacman -Sw texlive-core
+: 1541394035:0;sudo pacman -Sw r
+: 1541394073:0;pacman -Ss haskell
+: 1541394080:0;sudo pacman -Sw stack
+: 1541394254:0;pacman -Qo gfortran
+: 1541394259:0;pacman -Qs fortran
+: 1541394270:0;pacman -Ss fortran
+: 1541394301:0;pacman -Ss gdb
+: 1541394323:0;pacman -Ss go
+: 1541394336:0;pacman -Ss go | grep gcc
+: 1541394364:0;dnf
+: 1541394378:0;ls mail
+: 1541394383:0;ls spool
+: 1541394394:0;mail root
+: 1541394420:0;cat dead.letter
+: 1541394426:0;rm dead.letter
+: 1541394443:0;pacman -So sendmail
+: 1541394448:0;pacman -Fo sendmail
+: 1541394461:0;pacman -Fs sendmail
+: 1541394503:0;pacman -Ss sendmail
+: 1541394519:0;pacman -Si go
+: 1541394554:0;pacman -Ql go
+: 1541394563:0;pacman -Ql python2
+: 1541394565:0;pacman -Ql python
+: 1541394574:0;pacman -Ql python-numpy
+: 1541394642:0;rm err
+: 1541394644:0;ls ../Downloads
+: 1541394651:0;mkdir bb
+: 1541394655:0;ls bar
+: 1541394657:0;rmdir bar
+: 1541394665:0;cd bb
+: 1541394680:0;mv ../bb ../temp
+: 1541394687:0;cd ..
+: 1541394713:0;ls a
+: 1541394717:0;ls a/b
+: 1541394735:0;mkdir -p a/b/c/d
+: 1541394742:0;rmdir -p a/b
+: 1541394746:0;rmdir -p a/b/c/d
+: 1541394750:0;rmdir -h
+: 1541394754:0;rmdir --help
+: 1541394865:0;man import_interpolation
+: 1541394869:0;import_interpolation -h
+: 1541394880:0;which import_interpolation
+: 1541394893:0;whereis import_interpolation
+: 1541394911:0;whatis import_interpolation
+: 1541394938:0;locale
+: 1541394943:0;which locale
+: 1541394949:0;whereis locale
+: 1541394961:0;uniq ../foo.c
+: 1541394965:0;man uniq
+: 1541394976:0;uniq ../foo.py
+: 1541394992:0;la
+: 1541401313:0;yandex-disk status
+: 1541410354:0;cd temp
+: 1541410361:0;rmdir temp
+: 1541410414:0;chmod +x foo.sh
+: 1541410483:0;vim foo.s
+: 1541410612:0;sh foo.sh
+: 1541410618:0;zsh foo.sh
+: 1541410668:0;echo $((1+1))
+: 1541410675:0;echo $((1+10))
+: 1541410776:0;vim .vimrc
+: 1541410918:0;csh
+: 1541410934:0;which sh
+: 1541410936:0;which bash
+: 1541410939:0;which zsh
+: 1541410942:0;cat /etc/shells
+: 1541410996:0;pause
+: 1541410998:0;paste
+: 1541411189:0;which ls
+: 1541411202:0;man ls
+: 1541411711:0;echo /dev/stdout
+: 1541411717:0;echo 333 > /dev/stdout
+: 1541411721:0;echo 333 > /dev/stdin
+: 1541411725:0;echo 333 > /dev/stderr
+: 1541411789:0;ls /dev/std*
+: 1541411820:0;ls -l /dev/stdout
+: 1541411824:0;ls -l /dev/stderr
+: 1541411839:0;echo abd > /dev/stdout
+: 1541411853:0;d
+: 1541411867:0;0 = /dev/stdin
+: 1541411939:0;echo aaa >> foo.sh
+: 1541411955:0;echo ddd 1> foo.sh
+: 1541411973:0;echo ddd 1>> foo.sh
+: 1541411987:0;echo ddd 2>> foo.sh
+: 1541411995:0;echo dddddsss 2>> foo.sh
+: 1541412011:0;echo dddddsss 0>> foo.sh
+: 1541412023:0;echo dddddsss 1>> foo.sh
+: 1541412047:0;ls /dev/stdin
+: 1541412049:0;ls /dev/stdin -l
+: 1541412079:0;grep root /etc/passwd
+: 1541412088:0;grep root /etc/passwd | wc -l
+: 1541412147:0;cat >> foo.sh << ddd\
+: 1541412151:0;cat foo.sh
+: 1541412482:0;set | grep HIST
+: 1541412999:0;a=foo.sh
+: 1541413019:0;a=`./foo.sh`
+: 1541413172:0;./foo.sh 
+: 1541413200:0;./foo.sh v
+: 1541413277:0;help ls
+: 1541413296:0;man if
+: 1541413301:0;elp if
+: 1541413307:0;if --help
+: 1541413311:0;if -h
+: 1541413351:0;sudo pacman -S pam
+: 1541413495:0;history 1040
+: 1541413500:0;history 1
+: 1541413505:0;history 1 | less
+: 1541413579:0;clear
+: 1541413582:0;history
+: 1541413624:0;a="1"
+: 1541413628:0;read $a
+: 1541413673:0;cd $a
+: 1541413716:0;cd /usr/share/doc
+: 1541413718:0;du -s
+: 1541413728:0;hs -hs
+: 1541413734:0;ls -hs
+: 1541413741:0;ls -s
+: 1541413747:0;du -hs
+: 1541413751:0;cd julia
+: 1541413758:0;read jk
+: 1541413764:0;read A
+: 1541413772:0;echo %A
+: 1541413779:0;echo $A
+: 1541413834:0;echo a b
+: 1541413839:0;1   4   5 
+: 1541413846:0;read a b
+: 1541413854:0;echo $b
+: 1541413858:0;mN :
+: 1541413924:0;exec julia
+: 1541413945:0;exec pwd
+: 1541414066:0;tail -f foo.c
+: 1541414080:0;reset
+: 1541414106:0;git add foo.sh
+: 1541414136:0;cut foo.c
+: 1541414143:0;cut -d< foo.c
+: 1541414153:0;cut -d\< foo.c
+: 1541414159:0;cut -din foo.c
+: 1541414162:0;cut -di foo.c
+: 1541414185:0;man cut
+: 1541414199:0;cut -b100 foo.c
+: 1541414202:0;cut -b10 foo.c
+: 1541414205:0;cut -b1 foo.c
+: 1541414211:0;cut -b foo.c
+: 1541414213:0;cut -b0 foo.c
+: 1541414217:0;cut -b5 foo.c
+: 1541414232:0;tr
+: 1541414239:0;echo abcdefg
+: 1541414244:0;echo abcdefg [a-z]
+: 1541414260:0;echo "abcdefg [a-z]"
+: 1541414271:0;echo "abcdefg [a-z]" | tr 'a-c' 'A-C'
+: 1541414310:0;date +%T
+: 1541414314:0;date +%F
+: 1541414331:0;date
+: 1541414344:0;times
+: 1541414347:0;time
+: 1541414359:0;cat /etc/localtime
+: 1541414373:0;file /etc/localtime
+: 1541414388:0;file /usr/share/zoneinfo/Asia/Shanghai
+: 1541414414:0;wc foo.py
+: 1541414420:0;file foo.py
+: 1541414425:0;stat foo.py
+: 1541414444:0;wc -h
+: 1541414446:0;wc --help
+: 1541414466:0;cml
+: 1541414484:0;wc -l /var/log/pacman.log
+: 1541414491:0;vim /var/log/pacman.log
+: 1541414548:0;basename foo.py
+: 1541414560:0;basename /home/fang/foobar
+: 1541414568:0;dirname /home/fang/foobar
+: 1541414619:0;ls -l /root
+: 1541414624:0;sudo ls -l /root
+: 1541414632:0;sudo ls -ahl /root
+: 1541414661:0;ls -alh ~
+: 1541414689:0;vim ~/.zshrc
+: 1541414704:0;vim /etc/zsh/zshrc
+: 1541414791:0;echo $GRML_OSTYPE
+: 1541414825:0;echo abc
+: 1541414851:0;cut
+: 1541414856:0;cut >> cut.t
+: 1541414872:0;cut 2>> cut.t
+: 1541414874:0;cat cut.t
+: 1541414909:0;cut 2>>&1
+: 1541414913:0;cut 2>&1
+: 1541414960:0;cut 2>
+: 1541414962:0;cut 2
+: 1541414965:0;cut 
+: 1541414972:0;cut | tee cut.ddd
+: 1541414975:0;cat cut.ddd
+: 1541414997:0;cut | tee
+: 1541415001:0;tee
+: 1541415026:0;cat 1
+: 1541415032:0;rm 2
+: 1541415036:0;rm cut.*
+: 1541415060:0;more
+: 1541415063:0;more foo.c
+: 1541415072:0;less foo.c
+: 1541415088:0;more /var/log/pacman.log
+: 1541415124:0;ll /dev/stdin
+: 1541415129:0;ll /dev/stdout
+: 1541415138:0;man tee
+: 1541415186:0;cut 2>&0
+: 1541415205:0;rmrmrmrmrmrmrm
+: 1541415207:0;rmrm
+: 1541415210:0;rmm
+: 1541415290:0;sed -i "^ls/d" ~/.zsh_history
+: 1541415294:0;sed -i "/^ls/d" ~/.zsh_history
+: 1541415299:0;sort -n ~/.zsh_history
+: 1541415338:0;vim ~/Documents/md/sed.md
+: 1541415428:0;vim ddd
+: 1541415693:0;dir
+: 1541415699:0;which dir
+: 1541415739:0;set | grep a
+: 1541415744:0;abc=123
+: 1541415758:0;man set
+: 1541415768:0;which is set
+: 1541415770:0;which set
+: 1541415780:0;echo $abcc
+: 1541415816:0;abc=10
+: 1541415832:0;abc=1
+: 1541415837:0;unset abc
+: 1541415848:0;abc=
+: 1541415853:0;set | grep abc
+: 1541415963:0;cat foo.py
+: 1541415968:0;cat foo.c
+: 1541416000:0;sed -n "s/\d*//g" bar.c
+: 1541416020:0;sed -i "s/\d*//g" bar.c
+: 1541416044:0;sed -i "s/\d//g" bar.c
+: 1541416058:0;sed -i "s/[0-9]*//g" bar.c
+: 1541416099:0;sed -i "s/\in//g" bar.c
+: 1541416411:0;sed -i "2,5/d" bar.c
+: 1541416418:0;sed -i "2,5d" bar.c
+: 1541416436:0;sed -i "2-5d" bar.c
+: 1541416441:0;sed -i "2d5d" bar.c
+: 1541416449:0;sed -i "2,45d" bar.c
+: 1541416458:0;cp foo.c bar.c
+: 1541416467:0;sed -i "2 5d" bar.c
+: 1541416479:0;sed -i "2d" "5d" bar.c
+: 1541416484:0;cat bar.c
+: 1541416729:0;grep sed ~/.zsh_history
+: 1541416771:0;abc=ac
+: 1541416774:0;echo $abc
+: 1541416779:0;type abc
+: 1541416783:0;type $abc
+: 1541439916:0;a=12
+: 1541439918:0;b=34
+: 1541439928:0;c=(1,2,3)
+: 1541439933:0;echo $c
+: 1541439950:0;echo $d
+: 1541439962:0;echo ${c[1]}
+: 1541439966:0;echo ${c[2]}
+: 1541439969:0;echo ${c[0]}
+: 1541439987:0;echo ${#c}
+: 1541439996:0;echo ${#c[@]}
+: 1541440000:0;echo ${#d\[@]}
+: 1541440002:0;echo ${#d[@]}
+: 1541440005:0;echo ${#d[]}
+: 1541440008:0;echo ${#d}
+: 1541440015:0;echo ${#d[1]}
+: 1541440022:0;echo ${d[0]}
+: 1541440025:0;echo ${d[2]}
+: 1541440042:0;echo ${d[3]}
+: 1541440075:0;d=(1 2 3)
+: 1541440083:0;echo ${d[1]}
+: 1541448061:0;echo 
+: 1541448074:0;echo $(( 1.3+3.4))
+: 1541448090:0;python
+: 1541448103:0;julia
+: 1541448114:0;echo $(( 1.1+1.1))
+: 1541448117:0;echo $(( 1.1+1.1+1.1))
+: 1541448129:0;echo $((0.1+0.1))
+: 1541448136:0;expr 1+3
+: 1541448140:0;expr 1 + 3
+: 1541448613:0;ls /usr/bin | grep doc
+: 1541448624:0;ls | grep fo
+: 1541448814:0;whereis gnome-user-docs
+: 1541448862:0;gnome-shell -v
+: 1541448870:0;gnome-shell --version
+: 1541448918:0;gnome-weather --version
+: 1541448939:0;gnome-session --version
+: 1541448985:0;evince --version
+: 1541449016:0;firefox --version
+: 1541449156:0;openssl --version
+: 1541449163:0;openssl -v
+: 1541449172:0;help openssl
+: 1541449191:0;expr 0.1+0.1
+: 1541449195:0;expr 0.1 + 0.1
+: 1541449328:0;b=a+2
+: 1541449357:0;b=$a+2
+: 1541449370:0;b=$(a+2)
+: 1541449377:0;b=$((a+2))
+: 1541449530:0;a=2
+: 1541449533:0;b=3
+: 1541449553:0;echo $($a + $b)
+: 1541449564:0;echo $(($a + $b))
+: 1541449570:0;echo $((a + b))
+: 1541449585:0;echo $a $b
+: 1541449595:0;echo $[ $a + $b]
+: 1541449603:0;echo $[ a + b ]
+: 1541449681:0;free -h
+: 1541449717:0;pacman -Qs gnome-user-docs
+: 1541449739:0;pacman -Ql gnome-user-docs
+: 1541450658:0;rm bar.c
+: 1541450878:0;cat foo.s
+: 1541450926:0;source foo.sh
+: 1541450938:0;. foo.sh
+: 1541450964:0;vim ~/.bash_history
+: 1541451306:0;type [
+: 1541451310:0;type ]
+: 1541451316:0;type []
+: 1541451320:0;whereis [
+: 1541451329:0;ls /usr/bin | less
+: 1541451348:0;ls /usr/bin | wc
+: 1541451355:0;ll /usr/bin | wc
+: 1541452083:0;vim foo.py
+: 1541453838:0;echo $(($a+1))
+: 1541453850:0;echo $(( $a+1 ))
+: 1541453884:0;echo $(( a+1 ))
+: 1541454271:0;seq 1 10
+: 1541454274:0;man seq
+: 1541454290:0;seq 1 10 2
+: 1541454293:0;seq 1 10 
+: 1541454296:0;seq 1 10 22
+: 1541454299:0;seq 1 10 100
+: 1541454357:0;{1..10}
+: 1541454362:0;printf {1..10}
+: 1541454377:0;printf "{1..10}"
+: 1541454386:0;printf \{1..10\}
+: 1541455070:0;rm 1
+: 1541455075:0;rm 1\]
+: 1541455130:0;mkdir tmp && cd tmp
+: 1541455223:0;tr 
+: 1541455228:0;man tr
+: 1541455242:0;a=abc
+: 1541455258:0;echo | tr [a-z] [A-Z]
+: 1541455268:0;echo $a | tr [a-z] [A-Z]
+: 1541455338:0;echo $a | tr 'a-z' 'A-Z'
+: 1541455413:0;touch {a..d}_{1..3}
+: 1541455444:0;vim ren.sh
+: 1541455510:0;mv ren.sh ..
+: 1541455517:0;../ren.sh
+: 1541455527:0;cat I
+: 1541455530:0;rm I
+: 1541455539:0;cat ../ren.sh
+: 1541455549:0;mkdir ../hh
+: 1541455555:0;mv ../ren.sh ../hh
+: 1541455571:0;chmod +x ../hh/ren.sh
+: 1541455582:0;vim ../hh/ren.sh
+: 1541455601:0;../hh/ren.sh
+: 1541455648:0;ls -l a*
+: 1541455651:0;ls -l A*
+: 1541455677:0;..
+: 1541455684:0;rm -r hh
+: 1541455689:0;rm -r tmp
+: 1541458779:0;go -version
+: 1541458783:0;go --version
+: 1541458794:0;go version
+: 1541458809:0;sudo pacman -Suy
+: 1541458841:0;pip list | grep numpy
+: 1541458938:0;ls /var/cache/pacman/pkg | grep numpy
+: 1541458970:0;l /var/cache/pacman/pkg | grep go
+: 1541459005:0;lh /var/cache/pacman/pkg | grep python3
+: 1541459015:0;lh /var/cache/pacman/pkg | grep python
+: 1541459044:0;lh /var/cache/pacman/pkg | grep julia
+: 1541459052:0;lh /var/cache/pacman/pkg | grep go
+: 1541459056:0;lh /var/cache/pacman/pkg | grep perl
+: 1541459061:0;lh /var/cache/pacman/pkg | grep php
+: 1541459068:0;lh /var/cache/pacman/pkg | grep curl
+: 1541459073:0;lh /var/cache/pacman/pkg | grep apache
+: 1541459095:0;lh /var/cache/pacman/pkg | grep gcc
+: 1541459099:0;lh /var/cache/pacman/pkg | grep gdb
+: 1541459107:0;lh /var/cache/pacman/pkg | grep jupyter
+: 1541459117:0;lh /var/cache/pacman/pkg | grep r
+: 1541459121:0;lh /var/cache/pacman/pkg | grep r-core
+: 1541459126:0;lh /var/cache/pacman/pkg | grep core
+: 1541459141:0;pacman -Fo r
+: 1541459150:0;pacman -Ft r
+: 1541459153:0;pacman -Fy r
+: 1541459158:0;pacman -Fs r
+: 1541459180:0;sudo pacman -S gitlab
+: 1541459206:0;pacman -Qo r
+: 1541459226:0;ls /var/cache/pacman/pkg/r*
+: 1541459236:0;ls -l /var/cache/pacman/pkg/r*
+: 1541459244:0;ls -lh /var/cache/pacman/pkg/r*
+: 1541459285:0;lh /var/cache/pacman/pkg | grep texlive
+: 1541459307:0;lh /var/cache/pacman/pkg | grep texlive | sort -n
+: 1541459322:0;lh /var/cache/pacman/pkg | grep texlive | sort -nr
+: 1541459345:0;l /var/cache/pacman/pkg | grep texlive | sort -nr
+: 1541459454:0;find /var/cache/pacman/pkg -name "texli*"
+: 1541459467:0;find /var/cache/pacman/pkg -name "texli*" -size +10M
+: 1541459479:0;find /var/cache/pacman/pkg -size +10M
+: 1541459491:0;find /var/cache/pacman/pkg -type f -size +10M
+: 1541459522:0;find /var/cache/pacman/pkg -name "texli*" | xargs du -s | sort -nr
+: 1541459532:0;find /var/cache/pacman/pkg -name "texli*" | xargs du -hs | sort -nr
+: 1541459591:0;cd /var/cache/pacman/pkg
+: 1541459592:0;l
+: 1541459596:0;ls math*
+: 1541459604:0;grep math
+: 1541459613:0;vim ~/.zsh_history
+: 1541459644:0;ls gnome*
+: 1541459651:0;ll gnome* | less
+: 1541459679:0;ll gnome* | xargs du -hs 
+: 1541459727:0;find ./ -name "^gnome"
+: 1541459732:0;find ./ -name ^gnome
+: 1541459765:0;find ./ -name [^gnome*]
+: 1541459771:0;find ./ -name '^gnome*'
+: 1541459787:0;find ./ -name 'math"
+: 1541459789:0;find ./ -name 'math'
+: 1541459791:0;find ./ -name math
+: 1541459796:0;find ./ -name "math"
+: 1541459801:0;find ./ -name "math*"
+: 1541459805:0;find ./ -name "gnome*"
+: 1541459812:0;find ./ -name "shell*"
+: 1541459873:0;find ./ -name './^gnome*'
+: 1541459882:0;find ./ -name '\./^gnome*'
+: 1541459894:0;find ./ -name "/^gnome*"
+: 1541459902:0;find ./ -name "^/gnome*"
+: 1541459905:0;find ./ -name "^\./gnome*"
+: 1541459927:0;find ./ -name "^gnome*"
+: 1541459944:0;find ./ -type f-name "^gnome*"
+: 1541459948:0;find ./ -type f -name "^gnome*"
+: 1541460114:0;find ./ -type f -regex -name "^gnome*"
+: 1541460584:0;type cd
+: 1541460594:0;type pwd
+: 1541460596:0;pwd
+: 1541460604:0;/usr/bin/pwd
+: 1541498619:0;ls /usr/share/fonts
+: 1541498628:0;ls /usr/share/fonts/TTF/
+: 1541498638:0;ls /usr/share/fonts/noto
+: 1541498647:0;ls /usr/share/fonts/noto | wc
+: 1541498677:0;while
+: 1541498743:0;a
+: 1541498748:0;a=10
+: 1541498773:0;while [ $a -gt 0 ]\
+do\
+echo $a\
+a=$((a-1))\
+done
+: 1541498780:0;cd
+: 1541498799:0;a=./foo.sh
+: 1541498812:0;a=$(./foo.sh)
+: 1541498867:0;$?
+: 1541498984:0;unset a
+: 1541499002:0;read "hel" a
+: 1541499030:0;read hhh a
+: 1541499049:0;read 'abc' a
+: 1541499083:0;read -p "helo" a
+: 1541499097:0;read -p "helo" $a
+: 1541499272:0;read -p "enter a num: " a
+: 1541499279:0;read -p "enter a num: " $a
+: 1541499285:0;read "enter a num: " $a
+: 1541499292:0;man read
+: 1541499359:0;read -r "enter a num: " $a
+: 1541499363:0;read -r "enter a num: " a
+: 1541499370:0;read "enter a num: " a
+: 1541499382:0;help read
+: 1541499408:0;read -h
+: 1541499412:0;read --help
+: 1541499414:0;read
+: 1541499419:0;read dd
+: 1541499421:0;read 
+: 1541499425:0;$dd
+: 1541499427:0;Ed
+: 1541499433:0;$d
+: 1541499438:0;echo $dd
+: 1541499464:0;read a
+: 1541499470:0;$a
+: 1541499480:0;read -p
+: 1541499644:0;read -p "hh: " a
+: 1541499853:0;man test
+: 1541499862:0;let
+: 1541499877:0;let --help
+: 1541499880:0;let -h
+: 1541499881:0;man let
+: 1541499928:0;git
+: 1541499940:0;git commit -am "sh"
+: 1541499942:0;git status
+: 1541500882:0;while true\
+do\
+echo $a\
+sleep 0.1\
+sleep 0.1\
+a=$((a+1))\
+done
+: 1541500903:0;vim foo.
+: 1541501039:0;seq 1 2 15
+: 1541501939:0;:
+: 1541501942:0;man :
+: 1541501946:0;: -h
+: 1541501949:0;which :
+: 1541502216:0;which ddd
+: 1541502228:0;a=`which ddd`
+: 1541502329:0;cd foobar
+: 1541502942:0;echo $a
+: 1541502944:0;bash
+: 1541504426:0;cat foo.sh
+: 1541505066:0;./foo.sh
+: 1541505131:0;a=1
+: 1541505144:0;a="return 10"
+: 1541505145:0;echo $?
+: 1541505148:0;vim foo.sh
+: 1541505575:0;exec ls
+: 1541512555:0;pacman -Qo time
+: 1541512588:0;pacman -Fy grep
+: 1541512594:0;sudo pacman -Fy grep
+: 1541512640:0;pacman -Fo /usr/bin/grep
+: 1541512650:0;pacman -Fy /usr/bin/grep
+: 1541512655:0;man pacman
+: 1541512739:0;pacman -Fs /usr/bin/grep
+: 1541512749:0;pacman -Fs grep
+: 1541512764:0;pacman -Fo grep
+: 1541512773:0;pacman -Qo grep
+: 1541512797:0;pacman -h
+: 1541512805:0;pacman --help
+: 1541512811:0;man 5 pacman
+: 1541512818:0;man 8 pacman
+: 1541512848:0;sudo pacman -Syu
+: 1541512880:0;cd Downloads
+: 1541512887:0;asp 
+: 1541512890:0;asp -h
+: 1541512900:0;asp checkout seq
+: 1541512923:0;grep makepkg .zsh_history
+: 1541513193:0;makepkg -h
+: 1541513234:0;pacman -Qo seq
+: 1541513246:0;asp checkout coreutils
+: 1541513380:0;cd coreutils
+: 1541513384:0;cd repos
+: 1541513387:0;cd core-x86_64
+: 1541513389:0;l ..
+: 1541513391:0;ls
+: 1541513394:0;ll
+: 1541513400:0;makepkg -od
+: 1541513604:0;pacman -Qi grep | grep pack
+: 1541513615:0;pacman -Qi grep | grep -i author
+: 1541513624:0;pacman -Qi grep | grep -i version
+: 1541513630:0;pacman -Qi grep
+: 1541513646:0;pacman -Qi coreutils
+: 1541513661:0;which sed
+: 1541513663:0;man sed
+: 1541513899:0;asp update
+: 1541514680:0;ls
+: 1541514684:0;ll
+: 1541514688:0;cd src
+: 1541514688:0;ls
+: 1541514692:0;la
+: 1541514701:0;makepkg -od --skippgpcheck
+: 1541514703:0;..
+: 1541514707:0;makepkg -od --skippgpcheck
+: 1541514712:0;l
+: 1541514714:0;cd src
+: 1541514715:0;ls
+: 1541514720:0;cd coreutils-8.30
+: 1541514721:0;ls
+: 1541514733:0;find ./ -iname "seq"
+: 1541514789:0;l
+: 1541514791:0;ls src
+: 1541514797:0;cd src
+: 1541514798:0;l
+: 1541514804:0;find ./ seq
+: 1541514811:0;find ./ -iname seq
+: 1541514813:0;l
+: 1541514818:0;ls
+: 1541514847:0;find ./ -iname "seq"
+: 1541514852:0;find ./ -iname "*seq*"
+: 1541514856:0;vim seq.c
+: 1541515008:0;echo $EXIT
+: 1541515012:0;echo $EXIT_SUCCESS
+: 1541515065:0;wc basename.c
+: 1541515073:0;wc cat.c
+: 1541515078:0;wc *
+: 1541515085:0;wc * | sort -n
+: 1541515089:0;wc * | sort -nr
+: 1541515122:0;wc *.c | sort -nr
+: 1541515137:0;vim uname-uname.c
+: 1541515167:0;vim ls-ls.c
+: 1541515172:0;wc ls.c
+: 1541515178:0;vim yes.c
+: 1541515216:0;ls
+: 1541515233:0;wc sleep.c
+: 1541515237:0;vim sleep.c
+: 1541515389:0;du -hs
+: 1541515392:0;...
+: 1541515397:0;..
+: 1541515399:0;du -hs
+: 1541515402:0;ls
+: 1541515404:0;./
+: 1541515406:0;..
+: 1541515406:0;ls
+: 1541515414:0;mv coreutils /mnt/data/code/refer
+: 1541515415:0;l
+: 1541520320:0;vim /mnt/data/back-up/config/other-config.txt
+: 1541520398:0;cd /mnt/data/back-up/config
+: 1541520400:0;git status
+: 1541520412:0;cp ~/.zsh_history zsh_history
