@@ -11,41 +11,36 @@ set formatoptions+=B
 set rtp+=~/.vim/julia-vim
 
 "map <F5> : !python3 %<CR>
-"map <F6> : !julia %<CR>
-"map <F7> : !g++ -lm % && ./a.out<CR>
 map <F5> : call Compile()<CR>
 func! Compile()
     exec 'w'
     if &filetype == 'c'
         exec "!g++ % -o %<"
         exec "!time ./%<"
+    elseif &filetype == 'sh'
+        exec "!bash %"
+    elseif &filetype == 'python'
+        exec "!python3 %"
+    elseif &filetype == 'julia'
+        exec "!julia %"
+    elseif &filetype == 'go'
+        exec "!go run %"
+    elseif &filetype == 'html'
+        exec "!firefox % &"
 "    elseif &filetype == 'cpp'
 "        exec "!g++ % -o %<"
 "        exec "!time ./%<"
 "    elseif &filetype == 'java'
 "        exec "!javac %"
 "        exec "!time java %<"
-    elseif &filetype == 'python'
-        exec "!python3 %"
-    elseif &filetype == 'go'
-        exec "!go run %"
-    elseif &filetype == 'julia'
-        exec "!julia %"
-    elseif &filetype == 'sh'
-        exec "!bash %"
-    elseif &filetype == 'html'
-        exec "!firefox % &"
     endif
     endfunc
 
-
-
-"set noundofile
-"set nobackup
-"set noswapfile
 "set encoding=utf-8
 "set fileencoding=utf-8
 "set fileformat=unix
+
+" copy from share/vimfiles/arch-vimrc
 " Move temporary files to a secure location to protect against CVE-2017-1000382
 if exists('$XDG_CACHE_HOME')
   let &g:directory=$XDG_CACHE_HOME
@@ -66,8 +61,8 @@ if ! isdirectory(expand(&g:undodir))
   silent! call mkdir(expand(&g:undodir), 'p', 0700)
 endif
 
-" --------
-" install vundle
+"====================
+"install vundle
 "set nocompatible              " be iMproved, required
 "filetype off                  " required
 "set rtp+=~/.vim/bundle/Vundle.vim
@@ -106,8 +101,10 @@ endif
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-" --------
-" --------
+"end of bundle
+"====================
+"
+" copy from share/vim81/vim-examplerc
 " An example for a vimrc file.
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
