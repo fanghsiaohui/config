@@ -1,3 +1,5 @@
+alias vi=vim
+
 # ====================
 # the old JAVA setting
 # --------------------
@@ -5,10 +7,9 @@
 # export CLASSPATH=.:$JAVA_HOME/lib
 # export PATH=$PATH:$JAVA_HOME/lib
 # ====================
+
 # setopt no_nomatch
 # export PATH=$PATH:/home/fang/.local/bin
-alias vi=vim
 # export JAVA_HOME=/usr/lib/jvm/default
 # export ANDROID_HOME=/home/fang/.androidSdk
 # export PATH=$PATH:$ANDROID_HOME/platform-tools
-
