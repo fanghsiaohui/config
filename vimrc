@@ -5,12 +5,15 @@ set softtabstop=4
 set expandtab
 set cursorline
 set ignorecase
-set foldenable
+"set foldenable
 "set foldmethod=indent
 set formatoptions+=B
 set rtp+=~/.vim/julia-vim
+set encoding=utf-8
+set fileencoding=utf-8
+set fileformat=unix
 
-"map <F5> : !python3 %<CR>
+"map! <F5> : !python3 %<CR>
 map <F5> : call Compile()<CR>
 func! Compile()
     exec 'w'
@@ -35,10 +38,6 @@ func! Compile()
 "        exec "!time java %<"
     endif
     endfunc
-
-"set encoding=utf-8
-"set fileencoding=utf-8
-"set fileformat=unix
 
 " copy from share/vimfiles/arch-vimrc
 " Move temporary files to a secure location to protect against CVE-2017-1000382
@@ -103,7 +102,7 @@ endif
 " Put your non-Plugin stuff after this line
 "end of bundle
 "====================
-"
+
 " copy from share/vim81/vim-examplerc
 " An example for a vimrc file.
 "
