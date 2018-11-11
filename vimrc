@@ -9,9 +9,6 @@ set ignorecase
 "set foldmethod=indent
 set formatoptions+=B
 set rtp+=~/.vim/julia-vim
-set encoding=utf-8
-set fileencoding=utf-8
-set fileformat=unix
 
 "map! <F5> : !python3 %<CR>
 map <F5> : call Compile()<CR>
