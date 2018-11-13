@@ -2,6 +2,7 @@
     set ntp 1
 2. fdisk /dev/sda
     make efi partition
+    // fdisk, gdisk, gdisk ef00
     command: t, ef, w
     makefs.fat -F32 /dev/sdax
 3. mkfs.xfs
@@ -14,12 +15,12 @@
 7. pacstrap /mnt base base-devel
 
 ### config system
-8. genfstab -L /mnt >> /mnt/etc/fstab
+8. genfstab /mnt >> /mnt/etc/fstab
     -U uiid
 ** change to new system **
 9. setup network and other
     pacman -S dialog vim ntfs-3g zsh os-prober grub efibootmgr
-    # nwpa_supplicant, etworkmanager (include in gnome)
+    # wpa_supplicant, networkmanager (include in gnome)
     # dialog is needed by wifi-menu
 10. time zone
     ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
@@ -37,6 +38,7 @@
     grub-install --target=i386-pc /dev/sda
     # EFI:
     grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=grub
+    // (usb system) grub-install --target=x86_64-efi --efi-directory=$esp --bootloader-id=grub --removable --recheck
     edit /etc/default/grub, set time
     grub-mkconfig -o /boot/grub/grub.cfg    
 14. passwd
@@ -89,6 +91,7 @@
     yandexdisk: https://aur.archlinux.org/yandex-disk.git
     android studio: https://aur.archlinux.org/android-studio.git
     makepkg -si
+    // (download makepkg -od, -o no build, -d no deps)
 3. timedatectl set-local-rtc 1
 
 ### END
