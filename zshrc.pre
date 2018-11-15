@@ -1,4 +1,5 @@
 alias vi=vim
+alias julia='julia --banner=no'
 
 # ====================
 # the old JAVA setting
