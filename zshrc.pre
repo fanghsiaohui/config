@@ -1,5 +1,5 @@
 alias vi=vim
-alias julia='julia --banner=no'
+# alias julia='julia --banner=no'
 alias code='cd /mnt/data/code'
 alias config='cd /mnt/data/backups/config'
 alias foobar='cd ~/foobar'
