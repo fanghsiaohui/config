@@ -384,7 +384,6 @@
 : 1539831234:0;whereis vim-jedi
 : 1539831249:0;what vim-jedi
 : 1539831254:0;whatis vim-jedi
-: 1539831258:0;cd /usr/share
 : 1539831275:0;cd plugin
 : 1539831379:0;cd after/
 : 1539831381:0;cd ftplugin
@@ -534,7 +533,6 @@
 : 1540090500:0;mv hideicon.md Documents
 : 1540090506:0;mv inter-vdio-card Documents
 : 1540091695:0;sudo pacman -Rs gnome-shell-extension-pixel-saver-git
-: 1540092230:0;ls app-info
 : 1540092233:0;ls app-info/xmls
 : 1540092261:0;ls webkitgtk
 : 1540092264:0;ls webkitgtk/localstorage
@@ -557,7 +555,6 @@
 : 1540101963:0;less zsh_his
 : 1540101974:0;tail zsh_his
 : 1540102002:0;cat zsh_his
-: 1540102008:0;cat .zsh_history
 : 1540102046:0;rm zsh_his
 : 1540102064:0;sed -i "/[lL]eela/d" .zsh_history
 : 1540102094:0;sed -i "/[fF]ree/d" .zsh_history
@@ -1170,7 +1167,6 @@
 : 1540807570:0;ls grep-3.1-1.src/grep
 : 1540807577:0;ls grep-3.1-1.src/grep/grep-3.1
 : 1540807752:0;pacman -Qs grep
-: 1540808015:0;cd local
 : 1540808035:0;la sr
 : 1540808507:0;ls ipynb/
 : 1540808512:0;ll ipynb
@@ -1695,7 +1691,6 @@
 : 1541189660:0;a=(1+6)
 : 1541242810:0;ls back-up
 : 1541243912:0;rm -rf foobar
-: 1541243973:0;du -hs foobar
 : 1541244037:0;mv arch-init arch
 : 1541248410:0;diff fennec-63.0.multi.android-arm.apk fennec-63.0.multi.android-arm-old.apk
 : 1541248419:0;diff3 fennec-63.0.multi.android-arm.apk fennec-63.0.multi.android-arm-old.apk
@@ -4061,7 +4056,6 @@ done
 : 1542505415:0;sudo cp * /usr/share/applications/android-studio.desktop
 : 1542505452:0;vim /usr/share/applications/android-studio.desktop
 : 1542505462:0;sudo cp * /usr/share/applications
-: 1542505478:0;vim assistant-qt4.desktop
 : 1542505589:0;tail 3 assistant-qt4.desktop
 : 1542505597:0;tail -3 designer-qt4.desktop
 : 1542505602:0;tail -3 linguist-qt4.desktop
@@ -4104,8 +4098,6 @@ done
 : 1542506958:0;cp /usr/share/applications/bssh.desktop ~
 : 1542506965:0;cp /usr/share/applications/bvnc.desktop ~
 : 1542506977:0;mv *desktop .local/share/applications
-: 1542507028:0;vim bvnc.desktop
-: 1542507050:0;vim avahi-discover.desktop
 : 1542507075:0;cd /run/media
 : 1542507076:0;cd fang
 : 1542507756:0;sync
@@ -4142,9 +4134,7 @@ done
 : 1542573465:0;cp qv* ~/.local/share/applications
 : 1542573488:0;vim qv4l2.desktop
 : 1542573567:0;cp flash-player-properties.desktop ibus-setup* ~/.local/share/applications
-: 1542573572:0;vim flash-player-properties.desktop
 : 1542573599:0;vim ibus-setup.desktop
-: 1542573635:0;rm ibus-setup-lib*
 : 1542573686:0;cp gnome-software-local-file.desktop ~/.local/share/applications/
 : 1542573763:0;cp org.gnome.Evince.desktop ~/.local/share/applications
 : 1542573800:0;vim org.gnome.Evince.desktop
@@ -4280,7 +4270,6 @@ done
 : 1542726739:0;file b.dat
 : 1542726763:0;rm c.dat
 : 1542726778:0;git commit -am "plotjl"
-: 1542726888:0;cd /mnt/data/backups/config
 : 1542727116:0;ls -lh ink*
 : 1542727132:0;diff inkscape-0.92.3-4-x86_64.pkg.tar.xz inkscape-0.92.3-5-x86_64.pkg.tar.xz
 : 1542727150:0;od
@@ -4683,7 +4672,6 @@ done
 : 1542896203:0;vim movefile.sh
 : 1542896217:0;./movefile.sh
 : 1542897210:0;rmdir docs
-: 1542900727:0;cd foobar/
 : 1542900829:0;du -hs *.
 : 1542900833:0;du -hs **
 : 1542900926:0;du 
@@ -5303,7 +5291,6 @@ done
 : 1543942104:0;pacman -Qi tk
 : 1543942159:0;pacman -Rs python-pmw
 : 1543942167:0;sudo pacman -Rs python-pmw
-: 1543942266:0;pacman -
 : 1543942272:0;pacman -Qi tcl
 : 1543942293:0;sudo pacman -S tk
 : 1543942306:0;sudo pacman -Rs tk
@@ -5493,13 +5480,11 @@ done
 : 1544207864:0;cp /usr/share/applications/android-studio.desktop ~/.local/share/applications
 : 1544207874:0;vim ~/.local/share/applications/android-studio.desktop
 : 1544208053:0;cd /usr/share/applications/android-studio.desktop ~/.local/share/applications
-: 1544208063:0;cd /usr/share/applications/
 : 1544208092:0;cd  ~/.local/share/applications
 : 1544208099:0;cp /usr/share/applications/org.gnome.Weather.Application.desktop .
 : 1544208144:0;cp /usr/share/applications/org.gnome.Books.desktop ./
 : 1544208151:0;cp /usr/share/applications/org.gnome.Documents.desktop ./
 : 1544208161:0;vim org.gnome.Books.desktop
-: 1544208178:0;vim org.gnome.Documents.desktop
 : 1544208213:0;cp /usr/share/applications/org.gnome.Calculator.desktop ./
 : 1544208218:0;vim org.gnome.Calculator.desktop
 : 1544208241:0;cp /usr/share/applications/org.gnome.Contacts.desktop ./
@@ -5511,7 +5496,6 @@ done
 : 1544208505:0;cp /usr/share/applications/org.gnome.Photos.desktop ./
 : 1544208507:0;vim org.gnome.Photos.desktop
 : 1544208540:0;cp /usr/share/applications/vim.desktop .
-: 1544208543:0;vim vim.desktop
 : 1544208661:0;cd .local/share/gnome-shell/
 : 1544208663:0;vim application_state
 : 1544208858:0;ls -lh ~/Pictures/savedPics/wallpaper/20181207-TaisetsuShirakawago_ROW12053480529_1920x1200.jpg
@@ -5574,7 +5558,6 @@ done
 : 1544297992:0;git commit -am "py inin foo"
 : 1544298024:0;rm ~/.Leela
 : 1544348498:0;ls /home/fang/Pictures/savedPics/wallpaper -lh
-: 1544351463:0;git checkout -- foo.py
 : 1544351582:0;tail .python_history
 : 1544351733:0;find . -type f -iname  "*ipython*"
 : 1544351768:0;find . -type f -iname  "*ipy*"
@@ -5820,7 +5803,6 @@ done
 : 1545664329:0;vim digital.py
 : 1545664334:0;vim strcount.py
 : 1545664377:0;../sci
-: 1545664380:0;vim *
 : 1545664418:0;git add *
 : 1545702097:0;vim decorator-bilibili.py
 : 1545705988:0;vim mirrorlist.pacnew
@@ -6029,7 +6011,6 @@ done
 : 1545752959:0;eog eog-wallpaper.jpg
 : 1545752979:0;rm eog-wallpaper.jpg
 : 1545752983:0;cd app
-: 1545752985:0;cd applications
 : 1545753000:0;java -version
 : 1545753040:0;cd refer/github.com/open-source-rover
 : 1545753049:0;find -type f 
@@ -6338,7 +6319,6 @@ done
 : 1546092289:0;mv Firefoxfeedsbackup.opml FirefoxFeedsBackup.opml
 : 1546092298:0;cd video
 : 1546092726:0;vim zshrc.pre
-: 1546092758:0;cp ~/.zsh_history zsh_history
 : 1546092765:0;git commit -am "zsh"
 : 1546094119:0;git commit -am "randn"
 : 1546181145:0;vim .zshrc.pre
@@ -6479,7 +6459,6 @@ done
 : 1547195191:0;mv ~/foobar/zp-20181105-42.mp4 .
 : 1547195212:0;git sta
 : 1547347419:0;date
-: 1547348392:0;git diff foo.py
 : 1547391612:0;ping www.archlinux.or
 : 1547464355:0;sudo pacman -sw gdb bash gdb-common linux php php-apache python readline wpa_supplicant
 : 1547464399:0;sudo pacman -Sw gdb bash gdb-common linux php php-apache python readline wpa_supplicant
@@ -6661,8 +6640,6 @@ done
 : 1547746041:0;zsh -v
 : 1547746062:0;prompt -s suse
 : 1547746105:0;cd pythonVenv
-: 1547746108:0;cd /usr
-: 1547746110:0;cd share
 : 1547746112:0;cd li
 : 1547746136:0;cd vim
 : 1547746141:0;cd vim81
@@ -6689,7 +6666,6 @@ done
 : 1549170763:0;ssh termux
 : 1549223984:0;firefox&
 : 1550837174:0;ping -c 10 www.bing.com
-: 1550837304:0;cd config
 : 1550837489:0;git add foo.py
 : 1550837503:0;git commit -am "py f1"
 : 1550837526:0;yandex-disk staus
@@ -6713,13 +6689,11 @@ done
 : 1550839546:0;git checkout -- hanoi.py
 : 1550839569:0;git commit -am "fo"
 : 1550839576:0;git push
-: 1550839626:0;code
 : 1550839634:0;cd fanghsiaohui.github.io
 : 1550839642:0;cd refer
 : 1550839646:0;cd github.com
 : 1550839666:0;~/foobar/zzz/shell/gitpull.sh
 : 1550839713:0;ba
-: 1550839715:0;back
 : 1550839723:0;unzip go-game.zip
 : 1550839731:0;cd go-game
 : 1550839740:0;./leela/LeelaGUI
@@ -6755,7 +6729,6 @@ done
 : 1551080783:0;vim zzz/python/increase.py
 : 1551080839:0;chmod +x bar.py
 : 1551080862:0;./bar.py
-: 1551081065:0;vim bar.py
 : 1551081647:0;rm bar.py
 : 1551081663:0;vim import.py
 : 1551081685:0;python -i import.py
@@ -6889,17 +6862,12 @@ done
 : 1553005112:0;update-ca-trust
 : 1553005131:0;sudo ls
 : 1553005138:0;su
-: 1553005147:0;la
 : 1553005157:0;vim .lesshst
 : 1554211863:0;log
 : 1554211868:0;logger
 : 1554211899:0;last | less
-: 1554211928:0;ping www.bing.com
 : 1554211999:0;uname -a
 : 1554212020:0;go version
-: 1554212291:0;yandex-disk stop
-: 1554212359:0;cd .config
-: 1554212366:0;cd .local
 : 1554212368:0;ls share
 : 1554212373:0;ls share/Google
 : 1554212400:0;find -d Appli
@@ -6910,7 +6878,6 @@ done
 : 1554212488:0;find -iname appli
 : 1554212564:0;mv applications/ applications-bak
 : 1554212597:0;mv applications-bak applications
-: 1554654739:0;yandex-disk status
 : 1554656629:0;clear
 : 1554656843:0;seq 1:10
 : 1554656865:0;sed find .zsh_history
@@ -7074,7 +7041,6 @@ do\
 echo $i\
 done
 : 1554661044:0;ls zzz
-: 1554661057:0;sudo pacman -Syu
 : 1554661085:0;cat .gitignore
 : 1554661127:0;grep import foo.py
 : 1554661132:0;grep import foo.jl
@@ -7153,9 +7119,7 @@ done
 : 1554664863:0;time java foo
 : 1554664873:0;rm foo.class
 : 1554664878:0;cd ~git
-: 1554664881:0;cd -
 : 1554664886:0;...
-: 1554664888:0;git status
 : 1554665051:0;chmod +x foo.py
 : 1554665101:0;python foo.py
 : 1554669389:0;cd /mnt/data/
@@ -7229,7 +7193,6 @@ done
 : 1554693114:0;du /var/cache/pacman/pkg -hs
 : 1554695450:0;lll
 : 1554695741:0;ll
-: 1554695840:0;l
 : 1554695961:0;vim
 : 1554696731:0;cat b
 : 1554696741:0;vim t
@@ -7241,19 +7204,14 @@ done
 : 1554697196:0;python strcount.py
 : 1555808774:0;cp /usr/share/applications/ibus-setup-libpinyin.desktop .local/share/applications/
 : 1555808813:0;cp /usr/share/applications/inkscape.desktop .local/share/applications/
-: 1555808825:0;vim bssh.desktop
 : 1555808985:0;cp /usr/share/applications/org.gnome.Weather.desktop .local/share/applications/
-: 1555808990:0;cd .local/share/applications
-: 1555808998:0;vim org.gnome.Contacts.desktop
 : 1555809052:0;vim org.gnome.Weather.Application.desktop
 : 1555809093:0;vim inkscape.desktop
 : 1555809123:0;ls /usr/share/applications/*inks*
 : 1555809137:0;less /usr/share/applications/inkscape.desktop
 : 1555809181:0;ls /usr/share/applications/*ibus*
-: 1555809196:0;ls *ibus*
 : 1555809218:0;whereis ibus
 : 1555809228:0;cd /usr/share/ibus
-: 1555809232:0;ls setup
 : 1555809424:0;pacman -Qs ibus
 : 1555809455:0;sudo pacman -Rs ibus-libpinyin
 : 1555809472:0;sudo pacman -Rs ibus
@@ -7326,7 +7284,6 @@ done
 : 1555812613:0;top
 : 1555812802:0;unzip -d video.zip
 : 1555812806:0;unzip video.zip
-: 1555814571:0;cat foo.py
 : 1555814612:0;./foo.jl
 : 1555814637:0;vim foo.jl
 : 1555814680:0;./foo.py
@@ -7334,10 +7291,8 @@ done
 : 1555814813:0;cd zzz/python/matplotlib
 : 1555814828:0;ls matplotlib
 : 1555814841:0;cd sci
-: 1555814853:0;..
 : 1555814854:0;ls icourse
 : 1555814871:0;cd matplotlib
-: 1555814917:0;cd Downloads
 : 1555814919:0;cd matplotTutorials
 : 1555814926:0;cd int
 : 1555814931:0;cd introductory
@@ -7346,39 +7301,141 @@ done
 : 1555815020:0;vim customizing.py
 : 1555815033:0;vim images.py
 : 1555815058:0;vim lifecycle.py
-: 1555815168:0;ls
 : 1555815172:0;vim usage.py
-: 1555815223:0;cd
-: 1555815224:0;cd foobar
 : 1555815226:0;vim foo.py
 : 1555940050:0;code
 : 1555940058:0;sudo pacman -S code
 : 1555940069:0;pacman -
 : 1555940073:0;pacman -Qs code
-: 1555940182:0;yandex-disk status
 : 1555940189:0;ping www.bing.com
 : 1555940198:0;yandex-disk status
 : 1555940202:0;yandex-disk stop
 : 1555940208:0;sudo pacman -Syu
-: 1555940334:0;ls
 : 1555940339:0;du -hs foobar
 : 1555940347:0;cd foobar
-: 1555940348:0;git status
-: 1555940351:0;ls
 : 1555940366:0;git diff foo.py
 : 1555940379:0;git checkout -- foo.py
-: 1555940381:0;git status
-: 1555940397:0;back
-: 1555940400:0;cd config
 : 1555940402:0;git status
-: 1555940405:0;ls
-: 1555940406:0;cd
-: 1555940406:0;la
 : 1555940437:0;cp ~/.zsh_history .zsh_history
-: 1555940450:0;cd
-: 1555940451:0;la
-: 1555940458:0;cd -
 : 1555940464:0;back
 : 1555940466:0;cd config
-: 1555940466:0;la
 : 1555940479:0;cp ~/.zsh_history zsh_history
+: 1555943107:0;cat .zsh_history
+: 1555943141:0;cd /mnt/data/backups/config
+: 1555943145:0;cd ooo
+: 1555943179:0;ln -sf /mnt/data/backups/config/arch/zshrc-arch ~/.zshrc
+: 1555943204:0;cd /mnt/data/backups/ooo
+: 1555943216:0;mv * ~
+: 1555943235:0;mv .* ~
+: 1555943506:0;echo $GDMSESSION
+: 1555943564:0;vim bar.py
+: 1555943675:0;la
+: 1555943680:0;cp -a .* ~
+: 1555943719:0;rm -r ooo
+: 1555943722:0;y
+: 1555943894:0;rm -r obs-studio
+: 1555943911:0;find ./ -type d "obs"
+: 1555943926:0;find ./ -type d -name "obs"
+: 1555943932:0;find ./ -type d -name "yel"
+: 1555943939:0;find ./ -type d -name "*yel"
+: 1555943947:0;find ./ -type d -name "*yel*"
+: 1555943954:0;find ./ -type d -name "*obs*"
+: 1555943995:0;ls .config
+: 1555944118:0;rm -r dconf enchant eog evince gedit gnome-boxes gnome-session goa-1.0 gtk-* libvirt inkscape nautilus obs-studio procps pulse rygel.conf totem
+: 1555944692:0;l
+: 1555944699:0;rm Screenshot\ from\ 2019-04-22\ 22-49-39.png
+: 1555944702:0;cd .local
+: 1555944711:0;cd .config
+: 1555944715:0;vim user-dirs.dirs
+: 1555944742:0;ln -sf /mnt/data/YandexDisk/Documents ./Documents
+: 1555944751:0;ln -sf /mnt/data/YandexDisk/Pictures ./Pictures
+: 1555944765:0;mv .config/Documents ./
+: 1555944770:0;mv .config/Pictures ./
+: 1555944789:0;ln -sf /mnt/data/YandexDisk/Other ./Other
+: 1555944811:0;cd Downloads
+: 1555944816:0;mv bar.py ../foobar
+: 1555944818:0;cd foobar/
+: 1555944832:0;cat foo.py
+: 1555944885:0;rm -r applications-b
+: 1555944905:0;cd /usr/share/applications/
+: 1555944952:0;mkdir ~/desktop
+: 1555944959:0;cp avahi-discover.desktop ~/desktop
+: 1555944999:0;cp ibus-setup-lib* ~/desktop
+: 1555945027:0;cp qtconfig-qt4.desktop ~/desktop
+: 1555945038:0;cp qv* ~/desktop
+: 1555945049:0;cd desktop
+: 1555945054:0;vim avahi-discover.desktop
+: 1555945082:0;vim *
+: 1555945133:0;ls ~/.local/share/applications
+: 1555945147:0;mv * ~/.local/share/applications
+: 1555945170:0;cp bssh.desktop ~
+: 1555945176:0;rmdir desktop
+: 1555945181:0;vim bssh.desktop
+: 1555945193:0;mv bssh.desktop .local/share/applications
+: 1555945219:0;cp bvnc.desktop ~
+: 1555945284:0;vim bvnc.desktop
+: 1555945292:0;mv bvnc.desktop .local/share/applications
+: 1555945320:0;cp qdbusviewer-qt4.desktop ~
+: 1555945323:0;vim qdbusviewer-qt4.desktop
+: 1555945334:0;mv qdbusviewer-qt4.desktop .local/share/applications
+: 1555945345:0;ls *ass*
+: 1555945365:0;ls *ass* | xargs cp {} ~
+: 1555945396:0;cp assistant-qt4.desktop ~
+: 1555945407:0;vim assistant-qt4.desktop
+: 1555945433:0;mv assistant-qt4.desktop .local/share/applications
+: 1555945442:0;ls *desi*
+: 1555945450:0;cp designer-qt4.desktop ~
+: 1555945454:0;vim designer-qt4.desktop
+: 1555945474:0;mv designer-qt4.desktop .local/share/applications
+: 1555945483:0;cp linguist-qt4.desktop ~
+: 1555945486:0;vim linguist-qt4.desktop
+: 1555945492:0;mv linguist-qt4.desktop .local/share/applications
+: 1555945533:0;ls *cont*
+: 1555945540:0;ls *Cont*
+: 1555945547:0;mv org.gnome.Contacts.desktop ~
+: 1555945553:0;cp org.gnome.Contacts.desktop ~
+: 1555945565:0;ls *ibu*
+: 1555945575:0;which ibus
+: 1555945585:0;cd /usr
+: 1555945588:0;cd local
+: 1555945591:0;cd share
+: 1555945599:0;cd /usr/share
+: 1555945609:0;ls appdata
+: 1555945622:0;ls app-info
+: 1555945652:0;ls *vim*
+: 1555945655:0;cp vim.desktop ~
+: 1555945666:0;ls *dobe*
+: 1555945674:0;ls *flash*
+: 1555945680:0;cp flash-player-properties.desktop ~
+: 1555945694:0;vim flash-player-properties.desktop
+: 1555945701:0;vim org.gnome.Contacts.desktop
+: 1555945707:0;vim vim.desktop
+: 1555945720:0;mv flash-player-properties.desktop org.gnome.Contacts.desktop vim.desktop .local/share/applications
+: 1555945742:0;ls *Ad*
+: 1555945747:0;ls *dvan*
+: 1555945781:0;cp ibus-setup-lib* 
+: 1555945784:0;cp ibus-setup-lib* ~
+: 1555945791:0;vim ibus-setup-libbopomofo.desktop
+: 1555945797:0;vim ibus-setup-libpinyin.desktop
+: 1555945805:0;mv ibus-setup-lib* .local/share/applications
+: 1555945822:0;ls *ibus*
+: 1555945827:0;ls *bus*
+: 1555945879:0;ls ibus
+: 1555945882:0;cd ibus
+: 1555945894:0;ls setup
+: 1555945933:0;..
+: 1555945935:0;cd applications
+: 1555946000:0;cp org.freedesktop.IBus.Setup.desktop ~
+: 1555946006:0;vim org.freedesktop.IBus.Setup.desktop
+: 1555946015:0;mv org.freedesktop.IBus.Setup.desktop .local/share/applications
+: 1555946024:0;cd .local/share/applications
+: 1555946029:0;rm ibus-setup-lib*
+: 1555946049:0;ls *Docu*
+: 1555946054:0;cp org.gnome.Documents.desktop ~
+: 1555946124:0;ls *Net*
+: 1555946296:0;cd
+: 1555946297:0;ls
+: 1555946305:0;vim org.gnome.Documents.desktop
+: 1555946311:0;cd -
+: 1555946315:0;mv ~/org.gnome.Documents.desktop ./
+: 1555946373:0;cp .zsh_history /mnt/data/backups/config/zsh_history
