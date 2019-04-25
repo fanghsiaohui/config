@@ -1,8 +1,6 @@
 alias vi=vim
-# alias julia='julia --banner=no'
 alias foobar='cd ~/foobar'
-alias code='cd /mnt/data/code'
-alias back='cd /mnt/data/backups'
+# alias julia='julia --banner=no'
 
 # ====================
 # the old JAVA setting
