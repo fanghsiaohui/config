@@ -1,4 +1,4 @@
-#alias vi=vim
+alias vi=vim
 #alias foobar='cd ~/foobar'
 # alias julia='julia --banner=no'
 
