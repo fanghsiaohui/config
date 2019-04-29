@@ -43,5 +43,7 @@ source code
 
 Jupyter
 	jupyter notebook --generate-config
+    python >>> from notebook.auth import passed
+        passwd()
 	jupyter notebook password
 	sudo jupyter nbextension enable --py --sys-prefix widgetsnbextension
