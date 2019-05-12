@@ -1,6 +1,0 @@
-box 17+2=19
-julia python 1
-android and graddle 1.2
-firefox 1
-thumbnail tracker 1
-totle   23.6
