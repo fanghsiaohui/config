@@ -1,3 +1,4 @@
 alias vi=vim
 alias julia='julia --banner=no'
+alias open="termux-open"
 export PATH=$PATH:$HOME/.local/bin
