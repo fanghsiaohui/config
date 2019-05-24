@@ -1,0 +1,427 @@
+: 1558416741:0;file
+: 1558416752:0;cd ../usr/etc
+: 1558416765:0;cp motd motd-bak
+: 1558416769:0;vim motd
+: 1558416936:0;git config --global user.name "fang"
+: 1558416949:0;git config --global user.email "fang@termux"
+: 1558416991:0;pip install -U pip
+: 1558417074:0;pkg seaech numpy
+: 1558417090:0;pkg in vim-python
+: 1558417125:0;pkg in file
+: 1558417244:0;pkg search clang
+: 1558417483:0;pip install -U setuptools
+: 1558417949:0;pkg search openblas
+: 1558418238:0;pkg in clang
+: 1558418282:0;pkg in python-dev
+: 1558418308:0;pkg in nmap
+: 1558418542:0;pip install --user numpy
+: 1558419860:0;pkg in libpng libpng-dev
+: 1558419897:0;pkg in freetype freetype-dev
+: 1558419943:0;pip install --user matplotlib
+: 1558422100:0;pip install --user sympy
+: 1558423056:0;pkg in libzmq libzmq-dev
+: 1558423108:0;pip install --user jupyter
+: 1558423210:0;pip install --user pandas
+: 1558425711:0;sysctl --help
+: 1558426186:0;pip install --user requests
+: 1558426283:0;pip install --user beautifulsoup4
+: 1558426318:0;pip list | wc -l
+: 1558426368:0;pip install --user scipy
+: 1558426558:0;echo $((0.9**13))
+: 1558427634:0;pkg list-installed | grep automatic
+: 1558427656:0;pkg list-installed | grep -v automatic
+: 1558427681:0;pkg list-installed | grep dev
+: 1558431144:0;gzip -d */[^cfz1-9]*
+: 1558431407:0;gzip -v */[^cfz1-9]*
+: 1558431988:0;mkdir vid
+: 1558432059:0;mv downloads/rub/.video/zp/[^0-9z]* vid
+: 1558432066:0;ls vid
+: 1558432630:0;termux-open --help
+: 1558432740:0;termux-open a.png
+: 1558432964:0;cp foo.py t.txt
+: 1558432968:0;termux-open t.txt
+: 1558432986:0;mv t.txt h.html
+: 1558432990:0;termux-open h.html
+: 1558434891:0;termux-open-url http://www.bing.com
+: 1558434932:0;pkg in curl
+: 1558434984:0;termux-open 3.mp4
+: 1558435163:0;open v/1.mp4
+: 1558435364:0;rm downloads
+: 1558435369:0;cd storage
+: 1558435372:0;ls -al
+: 1558435403:0;cd pictures
+: 1558435432:0;open Screenshots/Screenshot_2019-05-21-16-18-24.png
+: 1558435439:0;rm Screenshots/Screenshot_2019-05-21-16-18-24.png
+: 1558435474:0;termux-info
+: 1558435500:0;termux-fix-shebang --help
+: 1558435535:0;which termux-fix-shebang | xargs file
+: 1558435548:0;which termux-fix-shebang | xargs less
+: 1558435570:0;which termux-fix-shebang | less
+: 1558435605:0;which termux-reload-settings
+: 1558435612:0;which termux-reload-settings | xargs file
+: 1558435621:0;which termux-reload-settings | xargs less
+: 1558435672:0;which termux-wake-lock | xargs file
+: 1558435676:0;which termux-wake-lock | xargs less
+: 1558435803:0;pkg in gdb
+: 1558436067:0;ln -s storage/downloads/rub .
+: 1558445073:0;tar czvf apk.tgz apk
+: 1558448966:0;ln -sf config/zshrcarch .zshrc
+: 1558449048:0;rm .zshenv
+: 1558449115:0;which gzip
+: 1558449130:0;which gzip | xargs file
+: 1558450448:0;pkg list-installed | grep netcat
+: 1558450472:0;pkg files nmap | grep bin
+: 1558450489:0;nping localhost
+: 1558450531:0;pkg in pkg-config
+: 1558450796:0;chsh
+: 1558451021:0;open foobar/a.png
+: 1558451146:0;for i in *;do\
+mv -i $i ${i%.*}\
+done
+: 1558451503:0;pkg in file-dev
+: 1558451601:0;pkg uninstall pkg-config
+: 1558451612:0;pkg uninstall file-dev
+: 1558451677:0;ln -s config/zshenv .zshenv
+: 1558451683:0;source .zshenv
+: 1558451689:0;cat .zshenv
+: 1558451768:0;busybox
+: 1558451842:0;linux64
+: 1558452076:0;ps | awk '{print $4}'
+: 1558452216:0;cd zzz
+: 1558452241:0;cd shell
+: 1558452247:0;open foo.sh
+: 1558452386:0;open v/1
+: 1558452395:0;open v/2
+: 1558452407:0;file 1
+: 1558452410:0;file 2
+: 1558452413:0;file 3
+: 1558452436:0;for i in *;do\
+mv -i $i ${i}.mp4\
+done
+: 1558452624:0;less .python_history
+: 1558452796:0;ping www.google.com
+: 1558452833:0;echo "\n"
+: 1558452850:0;echo -n "\n"
+: 1558452873:0;echo "\a"
+: 1558452910:0;while 1\
+do\
+echo 1\
+done
+: 1558452935:0;while true\
+do\
+echo 1\
+done
+: 1558452947:0;while true\
+do\
+echo "\a"\
+done
+: 1558453238:0;termux-open http://www.bing.com
+: 1558453301:0;pkg in gzip
+: 1558453427:0;cd o
+: 1558453447:0;for i in *;do\
+open $i\
+done
+: 1558453483:0;open *
+: 1558453630:0;cd zzz/shell
+: 1558453640:0;open foo.sh --send
+: 1558453786:0;open foo.sh --view
+: 1558453822:0;open 
+: 1558453844:0;open --content-type txt foo.sh
+: 1558453939:0;open --chooser foo.sh
+: 1558492889:0;gcc -g -lm foobar/zzz/cJuliaGoJava/clock.c
+: 1558494016:0;cp d.c foobar/zzz/cJuliaGoJava/clock.c
+: 1558494038:0;git commit -am "c long"
+: 1558494191:0;git commit -am "local zsh"
+: 1558494253:0;ln -sf config/zshrcgrml .zshrc
+: 1558495604:0;find -type f -name "[^1z]*" -print0 | xargs -0 tar cvf d.tar
+: 1558495930:0;gzip -r *
+: 1558496550:0;cd rub/.video/zp
+: 1558496562:0;mv zpZH .zpZH
+: 1558496574:0;ls .zpZH
+: 1558500824:0;nmap www.bing.com
+: 1558500923:0;pip list 
+: 1558500935:0;pip list | grep requests
+: 1558501179:0;nmap localhost
+: 1558502237:0;nc -l -p 80
+: 1558502280:0;nc -v 80
+: 1558502288:0;nc -v localhost 80
+: 1558502291:0;nc -v localhost 8022
+: 1558502388:0;nc -l -p 8022
+: 1558502396:0;nc -l -p 81
+: 1558502416:0;nc -l -p 10000
+: 1558502430:0;ssh localhost -p 10000
+: 1558502463:0;nc localhost 80
+: 1558502466:0;nc localhost 802
+: 1558502467:0;nc localhost 8022
+: 1558511024:0;pkg list-installed >> pkg.txt
+: 1558511029:0;open pkg.txt
+: 1558511100:0;mv pkg.txt pkgtxt
+: 1558511103:0;open pkgtxt
+: 1558511123:0;cp pkgtxt pkg.txt
+: 1558511172:0;open pkgtxt --send
+: 1558511226:0;open pkg.txt --chooser
+: 1558511235:0;open pkgtxt --chooser
+: 1558511261:0;open pkg.txt --send
+: 1558511924:0;echo $((178/251))
+: 1558511929:0;echo $((178/251.0))
+: 1558517585:0;mkdir v
+: 1558517593:0;cp * ~/v
+: 1558517616:0;a=1
+: 1558517655:0;for i in *;do\
+mv $i $a.mp4\
+((a++))\
+done
+: 1558518634:0;tar czvf apk.tar.gz apk
+: 1558534136:0;pkg show php
+: 1558537645:0;pkg show util-linux
+: 1558537672:0;pkg in util-linux
+: 1558537754:0;pkg files util-linux
+: 1558537795:0;lsof
+: 1558537800:0;which lsof
+: 1558549820:0;jupyter notebook --generate-config
+: 1558549835:0;jupyter notebook password
+: 1558549894:0;pkg show golang
+: 1558549943:0;pkg search perl
+: 1558549987:0;find -type f -name "*pl"
+: 1558550199:0;find -type f -name "*py" | head
+: 1558550217:0;less usr/lib/python3.7/keyword.py
+: 1558550287:0;head -n 1 usr/lib/python3.7/keyword.py >> home/foobar/transpose.py
+: 1558550325:0;./transpose.py
+: 1558578878:0;cp newpoet qihuan
+: 1558578881:0;vim poet
+: 1558578901:0;python transpose.py
+: 1558578905:0;cat newpoet
+: 1558578912:0;mv newpoet shui
+: 1558579730:0;cd downloads
+: 1558579741:0;cd storage/shared
+: 1558579748:0;ls -l
+: 1558580867:0;mv install-my-arch.txt install-my-arch
+: 1558580880:0;mv other-config.txt other-config
+: 1558580901:0;git rm pipPkgPyTermux
+: 1558580921:0;less pyVenvEqRequirements.txt
+: 1558580938:0;git rm pyVenvEqRequirements.txt
+: 1558580952:0;cat ssh-config
+: 1558580968:0;vim ssh-config
+: 1558581014:0;git commit -am "cfg"
+: 1558581024:0;cd ../foobar
+: 1558581063:0;mkdir chan
+: 1558581076:0;mv poet qihuan shui transpose.py chan
+: 1558581087:0;cat modelFoo.py
+: 1558581104:0;cat foo.py
+: 1558581123:0;cd chan
+: 1558581128:0;vim transpose.py
+: 1558595624:0;ip add
+: 1558595636:0;ip add | grep local
+: 1558596339:0;git mv modelFoo.py zzz/python
+: 1558596347:0;rm a.png
+: 1558596374:0;git commit -am "mv model py"
+: 1558596423:0;vim foo.c
+: 1558596550:0;gcc foo.c
+: 1558596755:0;./a.out
+: 1558600409:0;bin
+: 1558600488:0;rm a.out
+: 1558600493:0;cat foo.c
+: 1558600593:0;cd -
+: 1558600606:0;go
+: 1558600955:0;tail .zsh_history
+: 1558600961:0;tail .python_history
+: 1558600990:0;find -type d -name "*vim*"
+: 1558611153:0;open foobar/foo.py
+: 1558611234:0;open foobar/foo.py --send 
+: 1558611331:0;open --send --content-type txt foobar/foo.py
+: 1558611447:0;man
+: 1558612798:0;cat >>t <<eof\
+1,3,5,7\
+2,4,6\
+eof
+: 1558617263:0;git add *
+: 1558617276:0;git commit -am "rename"
+: 1558624196:0;ps
+: 1558624213:0;cat foobar/foo.py
+: 1558624227:0;./foo.py
+: 1558624554:0;pkg in golang
+: 1558626667:0;vim foo.py
+: 1558627426:0;git commit -am "py"
+: 1558630169:0;ping www.bing.com
+: 1558630183:0;pkg in man
+: 1558630203:0;pkg in golang-doc
+: 1558631323:0;pkg show man
+: 1558631375:0;pkg files golang-doc
+: 1558631419:0;cd ~doc
+: 1558631432:0;cd usr/lib/go
+: 1558631505:0;cd doc
+: 1558631539:0;cd play
+: 1558631726:0;go run fib.go 1000
+: 1558631751:0;go run hello.go
+: 1558631763:0;cat hello.go
+: 1558631823:0;go run life.go
+: 1558631843:0;cat life.go
+: 1558631896:0;go run peano.go
+: 1558631907:0;cat peano.go
+: 1558631940:0;go run pi.go
+: 1558631947:0;cat pi.go
+: 1558632185:0;go run sieve.go
+: 1558632225:0;cat sieve.go
+: 1558632272:0;go run solitaire.go
+: 1558632324:0;go run tree.go
+: 1558632384:0;open share.png
+: 1558632403:0;open docs.html
+: 1558632750:0;ls gopher
+: 1558632762:0;ls progs
+: 1558632778:0;go run progs/run.go
+: 1558632802:0;cat progs/run.go
+: 1558632890:0;cp -a doc ~/godoc
+: 1558633347:0;mv godoc foobar
+: 1558638718:0;pkg search vim | grep go
+: 1558638759:0;pkg search vim
+: 1558638773:0;pkg search go
+: 1558639043:0;vim foo.go
+: 1558639459:0;ls foobar
+: 1558639790:0;cat t
+: 1558639792:0;rm t
+: 1558639794:0;rm y
+: 1558639814:0;git add foo.go
+: 1558639833:0;git commit -am "id"
+: 1558639875:0;python foo.py
+: 1558639904:0;go run foo.go
+: 1558639929:0;time go run foo.go
+: 1558639949:0;go build foo.go
+: 1558639980:0;time ./foo.py
+: 1558640004:0;time ./foo
+: 1558644815:0;man nmap
+: 1558644842:0;man busybox
+: 1558645285:0;go get http://gopl.io/ch1/helloworld
+: 1558645604:0;export GOPATH=${HONE}/foobar
+: 1558645637:0;export GOPATH=/data/data/com.termux/files/home/foobar
+: 1558650360:0;vim doo.go 
+: 1558653454:0;go run main.go >> li.gif
+: 1558653479:0;go run main.go 
+: 1558653491:0;file li.gif
+: 1558653499:0;open li.gif
+: 1558653524:0;rm li.gif
+: 1558672265:0;cd go/src/gopl.io
+: 1558672296:0;cd ch1/
+: 1558672324:0;find -type f | wc -l
+: 1558672396:0;ls dup1
+: 1558672404:0;cat dup1/main.go
+: 1558672457:0;go run dup1/main.go
+: 1558672581:0;go run dup2/main.go 
+: 1558672674:0;go run lissajous/main.go
+: 1558674631:0;grep range */*
+: 1558674826:0;grep "%s" */*
+: 1558676857:0;python
+: 1558677561:0;ssh localhost
+: 1558677582:0;cd .ssh
+: 1558677592:0;cat id_rsa.pub >> authorized_keys
+: 1558677598:0;ssh localhost -p 8022
+: 1558677611:0;open 3.mp4
+: 1558679723:0;cd zzz/cJuliaGoJava
+: 1558682271:0;python -m http.server
+: 1558683495:0;mv go foobar/zzz
+: 1558683760:0;git add doo.go zzz/go/
+: 1558683855:0;git submodule add zzz/go/src/gopl.io
+: 1558683872:0;git submodule add ./zzz/go/src/gopl.io
+: 1558683936:0;git rm --cached zzz/go/src/gopl.io
+: 1558683958:0;git rm -f --cached zzz/go/src/gopl.io
+: 1558683973:0;git rm foo.go
+: 1558683982:0;mv zzz/go ~
+: 1558684062:0;git commit -am "g"
+: 1558684154:0;mv go foobar
+: 1558684161:0;cd foobar
+: 1558684257:0;echo 'export GOPATH=/data/data/com.termux/files/home/foobar/go'
+: 1558684274:0;echo $HOME
+: 1558684298:0;echo 'export GOPATH=/data/data/com.termux/files/home/foobar/go' >> ~/.zshrc.local
+: 1558684308:0;cat .zshrc.local
+: 1558684331:0;vim .zshrc.local
+: 1558684432:0;cd $GOPATH
+: 1558684448:0;go get gopl.io/ch1/helloworld
+: 1558684477:0;git commit -am "ignore"
+: 1558684596:0;open v/3.mp4
+: 1558686709:0;go run doo.go
+: 1558687576:0;ls foobar/go/*/
+: 1558687592:0;du -hs foobar/go/bin/helloworld
+: 1558687601:0;file foobar/go/bin/helloworld
+: 1558688253:0;mv v storage
+: 1558688454:0;vim .zsh_history
+: 1558688501:0;pkg up
+: 1558688615:0;vim .gitignore
+: 1558688646:0;git commit -am "go"
+: 1558688701:0;vim ~/.zshrc.local
+: 1558688716:0;echo $GOPATH
+: 1558688721:0;go get gopl.io/ch1/dup1
+: 1558688730:0;ls foobar/rub/go/bin
+: 1558688743:0;rm foobar/rub/go/bin/dup1
+: 1558688754:0;config
+: 1558688768:0;git commit -am "go path"
+: 1558688772:0;git push
+: 1558692614:0;du -hs
+: 1558692628:0;du -hs usr
+: 1558692686:0;du bin | sort -n
+: 1558692698:0;du bin/* | sort -n
+: 1558692718:0;du -hs bin/clang-8
+: 1558692727:0;du -hs bin/go
+: 1558692737:0;cd usr
+: 1558692770:0;du -hs .*
+: 1558692794:0;du -hs .cache/go-build
+: 1558692801:0;du -hs .cache/matplotlib
+: 1558692806:0;du -hs .cache/vim
+: 1558692812:0;du -hs .cache/pip/http
+: 1558692825:0;cd .local
+: 1558692830:0;du -hs *
+: 1558692834:0;ls bin
+: 1558692841:0;ls share
+: 1558692866:0;cd
+: 1558692881:0;ls storage
+: 1558692906:0;pkg list-installed
+: 1558693005:0;pkg in grep sed gawk
+: 1558693065:0;foobar
+: 1558693391:0;vim doo.go
+: 1558700855:0;pip list --outdated
+: 1558701882:0;pkg search find
+: 1558702442:0;pkg reinstall vim-python
+: 1558702515:0;apt update
+: 1558702525:0;apt upgrade
+: 1558702550:0;pkg search python
+: 1558702609:0;go doc
+: 1558702742:0;vim ~/.zsh_history
+: 1558702786:0;pkg list-all
+: 1558702953:0;pkg show gnuplot
+: 1558702984:0;dash
+: 1558702993:0;ls -a
+: 1558703007:0;tail .bash_history
+: 1558703018:0;pkg show erlang
+: 1558703097:0;pkg show googletest
+: 1558703276:0;ls storage/v3
+: 1558703279:0;ls storage/v
+: 1558703623:0;_rsync
+: 1558703628:0;pkg search rsync
+: 1558703648:0;pkg in rsync
+: 1558704292:0;rsync -avz -e "ssh" git@github.com:fanghsiaohui/config/http .
+: 1558704327:0;mkdir gg
+: 1558704328:0;cd gg
+: 1558704331:0;sshd
+: 1558704408:0;rsync -avz -e "ssh -p 8022" u0_a269@localhost:config/http ..
+: 1558704433:0;ls ~/config/httpd
+: 1558704465:0;cd config/httpd
+: 1558704472:0;mkdir ../sss
+: 1558704485:0;mv httpd* ../ss
+: 1558704495:0;mv httpd* ../sss
+: 1558704510:0;touch a b c
+: 1558704514:0;rsync -avz -e "ssh -p 8022" u0_a269@localhost:config/httpd .
+: 1558704540:0;rsync -avz --delete -e "ssh -p 8022" u0_a269@localhost:config/httpd .
+: 1558704546:0;ls httpd
+: 1558704549:0;..
+: 1558704553:0;rm -rf gg
+: 1558704562:0;cd config
+: 1558704571:0;mv sss/* httpd
+: 1558704576:0;rmdir sss
+: 1558704584:0;cd httpd
+: 1558704585:0;ls
+: 1558704589:0;rm a b c
+: 1558704592:0;git status
+: 1558704600:0;cd
+: 1558704602:0;foobar
+: 1558704603:0;ls
+: 1558704606:0;vim doo.go
+: 1558704642:0;cat .zsh_history | head
+: 1558704703:0;cp .zsh_history config/termux-zsh_history
