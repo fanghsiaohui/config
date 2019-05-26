@@ -3,3 +3,6 @@ alias julia='julia --banner=no'
 alias open="termux-open"
 export PATH=$PATH:$HOME/.local/bin
 export GOPATH=$HOME/storage/gobook
+export dl=$HOME/storage/downloads
+export v=$HOME/storage/downloads/rub/.video
+export tmp=$HOME/tmp
