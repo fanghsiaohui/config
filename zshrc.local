@@ -2,5 +2,5 @@ alias vi=vim
 alias julia='julia --banner=no'
 alias open="termux-open"
 export PATH=$PATH:$HOME/.local/bin
-export GOPATH=$HOME/go
-export GOBOOK=$GOPATH/src/gopl.io
+#export GOPATH=$HOME/go
+#export GOBOOK=$GOPATH/src/gopl.io
