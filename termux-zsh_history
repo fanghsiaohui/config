@@ -18,5 +18,284 @@
 : 1558800728:0;jupyter notebook --generate-config
 : 1558800740:0;jupyter notebook password
 : 1558800812:0;ping -c 4 www.bing.com
-: 1558800840:0;vim ~/.zsh_history
 : 1558800916:0;cp ~/.zsh_history ../config/termux-zsh_history
+: 1558800946:0;vim termux-zsh_history
+: 1558800975:0;git commit -am "his"
+: 1558801120:0;jupyter notebook
+: 1558801275:0;rm Untitled.ipynb
+: 1558801329:0;ln -s storage/downloads .
+: 1558804241:0;echo $(find -type f)
+: 1558804257:0;echo $(find -type l)
+: 1558804319:0;echo $(find -type l -o -type f)
+: 1558804491:0;for i in $(find -type l -o -type f); do\
+echo $i\
+done
+: 1558808925:0;ls storage -l
+: 1558808939:0;rm storage/m*
+: 1558811673:0;vim abc.c
+: 1558811934:0;gcc -o abc abc.c
+: 1558811937:0;go build bar.go
+: 1558811945:0;time ./abc
+: 1558811952:0;time ./bar
+: 1558811956:0;time ./c.py
+: 1558813278:0;open foobar/bar.png
+: 1558813955:0;rm bar.png
+: 1558842109:0;find -type d -name vim
+: 1558842820:0;cd .ssh
+: 1558842834:0;cat authorized_keys
+: 1558842874:0;rm -rf *
+: 1558842881:0;ssh-keygen
+: 1558842923:0;cat id_rsa.pub
+: 1558843472:0;cd downloads/rub/.video/z2
+: 1558843546:0;for i in *; do\
+open $i\
+done
+: 1558843895:0;for i in video/j1/*; do\
+((a++))\
+echo $a.${i##*.}\
+done
+: 1558844291:0;for i in video/j1/*; do\
+((a++))\
+ln -s $i j$a.${i##*.}\
+done
+: 1558844313:0;a=100
+: 1558844359:0;for i in video/z1/*; do\
+((a++))\
+ln -s $i z$a.${i##*.}\
+done
+: 1558844369:0;a=200
+: 1558844401:0;for i in video/z2/*; do\
+((a++))\
+ln -s $i z$a.${i##*.}\
+done
+: 1558844553:0;source .zshrc.local
+: 1558847990:0;ls | wc -l
+: 1558848119:0;open 3.mp4
+: 1558848390:0;cd ../config
+: 1558848408:0;git commit -am "zsh path"
+: 1558850811:0;cd ../.ssh
+: 1558852911:0;cat id_rsa.pub >> authorized_keys
+: 1558853793:0;go run d.go
+: 1558853810:0;go build -o abc d.go
+: 1558853823:0;gdb abc
+: 1558857741:0;git mv d.go foo.go
+: 1558857774:0;git commit -am "foo"
+: 1558860396:0;pkg search top
+: 1558860414:0;pkg in htop
+: 1558866775:0;pkg in util-linux
+: 1558877596:0;date -d @1578777239
+: 1558877643:0;date -d "2019-10-10" +%s
+: 1558877669:0;date --help
+: 1558877699:0;date -d
+: 1558877711:0;date +%f
+: 1558877715:0;date +%F
+: 1558877743:0;date +%y
+: 1558877751:0;date +%m
+: 1558877759:0;date +%M
+: 1558877766:0;date +%d
+: 1558877772:0;date +%D
+: 1558877778:0;date +%Y
+: 1558877786:0;date +%h
+: 1558877800:0;date +%H
+: 1558877812:0;date +%s
+: 1558877815:0;date +%S
+: 1558884075:0;echo {01..3}
+: 1558886457:0;chmod +x dar.py
+: 1558886460:0;./dar.py
+: 1558886920:0;python -m http.server --directory ../tmp &
+: 1558887544:0;for i in *;do\
+open $i\
+done
+: 1558890739:0;rm foo.go
+: 1558890862:0;git rm dar.py
+: 1558890870:0;git rm foo.go
+: 1558890888:0;git commit -am "go py"
+: 1558895567:0;go run lissa.go
+: 1558895580:0;go run lissa.go > lissa.gif
+: 1558895624:0;open lissa.gif
+: 1558897431:0;cd src/gopl.io/ch1
+: 1558897886:0;python -m http.server --directory ~/tmp &
+: 1558897996:0;go run fetch/main.go http://localhost:8000
+: 1558898081:0;httpd
+: 1558898089:0;go run fetch/main.go http://localhost:8080
+: 1558908066:0;cd storage
+: 1558908720:0;cd $GOPATH
+: 1558909141:0;go get gopl.io/ch1/echo1
+: 1558909440:0;source ~/.zshrc.local
+: 1558909601:0;go get golang.org/x/tools/cmd/goimports
+: 1558909811:0;less src/gopl.io/README.md
+: 1558928017:0;go
+: 1558928175:0;go get -d golang.org/x/tools/cmd/goimports
+: 1558929888:0;go doc http
+: 1558930087:0;go doc http | grep listen
+: 1558930091:0;go doc http | grep -i listen
+: 1558930135:0;ps aux
+: 1558930143:0;ps -ef
+: 1558930262:0;git commit -am "ssh"
+: 1558930556:0;git diff dar.go
+: 1558931131:0;cd ~/foobar
+: 1558931153:0;ln -s $GOBOOK/ .
+: 1558931166:0;mv gopl.io gobook
+: 1558931211:0;echo gobook/ >> .gitignore
+: 1558937677:0;date -d "2019-01-01"
+: 1558937686:0;date -d "2019-01-01" +%s
+: 1558938495:0;for i in *;do\
+mv $i ${i%%.*}\
+done
+: 1558939536:0;find -type f 
+: 1558939551:0;find -type f | xargs gzip -v
+: 1558940812:0;find -type f -name "* *"
+: 1558940902:0;find -type f -name "* *" -print0 | xargs -0 gzip -v 
+: 1558941161:0;cd $v
+: 1558941173:0;cd z1
+: 1558941189:0;tar cvf zpZH.tar zpZH
+: 1558941336:0;find -name ".nomedia"
+: 1558941364:0;cd downloads
+: 1558941403:0;find -type f -name ".nomedia" | grep -v MicroMsg
+: 1558941836:0;cat .gitignore
+: 1558941899:0;vim .gitignore
+: 1558941906:0;git commit -am "ignore"
+: 1558942857:0;python bar.py
+: 1558943548:0;./foobar/dar
+: 1558944045:0;gdb -v
+: 1558944200:0;gdb python
+: 1558944450:0;gdb dar
+: 1558944698:0;go build dar.go
+: 1558947211:0;mv storage/go .
+: 1558972689:0;go doc slice
+: 1558972700:0;go doc string
+: 1558977199:0;open fib.png
+: 1558977471:0;rm fib.png
+: 1558978173:0;open Fib.png
+: 1558978378:0;rm Fib.png
+: 1558978742:0;go doc math
+: 1558983494:0;a=/data/data/com.termux/files/home/foobar
+: 1558983514:0;a=/data/data/com.termux/files/home/foobar/foo.py
+: 1558983516:0;basename $a
+: 1558983532:0;for i in*;do
+: 1558983553:0;for i in ./*;do\
+basename $i\
+done
+: 1558983566:0;for i in ./*;do\
+basename $i\
+echo $i\
+done
+: 1558983598:0;which basename
+: 1558983607:0;which basename | xargs file
+: 1558986856:0;go help get
+: 1559044585:0;go get github.com/Go-zh/tour tour 
+: 1559060544:0;echo $GOPATH
+: 1559060873:0;cd go/src/github.com/Go-zh/tour
+: 1559060896:0;cat README.md
+: 1559061031:0;cat TODO
+: 1559061111:0;cat fmt.go
+: 1559067871:0;ln -sf config/ssh-config .ssh/config
+: 1559067877:0;vim config/ssh-config
+: 1559067901:0;sshd
+: 1559067904:0;ssh localhost
+: 1559067907:0;ssh -p 8022 localhost
+: 1559068020:0;ps
+: 1559131794:0;cd go
+: 1559131808:0;cd src/github.com/Go-zh/tour
+: 1559189415:0;tar xzvf apk.tar.gz
+: 1559410242:0;cat zzz/python/modelFoo.py
+: 1559411795:0;./foo.py
+: 1559444229:0;sed -i '$d' .bash_history
+: 1559444300:0;if [ 1 -eq 1 ];then\
+echo true\
+else\
+echo false\
+fi
+: 1559445399:0;seq 01 2 100 | xargs printf "%06d\n" 
+: 1559582932:0;cd Android/data
+: 1559621502:0;python ./zzz/python/timer.py 10
+: 1559621833:0;cd zzz/python
+: 1559621994:0;vim timer.py
+: 1559623265:0;free
+: 1559623270:0;sh
+: 1559623335:0;cat .bash_history
+: 1559624501:0;vim .python_history
+: 1559624923:0;while true;do\
+echo 123\
+done
+: 1559624958:0;while false;do\
+echo false\
+done
+: 1559624968:0;true
+: 1559624972:0;false
+: 1559624982:0;yes t
+: 1559651327:0;dos2unix foobar/weight
+: 1559718789:0;python -m http.server
+: 1559718795:0;ip add
+: 1559789358:0;sed G foo.py
+: 1559789404:0;sed "G;G" foo.py
+: 1559849533:0;cat zshrc.local
+: 1559849555:0;git diff zshrc.local
+: 1559849579:0;git commit -am "go"
+: 1559988399:0;foobar
+: 1559988410:0;../config
+: 1559990489:0;git commit -am "py"
+: 1560001357:0;cd downloads/rub
+: 1560026675:0;du -hs
+: 1560026693:0;du -hs *
+: 1560027474:0;rm -rf go
+: 1560027486:0;vim ~/.zshrc.local
+: 1560027507:0;config
+: 1560027521:0;git commit -am "zsh local"
+: 1560049350:0;uptime
+: 1560147848:0;termux-setup-storage
+: 1560147866:0;cd tencent
+: 1560147879:0;find -type -name "*docx*"
+: 1560147887:0;find -type f -name "*docx*"
+: 1560147920:0;find -type f -name "*pdf*"
+: 1560181919:0;..
+: 1560181927:0;du -s 
+: 1560183876:0;du -s * | sort -n
+: 1560320535:0;cd storage/shared/netease/cloudmusic/Cache/Lyric
+: 1560320752:0;vim ~/.zsh_history
+: 1560361257:0;cat foo.py
+: 1560361263:0;cat dar.go
+: 1560361393:0;help
+: 1560361439:0;pkg list-installed
+: 1560361494:0;pkg show coreutils
+: 1560361525:0;pkg in coreutils
+: 1560390657:0;whoami
+: 1560390672:0;ls -a
+: 1560390727:0;cd ../foobar
+: 1560464900:0;python
+: 1560484088:0;cd storage/shared
+: 1560484119:0;find -name "*yandex*"
+: 1560484134:0;find -name "*ten*"
+: 1560484198:0;find -iname "*aq*"
+: 1560484238:0;vim
+: 1560484417:0;cat foobar/foo.py
+: 1560484423:0;cat foobar/dar.go
+: 1560484456:0;vim foobar/dar.go
+: 1560484494:0;go build foobar/dar.go
+: 1560484514:0;du -hs dar
+: 1560484529:0;time ./dar
+: 1560504530:0;pkg up
+: 1560504564:0;./dar
+: 1560504579:0;rm dar
+: 1560504583:0;cd foobar
+: 1560505297:0;go run dar.go
+: 1560505337:0;python foo.py
+: 1560505401:0;chmod -x foo.py
+: 1560505405:0;vim foo.py
+: 1560505414:0;vim dar.go
+: 1560505439:0;git cimmit -am "pi"
+: 1560505449:0;git commit -am "pi"
+: 1560505453:0;git push
+: 1560505463:0;cd
+: 1560505466:0;cd config
+: 1560505471:0;git status
+: 1560531339:0;pip list
+: 1560531517:0;pip list --outdated
+: 1560561169:0;ls
+: 1560561836:0;pkg up
+: 1560562113:0;pip list --outdated
+: 1560564684:0;cd storage/shared/tencent
+: 1560564698:0;ls
+: 1560564740:0;tar czvf MicroMsg.tar.gz MicroMsg
+: 1560564770:0;ls -a
+: 1560564797:0;cp .zsh_history config/termux-zsh_history
