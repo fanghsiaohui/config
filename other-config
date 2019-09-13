@@ -47,3 +47,7 @@ Jupyter
         passwd()
 	jupyter notebook password
 	sudo jupyter nbextension enable --py --sys-prefix widgetsnbextension
+
+mariadb
+    user: root
+    password: jkjk
