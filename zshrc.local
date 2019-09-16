@@ -1,4 +1,5 @@
 alias vi=vim
+alias vihis="vim ~/.zsh_history"
 alias julia='julia --banner=no'
 alias open="termux-open"
 export PATH=$PATH:$HOME/.local/bin
