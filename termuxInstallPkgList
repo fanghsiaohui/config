@@ -1,0 +1,5 @@
+pkg up
+pkg in 
+    zsh vim-python git openssh gnupg netcat nmap clang python
+pip install --user numpy sympy requests
+    scipy matplotlib
