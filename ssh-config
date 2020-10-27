@@ -4,5 +4,5 @@ HOST laptop
 	Port 22
 HOST phone
 	Hostname 192.168.1.147
-	User u0_a270
+	User u0_a159
 	Port 8022

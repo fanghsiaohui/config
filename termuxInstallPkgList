@@ -1,5 +1,6 @@
 pkg up
 pkg in 
     zsh vim-python git openssh gnupg netcat nmap clang python
+    libpng freetype gnuplot file htop build-essential
 pip install --user numpy sympy requests
     scipy matplotlib

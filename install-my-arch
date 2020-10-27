@@ -14,10 +14,11 @@
 6. modify /etc/pacman.d/mirrorlist
 7. pacstrap /mnt base base-devel
 
-### config system
+config system
 8. genfstab /mnt >> /mnt/etc/fstab
     -U uiid
-** change to new system **
+
+change to new system **
 9. setup network and other
     pacman -S dialog vim ntfs-3g zsh os-prober grub efibootmgr
     # wpa_supplicant, networkmanager (include in gnome)
@@ -60,7 +61,7 @@
     # disable netctl
     # pacman -S network-manager-applet
 
-### Problems
+Problems
 1 fcitx
     /etc/profile
     export XMODIFIERS="@im=fcitx"
@@ -94,4 +95,4 @@
     // (download makepkg -od, -o no build, -d no deps)
 3. timedatectl set-local-rtc 1
 
-### END
+END
