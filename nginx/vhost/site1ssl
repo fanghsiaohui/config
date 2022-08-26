@@ -1,8 +1,15 @@
     server {
-        listen       80 default_server;
-        listen       [::]:80 default_server;
+        listen       443 ssl http2 default_server;
+        listen       [::]:443 ssl http2 default_server;
         server_name  greenwood.cloud;
         root         /var/www/html/site1;
+
+        ssl_certificate "/etc/pki/nginx/greenwood.cloud_bundle.crt";
+        ssl_certificate_key "/etc/pki/nginx/private/greenwood.cloud.key";
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout  10m;
+        ssl_ciphers PROFILE=SYSTEM;
+        ssl_prefer_server_ciphers on;
 
         # Load configuration files for the default server block.
         include /etc/nginx/default.d/*.conf;
@@ -18,4 +25,3 @@
             location = /50x.html {
         }
     }
-
