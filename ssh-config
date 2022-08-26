@@ -1,7 +1,23 @@
+HOST cent
+	Hostname 43.138.250.178
+	User fang
+    Port 22
+
+HOST cent2
+	Hostname 43.142.84.47
+	User fang
+    Port 22
+
+HOST ali
+	Hostname 120.76.250.33
+	User root
+    Port 22
+
 HOST laptop
 	Hostname 192.168.1.110
 	User fang
-	Port 22
+    Port 22
+
 HOST phone
 	Hostname 192.168.1.147
 	User u0_a404
