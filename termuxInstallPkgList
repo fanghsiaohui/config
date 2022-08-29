@@ -1,8 +1,0 @@
-pkg up
-pkg in 
-    zsh git openssh
-    vim-python python clang golang file gnupg nmap
-    gnuplot #<libpng freetype>
-pip install numpy sympy requests
-    # scipy matplotlib
-    pillow
