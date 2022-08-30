@@ -1,9 +1,9 @@
-HOST cent
+HOST debian
 	Hostname 43.138.250.178
 	User fang
     Port 22
 
-HOST debian
+HOST debian_2
 	Hostname 43.142.84.47
 	User fang
     Port 22
