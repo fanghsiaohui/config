@@ -1,0 +1,65 @@
+: 1661837852:0;sudo usermod -aG www-data fang
+: 1661837961:0;sudo apt install nginx
+: 1661837996:0;sudo apt install php
+: 1661838020:0;sudo apt install mysql-server
+: 1661838041:0;sudo apt install default-mysql-server
+: 1661838058:0;systemctl status nginx
+: 1661838062:0;systemctl status mysqld
+: 1661838089:0;sudo apt install php-fpm
+: 1661838099:0;sudo apt install nmap
+: 1661838110:0;sudo systemctl disable apache2
+: 1661838119:0;id fang
+: 1661838229:0;systemctl status
+: 1661838312:0;cd .ssh
+: 1661838324:0;ln -sf ~/config/ssh-config config
+: 1661838326:0;cd
+: 1661838341:0;scp -r debian-2:archieves .
+: 1661838588:0;ln -sf /var/www/html sites
+: 1661838684:0;cd sites
+: 1661838693:0;sudo mkdir site{1..3}
+: 1661838757:0;cd ~/archieves
+: 1661838765:0;tar xzvf files.tar.gz
+: 1661838770:0;tar xzvf xcx.tar.gz
+: 1661838791:0;mv files ~/sites/site3
+: 1661838815:0;mv xcx/2.5.4/* ~/sites/site1
+: 1661838840:0;mv xcx/wifi-fx/one_wifi ~/sites/site1/addons
+: 1661838849:0;cd ~/sites
+: 1661838865:0;sudo chown -R www-data:www-data site*
+: 1661838869:0;sudo chmod -R g+w site*
+: 1661838874:0;cd site3
+: 1661838883:0;vim info.php
+: 1661838984:0;cd /etc/nginx
+: 1661838995:0;sudo cp nginx.conf nginx.conf_BK
+: 1661839015:0;sudo ln -s /home/fang/config/vimrc /root/.vimrc
+: 1661839020:0;sudo vim nginx.conf
+: 1661839058:0;cd sites-available
+: 1661839074:0;sudo cp default site1.conf
+: 1661839077:0;sudo vim site1.conf
+: 1661839163:0;sudo cp site1.conf site2.conf
+: 1661839168:0;sudo vim site2.conf
+: 1661839245:0;sudo cp site2.conf site3.conf
+: 1661839248:0;sudo vim site3.conf
+: 1661839387:0;sudo nginx -t
+: 1661839400:0;cd /etc/php/7.4/
+: 1661839403:0;cd fpm
+: 1661839403:0;ls
+: 1661839414:0;sudo cp php.ini php.ini_BK
+: 1661839421:0;sudo vim php.ini
+: 1661839488:0;systemctl status php7.4-fpm.service
+: 1661839523:0;cd /etc/nginx/sites-enabled
+: 1661839547:0;sudo ln -s /etc/nginx/sites-available/site* .
+: 1661839548:0;ll
+: 1661839554:0;sudo systemctl restart nginx
+: 1661839610:0;../sites-available
+: 1661839628:0;cp site* ~/config
+: 1661839631:0;cd ~/config
+: 1661839665:0;tar czvf nginxSites.conf.tar.gz site*
+: 1661839674:0;rm site*
+: 1661839680:0;git add *
+: 1661839688:0;git commit -am 'nginx conf'
+: 1661839690:0;git push
+: 1661839784:0;sudo apt install php-curl php-mysqlnd php-gd php-xml
+: 1661839841:0;php -m
+: 1661839994:0;sudo mysql_secure_installation
+: 1661840046:0;mysql -uroot -p
+: 1661840312:0;cp .zsh_history config
