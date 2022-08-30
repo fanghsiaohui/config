@@ -2,6 +2,10 @@
 alias vihis="vim ~/.zsh_history"
 #alias julia='julia --banner=no'
 #alias open="termux-open"
-export PATH=$PATH:$HOME/.local/bin
+export PATH="$HOME/.local/bin:$PATH"
 #export GOPATH=$HOME/go
 #export GOBOOK=$GOPATH/src/gopl.io
+
+# install ruby gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export export PATH="$HOME/gems/bin:$PATH"
