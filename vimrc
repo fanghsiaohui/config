@@ -1,3 +1,42 @@
+set nu
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
+set cursorline
+set ignorecase
+"set foldenable
+"set foldmethod=indent
+set formatoptions+=B
+set rtp+=~/.vim/julia-vim
+
+""map! <F5> : !python3 %<CR>
+"map <F5> : call Compile()<CR>
+"func! Compile()
+"    exec 'w'
+"    if &filetype == 'c'
+"        exec "!g++ % -o %<"
+"        exec "!time ./%<"
+"    elseif &filetype == 'sh'
+"        exec "!bash %"
+"    elseif &filetype == 'python'
+"        exec "!python3 %"
+"    elseif &filetype == 'julia'
+"        exec "!julia %"
+"    elseif &filetype == 'go'
+"        exec "!go run %"
+"    elseif &filetype == 'html'
+"        exec "!firefox % &"
+""    elseif &filetype == 'cpp'
+""        exec "!g++ % -o %<"
+""        exec "!time ./%<"
+""    elseif &filetype == 'java'
+""        exec "!javac %"
+""        exec "!time java %<"
+"    endif
+"    endfunc
+
+" copy frem grml
 " Filename:      /etc/vim/vimrc
 " Purpose:       configuration file for vim
 " Authors:       grml-team (grml.org), (c) Michael Prokop <mika@grml.org>
