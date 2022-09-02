@@ -19,6 +19,7 @@ config system
     -U uiid
 
 change to new system **
+arch-root /mnt
 9. setup network and other
     pacman -S dialog vim ntfs-3g zsh os-prober grub efibootmgr
     # wpa_supplicant, networkmanager (include in gnome)
