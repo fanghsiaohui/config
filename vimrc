@@ -361,19 +361,19 @@ endif
 " To enable persistent undo uncomment following section.
 " The undo files will be stored in $HOME/.cache/vim
 
-" if version >= 703
-" " enable persistent-undo
-"  set undofile
+ if version >= 703
+ " enable persistent-undo
+  set undofile
 "
 "  " store the persistent undo file in ~/.cache/vim
-"  set undodir=~/.cache/vim/
+  set undodir=~/.cache/vim/
 "
 "  " create undodir directory if possible and does not exist yet
-"  let targetdir=$HOME . "/.cache/vim"
-"  if isdirectory(targetdir) != 1 && getftype(targetdir) == "" && exists("*mkdir")
-"   call mkdir(targetdir, "p", 0700)
-"  endif
-" endif
+  let targetdir=$HOME . "/.cache/vim"
+  if isdirectory(targetdir) != 1 && getftype(targetdir) == "" && exists("*mkdir")
+   call mkdir(targetdir, "p", 0700)
+  endif
+ endif
 
 " Source a global configuration file if available
   if filereadable("/etc/vim/vimrc.local")
