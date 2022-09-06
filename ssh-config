@@ -9,7 +9,7 @@ HOST debian-2
 	Hostname 43.142.84.47
 	User fang
     Port 22
-    ServerAliveInterval 30
+    #ServerAliveInterval 30
 
 HOST ali
 	Hostname 120.76.250.33
