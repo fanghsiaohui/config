@@ -1,5 +1,3 @@
-ServerAliveInterval 30
-
 HOST debian
 	Hostname 43.138.250.178
 	User fang
