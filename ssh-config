@@ -3,7 +3,7 @@ HOST debian
 	User fang
     Port 22
 
-HOST testing(deb)
+HOST testing_deb
 	Hostname 43.142.84.47
 	User fang
     Port 22
