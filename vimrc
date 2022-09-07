@@ -5,6 +5,7 @@ set softtabstop=4
 set expandtab
 set cursorline
 set ignorecase
+set wildmenu
 "set foldenable
 "set foldmethod=indent
 set formatoptions+=B
