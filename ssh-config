@@ -1,9 +1,10 @@
-HOST debian
-	Hostname 43.138.250.178
+HOST debian greenwood
+    #Hostname 43.138.250.178
+    Hostname greenwood.cloud
 	User fang
     Port 22
 
-HOST testing_deb
+HOST testing
 	Hostname 43.142.84.47
 	User fang
     Port 22
