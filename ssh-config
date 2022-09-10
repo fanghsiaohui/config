@@ -3,6 +3,7 @@ HOST debian greenwood
     Hostname greenwood.cloud
 	User fang
     Port 22
+    ServerAliveInterval 30
 
 HOST testing
 	Hostname 43.142.84.47
