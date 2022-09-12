@@ -1,349 +1,51 @@
-: 1661837852:0;sudo usermod -aG www-data fang
-: 1661837961:0;sudo apt install nginx
-: 1661837996:0;sudo apt install php
-: 1661838020:0;sudo apt install mysql-server
-: 1661838041:0;sudo apt install default-mysql-server
-: 1661838058:0;systemctl status nginx
-: 1661838062:0;systemctl status mysqld
-: 1661838089:0;sudo apt install php-fpm
-: 1661838099:0;sudo apt install nmap
-: 1661838110:0;sudo systemctl disable apache2
-: 1661838119:0;id fang
-: 1661838312:0;cd .ssh
-: 1661838324:0;ln -sf ~/config/ssh-config config
-: 1661838341:0;scp -r debian-2:archieves .
-: 1661838588:0;ln -sf /var/www/html sites
-: 1661838684:0;cd sites
-: 1661838693:0;sudo mkdir site{1..3}
-: 1661838757:0;cd ~/archieves
-: 1661838765:0;tar xzvf files.tar.gz
-: 1661838770:0;tar xzvf xcx.tar.gz
-: 1661838791:0;mv files ~/sites/site3
-: 1661838815:0;mv xcx/2.5.4/* ~/sites/site1
-: 1661838840:0;mv xcx/wifi-fx/one_wifi ~/sites/site1/addons
-: 1661838849:0;cd ~/sites
-: 1661838865:0;sudo chown -R www-data:www-data site*
-: 1661838869:0;sudo chmod -R g+w site*
-: 1661838874:0;cd site3
-: 1661838883:0;vim info.php
-: 1661838984:0;cd /etc/nginx
-: 1661838995:0;sudo cp nginx.conf nginx.conf_BK
-: 1661839015:0;sudo ln -s /home/fang/config/vimrc /root/.vimrc
-: 1661839020:0;sudo vim nginx.conf
-: 1661839058:0;cd sites-available
-: 1661839074:0;sudo cp default site1.conf
-: 1661839077:0;sudo vim site1.conf
-: 1661839163:0;sudo cp site1.conf site2.conf
-: 1661839168:0;sudo vim site2.conf
-: 1661839245:0;sudo cp site2.conf site3.conf
-: 1661839248:0;sudo vim site3.conf
-: 1661839387:0;sudo nginx -t
-: 1661839400:0;cd /etc/php/7.4/
-: 1661839403:0;cd fpm
-: 1661839414:0;sudo cp php.ini php.ini_BK
-: 1661839421:0;sudo vim php.ini
-: 1661839488:0;systemctl status php7.4-fpm.service
-: 1661839523:0;cd /etc/nginx/sites-enabled
-: 1661839547:0;sudo ln -s /etc/nginx/sites-available/site* .
-: 1661839548:0;ll
-: 1661839554:0;sudo systemctl restart nginx
-: 1661839610:0;../sites-available
-: 1661839628:0;cp site* ~/config
-: 1661839631:0;cd ~/config
-: 1661839665:0;tar czvf nginxSites.conf.tar.gz site*
-: 1661839674:0;rm site*
-: 1661839688:0;git commit -am 'nginx conf'
-: 1661839784:0;sudo apt install php-curl php-mysqlnd php-gd php-xml
-: 1661839841:0;php -m
-: 1661839994:0;sudo mysql_secure_installation
-: 1661840312:0;cp .zsh_history config
-: 1661840326:0;mv .zsh_history zsh_history
-: 1661840329:0;git add *
-: 1661840337:0;git commit -am 'zsh history'
-: 1661840339:0;git push
-: 1661947798:0;systemctl status
-: 1661947809:0;mkdir tmp
-: 1661947811:0;cd tmp
-: 1662093844:0;which pip | xargs file
-: 1662093864:0;python3
-: 1662099102:0;cd .cache
-: 1662099110:0;ls backup
-: 1662099167:0;vim .vimrc
-: 1662099304:0;cd config
-: 1662099306:0;git status
-: 1662099309:0;git pull
-: 1662099357:0;git config pull.rebase false
-: 1662099379:0;vim vimrc
-: 1662099396:0;cd
-: 1662099399:0;cd .cache/vim
-: 1662099401:0;cd vim
-: 1662099437:0;su root
-: 1662116616:0;ls /etc/apt
-: 1662141137:0;cd config
-: 1662141141:0;git status
-: 1662141153:0;ls
-: 1662141160:0;git pull
-: 1662141174:0;git config --list
-: 1662141188:0;ls
-: 1662141198:0;du -hs .
-: 1662141282:0;uptime
-: 1662193394:0;sudo vim /etc/nginx/sites-available/site3.conf
-: 1662193463:0;su
-: 1662218093:0;last
-: 1662261029:0;nl .ssh/authorized_keys
-: 1662261040:0;cp authorized_keys .ssh
-: 1662272815:0;cat .ssh/authorized_keys
-: 1662272820:0;cat .ssh/known_hosts
-: 1662272849:0;cat /dev/null > .ssh/known_hosts
-: 1662272853:0;cat .ssh/known_hosts
-: 1662281183:0;mysql -uroot -p
-: 1662286021:0;uptime
-: 1662438382:0;cat authorized_keys
-: 1662438386:0;rm authorized_keys
-: 1662438395:0;cd .ssh
-: 1662438399:0;cat authorized_keys
-: 1662438404:0;cat known_hosts
-: 1662438423:0;cat config
-: 1662438428:0;cd config
-: 1662438431:0;git pull
-: 1662454159:0;cd .ssh
-: 1662454161:0;cat known_hosts
-: 1662454184:0;cat /dev/null > known_hosts
-: 1662454188:0;cat authorized_keys
-: 1662481949:0;cd config
-: 1662481952:0;git status
-: 1662481954:0;git pull
-: 1662487720:0;cd config
-: 1662487725:0;git pull
-: 1662487762:0;ls archieves
-: 1662487833:0;cd sites/site2
-: 1662487865:0;sudo apt upgrade
-: 1662519322:0;cd config
-: 1662519327:0;git pull
-: 1662519335:0;git status
-: 1662530926:0;ls archieves
-: 1662531468:0;cd sites/site3
-: 1662531470:0;ls
-: 1662531504:0;ln -sf ~/tmp files
-: 1662531522:0;mv fil/* files
-: 1662531535:0;ls files
-: 1662531575:0;cd /etc/nginx/sites-available
-: 1662531575:0;ls
-: 1662531598:0;cd sites-enabled/
-: 1662531614:0;sudo rm site2.conf
-: 1662531644:0;cd ~www/html
-: 1662531687:0;cd sites/site1/addons
-: 1662531702:0;sudo systemctl restart nginx
-: 1662534699:0;sudo vim /etc/nginx/sites-available/site1.conf
-: 1662534721:0;sudo vim /etc/nginx/sites-available/site3.conf
-: 1662534905:0;rm -r xcx
-: 1662534916:0;tar xzvf files.tar.gz
-: 1662534923:0;ls files
-: 1662536947:0;cd archieves
-: 1662537608:0;du -hs *
-: 1662625854:0;sudo apt upgrade
-: 1662625864:0;uname -a
-: 1662625898:0;sudo apt autoremove
-: 1662625904:0;sudo apt upgrade
-: 1662625956:0;systemctl status
-: 1662626013:0;mysql -uroot -p
-: 1662725121:0;sudo apt upgrade
-: 1662725132:0;systemctl status
-: 1662748525:0;ls archieves
-: 1662748943:0;mv greenwood.cloud_nginx.zip archieves
-: 1662748952:0;cd archieves
-: 1662748959:0;unzip greenwood.cloud_nginx.zip
-: 1662749097:0;sudo vi /etc/nginx/sites-available/site1.conf
-: 1662749177:0;cd /etc/nginx
-: 1662749183:0;vi nginx.conf
-: 1662749208:0;cd sites-available
-: 1662750798:0;pidof sshd
-: 1662750825:0;dmesg
-: 1662750904:0;w
-: 1662752976:0;sudo vi site1.conf
-: 1662753072:0;vi nginx.conf
-: 1662753368:0;ls
-: 1662753384:0;sudo mv greenwood.cloud_nginx cert
-: 1662753390:0;cd sites-available
-: 1662753394:0;ls ../cert
-: 1662753412:0;sudo vi site1.conf
-: 1662753533:0;sudo systemctl reload nginx
-: 1662753575:0;sudo vi site1.conf
-: 1662753905:0;mysql_secure_installation
-: 1662754066:0;mysql -uroot -p
-: 1662754094:0;systemctl status mysqld
-: 1662786202:0;uname -a
-: 1662787030:0;cd .ssh
-: 1662787030:0;ls
-: 1662787034:0;cat authorized_keys
-: 1662787041:0;cat known_hosts
-: 1662787058:0;cat /dev/null > known_hosts
-: 1662787730:0;ls archieves
-: 1662787754:0;cd config
-: 1662787759:0;git pull
-: 1662788451:0;php -v
-: 1662793749:0;git commit -am 'vi'
-: 1662793752:0;git push
-: 1662794085:0;cat authorized_keys
-: 1662794093:0;cat known_hosts
-: 1662817806:0;cp /etc/nginx/sites-available/site1.conf config/nginxwifi.conf
-: 1662817810:0;cd config
-: 1662817867:0;git add nginxwifi.conf
-: 1662817869:0;git commit -am 'ssl nginx'
-: 1662817871:0;git push
-: 1662817891:0;cat known_hosts
-: 1662817907:0;mysql_secure_installation
-: 1662817969:0;uptime
-: 1662818141:0;systemctl list-unit-files --type=service
-: 1662818179:0;sudo dmesg
-: 1662818363:0;cd /etc/nginx
-: 1662818367:0;ls sites-*
-: 1662818386:0;sudo rm sites-available/site2.conf
-: 1662818391:0;ls sites-*
-: 1662819003:0;sudo apt update
-: 1662819018:0;sudo apt update
-: 1662819030:0;sudo apt upgrade
-: 1662819196:0;uname -a
-: 1662819209:0;systemctl status sshd
-: 1662819214:0;systemctl status mysqld
-: 1662819231:0;systemctl status php7.4-fpm.service
-: 1662819260:0;mysql -uroot -p
-: 1662819464:0;mysql -uwq -p
-: 1662819854:0;mysql -uroot -p
-: 1662819864:0;mysql -uroot -p
-: 1662820561:0;cd /var/lib/mysql
-: 1662820563:0;ls
-: 1662820569:0;cd wqwifi
-: 1662820570:0;ls
-: 1662820577:0;ll
-: 1662820586:0;sudo cd wqwifi
-: 1662820627:0;mysql -uroot -p
-: 1662820971:0;mysql -uroot -p
-: 1662821391:0;mysql -uroot -p
-: 1662821549:0;mysql -uroot -p
-: 1662823557:0;mysql -uroot -p
-: 1662823580:0;mysql -uroot -p
-: 1662824069:0;sudo systemctl reload mysqld
-: 1662824085:0;sudo systemctl restart mysqld
-: 1662824089:0;mysql -uroot -p
-: 1662824261:0;mysqlrepair
-: 1662824273:0;mysqlcheck
-: 1662824289:0;mysql_install_db
-: 1662824306:0;sudo mysql_install_db
-: 1662824319:0;mysql_upgrade
-: 1662824336:0;mysql -uroot -p
-: 1662824641:0;mysql_secure_installation
-: 1662824669:0;sudo mysql_secure_installation
-: 1662824699:0;mysql -uroot -p
-: 1662825236:0;cd
-: 1662825241:0;less .mysql_history
-: 1662825278:0;fg
-: 1662825447:0;mysqladmin -uroot -p status
-: 1662825482:0;mysqladmin -uroot -p ping
-: 1662825510:0;mysqlshow -uroot -p
-: 1662825548:0;mysqladmin -uroot -p refresh
-: 1662825567:0;mysqladmin -uroot -p shutdown
-: 1662825596:0;mysqladmin -uroot -p reload
-: 1662825610:0;systemctl status mysqld
-: 1662825616:0;systemctl start mysqld
-: 1662825622:0;sudo systemctl start mysqld
-: 1662825632:0;systemctl status mysqld
-: 1662825639:0;mysql -uroot -p
-: 1662826374:0;w
-: 1662826386:0;sudo systemctl stop nginx
-: 1662826400:0;sudo systemctl stop php7.4-fpm
-: 1662826406:0;mysql -uroot -p
-: 1662826422:0;mysql -uroot -p
-: 1662827026:0;mysql_secure_installation
-: 1662827055:0;sudo mysql_secure_installation
-: 1662827082:0;mysql_install_db
-: 1662827089:0;sudo mysql_install_db
-: 1662827104:0;mysql_upgrade
-: 1662827125:0;sudo mysql_secure_installation
-: 1662827210:0;cd /var/lib/mysql
-: 1662827210:0;ls
-: 1662827218:0;du -hs .
-: 1662827226:0;su
-: 1662836963:0;mv .zsh_history config/zsh_history
-: 1662877868:0;ln -sf config/vimrc .vimrc
-: 1662877883:0;cd .ssh
-: 1662877899:0;ln -sf ~/config/ssh-config config
-: 1662877915:0;sudo apt install nginx
-: 1662877962:0;systemctl list-unit-files --type=service
-: 1662877982:0;sudo apt install php
-: 1662878092:0;sudo apt install default-mysql-server
-: 1662878262:0;sudo systemctl disable apache2
-: 1662898643:0;sudo apt install php-fpm
-: 1662898679:0;sudo apt install nmap
-: 1662898710:0;sudo apt install php-curl
-: 1662898721:0;sudo apt install php-gd
-: 1662898731:0;sudo apt install php-xml
-: 1662898745:0;sudo apt install php-mysqlnd
-: 1662898758:0;sudo apt install redis
-: 1662898830:0;git config --global user.name 'fang'
-: 1662898851:0;git config --global user.email 'fang@debian'
-: 1662898923:0;id
-: 1662898942:0;sudo usermod -aG www-data fang
-: 1662899026:0;sudo mysql_secure_installation
-: 1662899084:0;systemctl status
-: 1662899133:0;sudo reboot
-: 1662899179:0;systemctl status
-: 1662899206:0;mysql -uroot -p
-: 1662899420:0;scp testing:files.tar.gz .
-: 1662899607:0;sudo apt autoremove
-: 1662899639:0;mkdir tmp
-: 1662899643:0;mv files.tar.gz tmp
-: 1662899645:0;cd tmp
-: 1662899653:0;tar xzvf files.tar.gz
-: 1662899665:0;mv archieves ..
-: 1662899675:0;mv tmp/* .
-: 1662901163:0;mysql -uroot -p
-: 1662901484:0;cd archieves
-: 1662901497:0;tar xzvf xcx.tar.gz
-: 1662901517:0;cd /var/www/html
-: 1662901558:0;sudo mkdir site{1,3}
-: 1662901606:0;sudo mv ~/archieves/xcx/2.5.4/* site1
-: 1662901651:0;sudo mv ~/archieves/xcx/wifi-fx/one_wifi site1/addons
-: 1662901678:0;sudo chown -R www-data:www-data site*
-: 1662901701:0;sudo chmod -R g+w site*
-: 1662901717:0;ll site1
-: 1662901733:0;cd /etc/nginx
-: 1662901761:0;cd sites-available
-: 1662901803:0;sudo cp ~/config/nginxwifi.conf site1.conf
-: 1662901927:0;sudo vi site*
-: 1662902317:0;sudo cp -a nginx.conf nginx.conf_bk
-: 1662902322:0;sudo vi nginx.conf
-: 1662902421:0;systemctl status nginx
-: 1662902429:0;systemctl status php7.4-fpm
-: 1662902436:0;systemctl status mysqld
-: 1662902480:0;cd sites-enabled
-: 1662902507:0;sudo ln -sf /etc/nginx/sites-available/site1.conf .
-: 1662902516:0;sudo nginx -t
-: 1662902543:0;cd ~/archieves
-: 1662902545:0;ls
-: 1662902553:0;rm -rf xcx
-: 1662902570:0;unzip greenwood.cloud_nginx.zip
-: 1662902646:0;chmod -R o-rw greenwood.cloud_nginx
-: 1662902687:0;cd -
-: 1662902751:0;cd ../sites-available
-: 1662902756:0;sudo vi site1.conf
-: 1662902926:0;..
-: 1662902992:0;sudo mkdir cert
-: 1662903014:0;sudo cp -ar ~/archieves/greenwood.cloud_nginx cert
-: 1662903019:0;sudo nginx -t
-: 1662903032:0;sudo systemctl reload nginx
-: 1662903162:0;cd
-: 1662903171:0;ls tmp
-: 1662903195:0;rm tmp/files.tar.gz
-: 1662903200:0;ls *
-: 1662903218:0;rm -rf archieves/greenwood.cloud_nginx
-: 1662903261:0;cd config
-: 1662903278:0;cp /etc/nginx/sites-available/site1.conf nginxwifi.conf
-: 1662903292:0;git commit -am 'site1 conf'
-: 1662903295:0;git push
-: 1662903303:0;..
-: 1662903337:0;cd /var/www/html/site3
-: 1662903351:0;vi info.php
-: 1662903375:0;php info.php
-: 1662903393:0;ln -s ~/tmp/files .
-: 1662909220:0;cat .zsh_history >> config/zsh_history
+: 1662963993:0;sudo apt install nginx
+: 1662964130:0;sudo apt install php
+: 1662964203:0;sudo apt install default-mysql-server
+: 1662964266:0;sudo apt install php-fpm
+: 1662964290:0;sudo systemctl disable apache2
+: 1662964319:0;systemctl status
+: 1662964414:0;sudo reboot
+: 1662964663:0;systemctl status
+: 1662964733:0;sudo usermod -aG www-data fang
+: 1662964774:0;sudo apt install nmap
+: 1662964820:0;sudo apt install php-curl
+: 1662964826:0;sudo apt install php-gd
+: 1662964831:0;sudo apt install php-xml
+: 1662964846:0;sudo apt install php-mysqlnd
+: 1662964887:0;cd /etc/nginx
+: 1662964923:0;sudo cp -a nginx.conf nginx.conf_bk
+: 1662964926:0;sudo vi nginx.conf
+: 1662964947:0;cd sites-available
+: 1662964981:0;sudo cp ~/config/nginxwifi.conf site1.conf
+: 1662965023:0;..
+: 1662965029:0;sudo mkdir cert
+: 1662965033:0;cd
+: 1662965098:0;scp testing:archieves.tar.gz .
+: 1662965277:0;tar xzvf archieves.tar.gz
+: 1662965322:0;cd archieves
+: 1662965350:0;tar xzvf xcx.tar.gz
+: 1662965361:0;tar xzvf tmp.tar.gz
+: 1662965366:0;unzip greenwood.cloud_nginx.zip
+: 1662965368:0;ls
+: 1662965377:0;mv tmp ..
+: 1662965435:0;chmod -R o-rw greenwood.cloud_nginx
+: 1662965443:0;chmod -R g-w greenwood.cloud_nginx
+: 1662965464:0;chmod -R g-r greenwood.cloud_nginx
+: 1662965534:0;sudo cp -aR greenwood.cloud_nginx /etc/nginx/cert
+: 1662965578:0;sudo mkdir /var/www/html/site{1,3}
+: 1662965621:0;cd /var/www/html/site1
+: 1662965657:0;sudo cp -aR ~/archieves/xcx/2.5.4/* .
+: 1662965683:0;sudo cp -aR ~/archieves/xcx/wifi-fx/one_wifi addons
+: 1662965697:0;..
+: 1662965755:0;sudo chown -R fang:www-data site*
+: 1662965786:0;sudo chmod -R g+w site*
+: 1662965910:0;cd site3
+: 1662965917:0;vi info.php
+: 1662965953:0;ln -s ~/tmp/files .
+: 1662965984:0;sudo nginx -t
+: 1662966064:0;cd /etc/nginx/sites-enabled
+: 1662966102:0;sudo ln -s /etc/nginx/sites-available/site1.conf
+: 1662966108:0;sudo systemctl reload nginx
+: 1662966256:0;w
+: 1662966295:0;cd
+: 1662966316:0;cp .zsh_history config/zsh_history
