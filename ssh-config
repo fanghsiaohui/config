@@ -5,7 +5,7 @@ HOST debian greenwood
     Port 22
     ServerAliveInterval 30
 
-HOST testing
+HOST cent testing
 	Hostname 43.142.84.47
 	User fang
     Port 22
