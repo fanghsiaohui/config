@@ -9,6 +9,7 @@ set wildmenu
 "set foldenable
 "set foldmethod=indent
 set formatoptions+=B
+"合并两行中文时，不在中间加空格
 set rtp+=~/.vim/julia-vim
 
 ""map! <F5> : !python3 %<CR>
