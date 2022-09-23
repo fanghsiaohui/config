@@ -15,12 +15,12 @@ HOST laptop
 	User fang
     Port 22
 
-HOST phone_XM
+HOST phone_xm
 	Hostname 192.168.2.202
 	User u0_a328
 	Port 8022
 
-HOST phone_HW
-	Hostname 192.168.2.202
+HOST phone_hw
+	Hostname 192.168.2.209
 	User u0_a345
 	Port 8022
