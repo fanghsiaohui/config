@@ -1,4 +1,5 @@
 #alias vi=vim
+alias zman="man -M zh_CN:"
 alias vihis="vim ~/.zsh_history"
 #alias open="termux-open"
 #alias julia='julia --banner=no'
