@@ -1,5 +1,5 @@
 #alias vi=vim
-alias zman="man -M zh_CN:"
+alias zman="man -M /usr/share/man/zh_CN:"
 alias vihis="vim ~/.zsh_history"
 #alias open="termux-open"
 #alias julia='julia --banner=no'
@@ -12,3 +12,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # install ruby gems to ~/gems
 export GEM_HOME="$HOME/.gems"
 export export PATH="$HOME/.gems/bin:$PATH"
+
+# export LANG=zh_CN.utf8
+# export LANGUAGE=zh_CN.utf8
+export LC_TIME=zh_CN.utf8
