@@ -1,3 +1,10 @@
+wifi:
+    old: wifi-menu, need dialog
+    new: iwctl
+    device list
+    station device scan
+    station device get-network
+    station device connect ssid
 1. timedatectl
     set ntp 1
 2. fdisk /dev/sda
@@ -12,7 +19,8 @@
 5. mount device
     mount root, boot
 6. modify /etc/pacman.d/mirrorlist
-7. pacstrap /mnt base base-devel
+# 7. pacstrap /mnt base base-devel
+7. pacstrap /mnt base base-devel linux linux-firmware
 
 config system
 8. genfstab /mnt >> /mnt/etc/fstab

@@ -11,7 +11,7 @@ HOST ali
     Port 22
 
 HOST laptop
-    Hostname 192.168.1.110
+    Hostname 192.168.0.106
     User fang
     Port 22
 
