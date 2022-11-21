@@ -4,11 +4,7 @@ HOST greenwood.cloud
     User fang
     Port 22
     ServerAliveInterval 30
-
-HOST ali
-    Hostname 120.76.250.33
-    User root
-    Port 22
+    ServerAliveCountMax 10
 
 HOST laptop
     Hostname 192.168.0.106
@@ -19,3 +15,8 @@ HOST phoneHLK-AL00
     Hostname 192.168.2.209
     User u0_a345
     Port 8022
+
+HOST ali
+    Hostname 120.76.250.33
+    User root
+    Port 22
