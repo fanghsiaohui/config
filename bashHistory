@@ -1,0 +1,11 @@
+termux-setup-storage
+termux-change-repo
+pkg upgrade
+termux-change-repo
+pkg install vim openssh git python nmap-ncat file nodejs
+ssh-keygen
+git config --global user.name 'fang'
+git config --global user.email 'fang@phone'
+ssh-copy-id fang@greenwood.cloud
+ln -s /storage/emulated/0/Download/ downloads
+git clone git@github.com:fanghsiaohui/config.git
