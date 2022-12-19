@@ -4,7 +4,7 @@ HOST greenwood.cloud
     User fang
     Port 22
     ServerAliveInterval 30
-    ServerAliveCountMax 10
+    ServerAliveCountMax 3
 
 HOST laptop
     Hostname 192.168.0.106
