@@ -43,21 +43,19 @@ if ( ! $?OSTYPE ) then
   setenv OSTYPE `echo "$HOSTTYPE" | sed -e 's/^(i[3456]86|(amd|x86_)64)-//'`
 endif
 
-set nonomatch
 if ( ! $?hosts ) set hosts
 
 foreach f ( "$HOME/."{,r,ssh/known_}hosts* \
   /usr/local/etc/csh.hosts /etc/hosts.equiv )
   if ( -r "$f" ) then
-    set hosts=($hosts `cut -d' ' -f1 "$f" | sed \
+    set hosts=($hosts `sed \
       -e 's/#.*//' \
       -e '/^[+-]@/d' \
       -e 's/^[-+]//' \
       -e 's/[[:space:]].*//' \
-      -e 's/,/\n/g' \
-      | sed -e '/^[.:[:xdigit:][:space:]]*$/d' \
-      | sed -e 's/\[//' \
-      | sed -e 's/]:[0-9]*//'`)
+      -e 's/,/\n/g' "$f" \
+      | sed -e 's/[][]//g' \
+      | sed -e '/^[.:[:xdigit:][:space:]]*$/d'`)
   endif
 end
 unset f
@@ -67,7 +65,9 @@ if ( -r "$HOME/.netrc" ) then
 endif
 
 if ( -r "$HOME/.ssh/config" ) then
-  set hosts=($hosts `sed '/^HOST/p' "$HOME/.ssh/config" | cut -d' ' -f2`)
+  #set hosts=($hosts `awk '$1 == "machine" { print $2 }' "$HOME/.netrc"`)
+  set hosts=($hosts `sed -n '/HOST/p' "$HOME/.ssh/config" \
+  | cut -d ' ' -f2`)
 endif
 
 set hosts=(`echo $hosts | tr ' ' '\012' | sort -u`)

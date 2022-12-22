@@ -6,10 +6,10 @@
 # more examples available at /usr/share/examples/csh/
 #
 
-setenv	GREP_OPTIONS    --color=auto
-set     correct = all
+set correct = all
 setenv	CLICOLOR	yes
 setenv	EDITOR	vim
+setenv	GREP_OPTIONS    --color=auto
 
 #alias hisc	"history -c && history -M"
 #alias grep	grep --color
@@ -52,4 +52,5 @@ if ($?prompt) then
 
 endif
 
-source ~/.complete.csh
+set nonomatch
+source ~/.complete

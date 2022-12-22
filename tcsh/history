@@ -1,0 +1,48 @@
+#+1671182538
+ssh greenwood.cloud mkdir other archives
+#+1671343402
+ssh greenwood.cloud uptime
+#+1671344997
+cd other/
+#+1671345013
+python -m venv vp1
+#+1671363218
+:
+#+1671476696
+ssh phoneHLK-AL00
+#+1671477552
+ssh greenwood.cloud openssl rand -base64 4
+#+1671524817
+openssl
+#+1671524907
+pkg install openssl-tool
+#+1671532208
+scp -r downloads/cloud/ greenwood.cloud:
+#+1671558474
+ssh greenwood.cloud
+#+1671648528
+cat ../usr/etc/hosts
+#+1671648541
+cat ../usr/etc/resolv.conf
+#+1671648601
+vi ../usr/etc/hosts
+#+1671649796
+scp greenwood.cloud:.complete .
+#+1671677013
+cd config/
+#+1671677016
+git status
+#+1671677082
+git add *
+#+1671677095
+git commit -am 'csh mine'
+#+1671677098
+git push
+#+1671677521
+:
+#+1671677538
+ssh greenwood.cloud
+#+1671678094
+nmap -sV greenwood.cloud
+#+1671678547
+ssh greenwood.cloud
