@@ -12,4 +12,5 @@ export GEM_HOME="$HOME/.gems"
 export PATH="$HOME/.gems/bin:$PATH"
 
 # export LANG=zh_CN.utf8
-export LC_TIME=zh_CN.utf8
+# export LC_TIME=zh_CN.utf8
+export LC_TIME=C
