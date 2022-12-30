@@ -1,48 +1,96 @@
-#+1671182538
-ssh greenwood.cloud mkdir other archives
-#+1671343402
-ssh greenwood.cloud uptime
-#+1671344997
-cd other/
-#+1671345013
-python -m venv vp1
-#+1671363218
+#+1672413203
+su
+#+1672413267
+sudo freebsd-update fetch install
+#+1672413571
+sudo pkg update
+#+1672413577
+sudo pkg upgrade
+#+1672413580
 :
-#+1671476696
-ssh phoneHLK-AL00
-#+1671477552
-ssh greenwood.cloud openssl rand -base64 4
-#+1671524817
-openssl
-#+1671524907
-pkg install openssl-tool
-#+1671532208
-scp -r downloads/cloud/ greenwood.cloud:
-#+1671558474
-ssh greenwood.cloud
-#+1671648528
-cat ../usr/etc/hosts
-#+1671648541
-cat ../usr/etc/resolv.conf
-#+1671648601
-vi ../usr/etc/hosts
-#+1671649796
-scp greenwood.cloud:.complete .
-#+1671677013
-cd config/
-#+1671677016
-git status
-#+1671677082
-git add *
-#+1671677095
-git commit -am 'csh mine'
-#+1671677098
-git push
-#+1671677521
+#+1672413610
+sudo pkg install vim python
+#+1672413680
+sudo cp /etc/ssh/sshd_config{,.bk}
+#+1672413689
+sudo vim /etc/ssh/sshd_config
+#+1672413780
+sudo service sshd restart
+#+1672413803
 :
-#+1671677538
-ssh greenwood.cloud
-#+1671678094
-nmap -sV greenwood.cloud
-#+1671678547
-ssh greenwood.cloud
+#+1672413856
+sudo pkg install apache24 mariadb106-server php81
+#+1672414098
+sudo service mysql-server onestart
+#+1672414149
+sudo mysql_secure_installation
+#+1672414199
+cd /usr/local/etc/apache24/
+#+1672414208
+sudo cp httpd.conf{,.bk}
+#+1672414212
+sudo vim httpd.conf
+#+1672414446
+sudo cp extra/httpd-vhosts.conf{,.bk}
+#+1672414455
+sudo vim extra/httpd-vhosts.conf
+#+1672414672
+sudo cp extra/httpd-ssl.conf{,.bk}
+#+1672414680
+sudo vim extra/httpd-ssl.conf
+#+1672414890
+cd ~/archives/
+#+1672414897
+tar xvf ssl.tar.gz
+#+1672414908
+tar xvf sitefiles.tar.gz
+#+1672414924
+sudo mv ssl /usr/local/etc/apache24/
+#+1672414958
+sudo mv sitefiles/site1/ /usr/local/www/apache24/data/site_sample
+#+1672414986
+cd /usr/local/www/apache24/data/
+#+1672415001
+sudo chown -R www:www site_sample/
+#+1672415056
+sudo pkg install mod_php81
+#+1672415409
+sudo apachectl -t
+#+1672415608
+sudo service apache24 onestart
+#+1672416610
+sudo vim /etc/rc.conf
+#+1672416643
+:
+#+1672416688
+sudo pkg install nmap
+#+1672417054
+sudo pw usermod fang -G wheel,www
+#+1672417941
+cp /usr/share/examples/tcsh/complete.tcsh .complete
+#+1672418022
+vim .cshrc
+#+1672418316
+:
+#+1672418317
+:
+#+1672418318
+:
+#+1672418319
+:
+#+1672418617
+mysql -uroot -p
+#+1672419683
+cd /usr/local/etc/apache24/
+#+1672419715
+cd extra/
+#+1672419866
+sudo cp httpd-default.conf{,.bk}
+#+1672419874
+sudo vim httpd-default.conf
+#+1672420070
+sudo service apache24 onerestart
+#+1672420410
+sudo vim /etc/hosts
+#+1672420622
+:
