@@ -1,102 +1,35 @@
-#+1691706997
 su
-#+1691707118
 sudo freebsd-update fetch install
-#+1691707180
 sudo pkg update
-#+1691707204
 sudo pkg install python vim git
-#+1691707273
-sudo pkg install apache24 mariadb1011-server php83
-#+1691707424
+sudo pkg install apache24 mariadb1011-server php83 mod_php83
 sudo pkg install py39-pip
-#+1691707434
 pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
-#+1691707451
 git config --global user.name "fang"
-#+1691707468
 git config --global user.email "fang@greenwood.cloud"
-#+1691707483
 ssh-keygen
-#+1691707753
 sudo pkg install nmap
-#+1691707759
 :
-#+1691708348
 sudo pkg install py39-{numpy,scipy,matplotlib}
-#+1691708479
 sudo pkg install py39-notebook
-#+1691709668
-:
-#+1691709765
 jupyter notebook --generate-config
-#+1691709783
 jupyter notebook password
-#+1691710045
 vim .jupyter/jupyter_notebook_config.py
-#+1691710705
-:
-#+1691712094
 sudo pkg install py39-jupyterlab
-#+1691712888
-sudo service apache24 onestart
-#+1691713142
-mkdir other archieves
-#+1691713267
-cd /usr/local/www/
-#+1691713405
-sudo mv ~/archieves/sitefiles/site1/ data/
-#+1691713914
-sudo vim extra/httpd-vhosts.conf
-#+1691713979
-sudo vim extra/httpd-ssl.conf
-#+1691719010
-cd /usr/local/www/apache24/data/site1/
-#+1691719224
-sudo vim httpd.conf
-#+1691719261
-apachectl -t
-#+1691719336
-sudo cp -r ~/archieves/ssl/ .
-#+1691719343
-sudo service apache24 restart
-#+1691719443
-cd /usr/local/www/apache24/data/
-#+1691719489
-sudo chown -R www:www site1/
-#+1691719711
-sudo pw usermod fang -G wheel,www
-#+1691719901
-sudo service apache24 restart
-#+1691720014
-cd /usr/local/www/apache24/data/
-#+1691720495
-sudo pkg install mod_php83
-#+1691720541
-sudo vim httpd.conf
-#+1691720569
-sudo service apache24 restart
-#+1691721158
-sudo vim httpd.conf
-#+1691721305
-apachectl -t
-#+1691721310
-sudo service apache24 restart
-#+1691721916
-sudo service mysql-server onestart
-#+1691721924
-mysql_secure_installation
-#+1691721940
-sudo mysql_secure_installation
-#+1691722563
 :
-#+1691723123
+mkdir other archieves
 cd /usr/local/etc/apache24/
-#+1691723131
 sudo vim extra/httpd-vhosts.conf
-#+1691723212
+sudo vim extra/httpd-ssl.conf
+sudo vim httpd.conf
+sudo cp -r ~/archieves/ssl/ .
+cd /usr/local/www/apache24/data/
+sudo mv ~/archieves/sitefiles/site1/ .
+sudo chown -R www:www site1/
 apachectl -t
-#+1691723219
-sudo service apache24 restart
-#+1691728249
+sudo service apache24 onestart
+:
+sudo service mysql-server onestart
+sudo mysql_secure_installation
+:
 sudo vim /etc/ssh/sshd_config
