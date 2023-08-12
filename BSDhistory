@@ -1,96 +1,102 @@
-#+1672413203
+#+1691706997
 su
-#+1672413267
+#+1691707118
 sudo freebsd-update fetch install
-#+1672413571
+#+1691707180
 sudo pkg update
-#+1672413577
-sudo pkg upgrade
-#+1672413580
-:
-#+1672413610
-sudo pkg install vim python
-#+1672413680
-sudo cp /etc/ssh/sshd_config{,.bk}
-#+1672413689
-sudo vim /etc/ssh/sshd_config
-#+1672413780
-sudo service sshd restart
-#+1672413803
-:
-#+1672413856
-sudo pkg install apache24 mariadb106-server php81
-#+1672414098
-sudo service mysql-server onestart
-#+1672414149
-sudo mysql_secure_installation
-#+1672414199
-cd /usr/local/etc/apache24/
-#+1672414208
-sudo cp httpd.conf{,.bk}
-#+1672414212
-sudo vim httpd.conf
-#+1672414446
-sudo cp extra/httpd-vhosts.conf{,.bk}
-#+1672414455
-sudo vim extra/httpd-vhosts.conf
-#+1672414672
-sudo cp extra/httpd-ssl.conf{,.bk}
-#+1672414680
-sudo vim extra/httpd-ssl.conf
-#+1672414890
-cd ~/archives/
-#+1672414897
-tar xvf ssl.tar.gz
-#+1672414908
-tar xvf sitefiles.tar.gz
-#+1672414924
-sudo mv ssl /usr/local/etc/apache24/
-#+1672414958
-sudo mv sitefiles/site1/ /usr/local/www/apache24/data/site_sample
-#+1672414986
-cd /usr/local/www/apache24/data/
-#+1672415001
-sudo chown -R www:www site_sample/
-#+1672415056
-sudo pkg install mod_php81
-#+1672415409
-sudo apachectl -t
-#+1672415608
-sudo service apache24 onestart
-#+1672416610
-sudo vim /etc/rc.conf
-#+1672416643
-:
-#+1672416688
+#+1691707204
+sudo pkg install python vim git
+#+1691707273
+sudo pkg install apache24 mariadb1011-server php83
+#+1691707424
+sudo pkg install py39-pip
+#+1691707434
+pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
+#+1691707451
+git config --global user.name "fang"
+#+1691707468
+git config --global user.email "fang@greenwood.cloud"
+#+1691707483
+ssh-keygen
+#+1691707753
 sudo pkg install nmap
-#+1672417054
+#+1691707759
+:
+#+1691708348
+sudo pkg install py39-{numpy,scipy,matplotlib}
+#+1691708479
+sudo pkg install py39-notebook
+#+1691709668
+:
+#+1691709765
+jupyter notebook --generate-config
+#+1691709783
+jupyter notebook password
+#+1691710045
+vim .jupyter/jupyter_notebook_config.py
+#+1691710705
+:
+#+1691712094
+sudo pkg install py39-jupyterlab
+#+1691712888
+sudo service apache24 onestart
+#+1691713142
+mkdir other archieves
+#+1691713267
+cd /usr/local/www/
+#+1691713405
+sudo mv ~/archieves/sitefiles/site1/ data/
+#+1691713914
+sudo vim extra/httpd-vhosts.conf
+#+1691713979
+sudo vim extra/httpd-ssl.conf
+#+1691719010
+cd /usr/local/www/apache24/data/site1/
+#+1691719224
+sudo vim httpd.conf
+#+1691719261
+apachectl -t
+#+1691719336
+sudo cp -r ~/archieves/ssl/ .
+#+1691719343
+sudo service apache24 restart
+#+1691719443
+cd /usr/local/www/apache24/data/
+#+1691719489
+sudo chown -R www:www site1/
+#+1691719711
 sudo pw usermod fang -G wheel,www
-#+1672417941
-cp /usr/share/examples/tcsh/complete.tcsh .complete
-#+1672418022
-vim .cshrc
-#+1672418316
+#+1691719901
+sudo service apache24 restart
+#+1691720014
+cd /usr/local/www/apache24/data/
+#+1691720495
+sudo pkg install mod_php83
+#+1691720541
+sudo vim httpd.conf
+#+1691720569
+sudo service apache24 restart
+#+1691721158
+sudo vim httpd.conf
+#+1691721305
+apachectl -t
+#+1691721310
+sudo service apache24 restart
+#+1691721916
+sudo service mysql-server onestart
+#+1691721924
+mysql_secure_installation
+#+1691721940
+sudo mysql_secure_installation
+#+1691722563
 :
-#+1672418317
-:
-#+1672418318
-:
-#+1672418319
-:
-#+1672418617
-mysql -uroot -p
-#+1672419683
+#+1691723123
 cd /usr/local/etc/apache24/
-#+1672419715
-cd extra/
-#+1672419866
-sudo cp httpd-default.conf{,.bk}
-#+1672419874
-sudo vim httpd-default.conf
-#+1672420070
-sudo service apache24 onerestart
-#+1672420410
-sudo vim /etc/hosts
-#+1672420622
-:
+#+1691723131
+sudo vim extra/httpd-vhosts.conf
+#+1691723212
+apachectl -t
+#+1691723219
+sudo service apache24 restart
+#+1691728249
+sudo vim /etc/ssh/sshd_config

@@ -403,7 +403,6 @@ set expandtab
 set ignorecase
 set wildmenu
 set noswapfile
-"set foldmethod=indent
 set hlsearch
 set formatoptions+=B
 "合并两行中文时，不在中间加空格
