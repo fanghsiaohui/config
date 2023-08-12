@@ -1,6 +1,6 @@
 ### configure files
 
 - vim
-- zsh
+- sh
 - nginx
 - ssh
