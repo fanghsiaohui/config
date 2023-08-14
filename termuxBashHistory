@@ -1,11 +1,32 @@
-termux-setup-storage
-termux-change-repo
+termux-setup-storage 
+termux-change-repo 
 pkg upgrade
-termux-change-repo
-pkg install vim openssh git python nmap-ncat file nodejs
-ssh-keygen
-git config --global user.name 'fang'
-git config --global user.email 'fang@phone'
-ssh-copy-id fang@greenwood.cloud
-ln -s /storage/emulated/0/Download/ downloads
-git clone git@github.com:fanghsiaohui/config.git
+termux-change-repo 
+pkg install openssh vim python git
+pkg install file nmap
+pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
+git config --global user.name "fang"
+git config --global user.email "fang@phone"
+git clone git@github.com:fanghsiaohui/config
+ln -s storage/downloads/ .
+ln -s config/ssh-config .ssh/config
+ln -s config/vimrc .vimrc
+cp ../usr/etc/motd{,.bk}
+vim ../usr/etc/motd
+curl ipinfo.io
+od -a
+hexdump -C
+xxd
+dirs
+pushd
+nmap -sV greenwood.cloud
+ssh-copy-id fang@greenwood.cloud 
+pkg install mariadb aria2 unrar openssl-tool gnupg fdupes nodejs
+mysql -uroot -p -h greenwood.cloud
+ssh -R 9999:localhost:8000 greenwood.cloud
+ssh -fNR 9999:localhost:8000 greenwood.cloud
+aria2c -j 10 ./*torrent
+ari ~/downloads/tmp/*torrent
+dd if=/dev/zero of=foo bs=1M count=1024
+ssh greenwood.cloud 
+:
