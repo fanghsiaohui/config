@@ -116,3 +116,5 @@ fi
 export CLICOLOR='true'
 alias grep='grep --color=auto'
 alias vih='vim ~/.bash_history'
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
