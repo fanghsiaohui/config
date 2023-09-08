@@ -1,17 +1,21 @@
 termux-setup-storage 
 termux-change-repo 
 pkg upgrade
-termux-change-repo
-pkg install openssh vim python git file nmap
-pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
+termux-change-repo 
+pkg install openssh vim-python git file nmap nodejs ldd dnsutils 
+ssh-keygen 
 git config --global user.name "fang"
 git config --global user.email "fang@phone"
+git config --global init.defaultBranch "main"
 git clone git@github.com:fanghsiaohui/config
-ssh-keygen 
-git clone git@github.com:fanghsiaohui/config
-ln -s storage/downloads/ .
-ln -s config/ssh-config ~/.ssh/config
-ln -s config/vimrc .vimrc
+cd config/
+git remote set-url --add origin git@gitee.com:fanghsiaohui/config
+cd
+ln -s ~/storage/downloads/ .
+ln -s ~/config/ssh-config ~/.ssh/config
+ln -s ~/config/vimrc-grml ~/.vimrc
+ln -s ~/config/bashrc-my ~/.bashrc
+ln -s ~/config/inputrc ~/.inputrc
 cp ../usr/etc/motd{,.bk}
 vim ../usr/etc/motd
 od -a
@@ -20,31 +24,21 @@ xxd
 dirs
 pushd
 popd
-pkg install nodejs
-pkg install mariadb openssl-tool gnupg aria2 unrar fdupes
 ssh -R 9999:localhost:8000 greenwood.cloud
 ssh -fNR 9999:localhost:8000 greenwood.cloud
-nmap -sV greenwood.cloud
-git remote set-url --add origin git@gitee.com:fanghsiaohui/config
-pkg install ldd dnsutils
-ln -s config/inputrc .inputrc
-ln -s config/bashrc .bashrc
-:
+pkg install mariadb openssl-tool gnupg aria2 unrar fdupes
+pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 curl ipinfo.io # 国内外
 curl cip.cc # 国内外
 curl ident.me # 国内外
 curl ifconfig.me # 国外
 curl inet-ip.info # 国外
 curl myip.ipip.net # 国内
-mv downloads/tmp/termux/other/ .
-chmod -R go= other/
-aria2c -j 10 ./*torrent
 ari ~/downloads/tmp/*torrent
 awk '{print $1}' httpd-access.log | sort | uniq -c | sort -nr | nl
 cut -d' ' -f 1 httpd-access.log | sort | uniq -c | sort -nr | cat -n
 npm config set registry https://registry.npm.taobao.org
 npm get registry
+:
 git clone https://github.com/online-go/online-go.com.git
 git clone https://github.com/DjangoGirls/djangogirls
-git config --global init.defaultBranch "main"
-:
