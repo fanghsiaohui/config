@@ -1,4 +1,4 @@
-HOST greenwood.cloud
+HOST fishx.info
     #Hostname 43.138.250.178
     Hostname greenwood.cloud
     User fang
@@ -6,17 +6,22 @@ HOST greenwood.cloud
     ServerAliveInterval 30
     ServerAliveCountMax 3
 
-HOST laptop
-    Hostname 192.168.0.106
+HOST work
+    Hostname 192.168.1.52
     User fang
     Port 22
 
-HOST phoneHLK-AL00
-    Hostname 192.168.2.209
-    User u0_a345
+HOST home
+    Hostname 192.168.1.102
+    User fang
+    Port 22
+
+HOST phone-note10
+    Hostname 192.168.1.100
+    User u0_a257
     Port 8022
 
-HOST ali
-    Hostname 120.76.250.33
-    User root
-    Port 22
+HOST phone-k80
+    Hostname 192.168.1.101
+    User u0_a398
+    Port 8022
