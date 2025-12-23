@@ -48,6 +48,7 @@
 
 ## This setting controls whether GUI notifications are sent from the client to your display manager session.
 #disable_notifications = "false"
+disable_notifications = "true"
 
 ## This setting controls whether the application will set the permissions on files and directories using the values of 'sync_dir_permissions' and 'sync_file_permissions'.
 #disable_permission_set = "false"

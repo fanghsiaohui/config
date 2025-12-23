@@ -1,6 +1,6 @@
 HOST fishx.info
-    #Hostname 43.138.250.178
-    Hostname greenwood.cloud
+    Hostname 124.221.238.234
+    #Hostname
     User fang
     Port 22
     ServerAliveInterval 30
