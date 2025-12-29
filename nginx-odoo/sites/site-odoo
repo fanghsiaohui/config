@@ -12,13 +12,13 @@ map $http_upgrade $connection_upgrade {
 # http -> https
 server {
   listen 80;
-  server_name odoo.fishx.info;
+  server_name fishx.info;
   rewrite ^(.*) https://$host$1 permanent;
 }
 
 server {
   listen 443 ssl;
-  server_name odoo.fishx.info;
+  server_name fishx.info;
   proxy_read_timeout 720s;
   proxy_connect_timeout 720s;
   proxy_send_timeout 720s;
