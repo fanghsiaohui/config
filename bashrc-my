@@ -149,7 +149,7 @@ alias ari='aria2c --conf-path=~/.config/aria2.conf'
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 
-PS1='\[\e]0;\u@\h: \w\a\]\[\033[00;32m\]\A \[\033[00;34m\]\w\[\033[00;35m\]$(__git_ps1 " (%s)") \[\033[00;34m\]\$\[\033[00m\] '
+PS1='\[\e]0;\u@\h: \w\a\]\[\033[00;34m\]\A \h \[\033[00;34m\]\w\[\033[00;35m\]$(__git_ps1 " (%s)") \[\033[00;34m\]\$\[\033[00m\] '
 
 shopt -s cdspell
 #export HISTTIMEFORMAT="%F %T "
