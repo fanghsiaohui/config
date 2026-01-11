@@ -153,3 +153,4 @@ PS1='\[\e]0;\u@\h: \w\a\]\[\033[01;32m\]\A \h \[\033[00;34m\]\w\[\033[00;35m\]$(
 
 shopt -s cdspell
 #export HISTTIMEFORMAT="%F %T "
+alias manzh='man -M /usr/share/man/zh_CN'
