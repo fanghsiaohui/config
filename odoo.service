@@ -1,0 +1,18 @@
+[Unit]
+Description=odoo-19
+Documentation=
+After=network.target network-online.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+SyslogIdentifier=odoo
+User=odoo
+Group=odoo
+ExecStart=/data/code/odoo-19/bin/odoo
+Environment=ODOO_LOG_FILE=/var/log/odoo/odoo.log
+Restart=on-failure
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target
