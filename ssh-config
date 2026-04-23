@@ -7,7 +7,7 @@ HOST fishx.info
     ServerAliveCountMax 3
 
 HOST work
-    Hostname 192.168.1.52
+    Hostname 192.168.1.113
     User fang
     Port 22
 

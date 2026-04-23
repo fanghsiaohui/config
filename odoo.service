@@ -10,7 +10,7 @@ SyslogIdentifier=odoo
 User=odoo
 Group=odoo
 ExecStart=/data/code/odoo-19/bin/odoo
-Environment=ODOO_LOG_FILE=/var/log/odoo/odoo.log
+#Environment=ODOO_LOG_FILE=/var/log/odoo/odoo.log
 Restart=on-failure
 StandardOutput=journal+console
 
