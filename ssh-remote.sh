@@ -1,2 +1,2 @@
-#!/user/bin/bash
+#!/usr/bin/bash
 ssh -fCNR 9999:localhost:22 fang@fishx.info
